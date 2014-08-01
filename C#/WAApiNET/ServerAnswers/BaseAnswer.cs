@@ -1,6 +1,6 @@
 ﻿namespace WAApiNET.ServerAnswers
 {
-    public abstract class BaseAnswer
+    public class BaseAnswer
     {
         public string Status { get; set; }
 

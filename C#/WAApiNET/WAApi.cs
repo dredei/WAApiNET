@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 using ExtensionMethods;
 using Newtonsoft.Json;
 using WAApiNET.Categories;
+using WAApiNET.Model;
+using WAApiNET.ServerAnswers;
 
 #endregion
 
@@ -59,6 +61,12 @@ namespace WAApiNET
                 this.Queries = 0;
             }
             string answer = this._webClient.DownloadString( "{0}/{1}/{2}".F( this._address, action, jsonData ) );
+            this.LastJSONAnswer = answer;
+            var baseAnswer = JsonConvert.DeserializeObject<BaseAnswer>( answer );
+            if ( baseAnswer.Status != "Success" )
+            {
+                throw new WAApiException( "Ошибка запроса", jsonData, answer );
+            }
             this.Queries++;
             return answer;
         }

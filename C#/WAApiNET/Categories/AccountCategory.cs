@@ -49,7 +49,7 @@ namespace WAApiNET.Categories
         {
             if ( this.Token.IsNullOrEmpty() )
             {
-                throw new Exception( "Сначала авторизуйтесь!" );
+                throw new WAApiException( "Сначала авторизуйтесь!" );
             }
             var getGeneralInfoQ = new BaseQueryData( this.Token );
             string answer = await this._waApi.SendPost( "Get general info", getGeneralInfoQ );

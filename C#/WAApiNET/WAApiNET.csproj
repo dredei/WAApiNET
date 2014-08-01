@@ -68,6 +68,7 @@
   <ItemGroup>
     <Compile Include="Model\Account.cs" />
     <Compile Include="Categories\AccountCategory.cs" />
+    <Compile Include="Model\WAApiException.cs" />
     <Compile Include="ServerAnswers\BaseAnswer.cs" />
     <Compile Include="ServerAnswers\GetGeneralInfoAnswer.cs" />
     <Compile Include="ServerAnswers\SignInAnswer.cs" />
