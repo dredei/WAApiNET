@@ -35,9 +35,8 @@ namespace WAApiNET
         /// </summary>
         /// <param name="email"></param>
         /// <param name="password"></param>
-        /// <param name="remember"></param>
         /// <param name="address"></param>
-        public WAApi( string email, string password, bool remember = false, string address = "http://api.waspace.net" )
+        public WAApi( string email, string password, string address = "http://api.waspace.net" )
         {
             if ( address[ address.Length - 1 ] == '/' )
             {

@@ -32,9 +32,8 @@ namespace WAApiNET.Categories
         /// <summary>
         /// Авторизация
         /// </summary>
-        /// <param name="remember"></param>
         /// <returns></returns>
-        public async Task SignIn( bool remember = false )
+        public async Task SignIn()
         {
             var signInQ = new SignInQuery( this._waApi.Email, this._waApi.Password );
             string answer = await this._waApi.SendPost( "Sign in", signInQ );
