@@ -2,11 +2,21 @@
 {
     internal class SignInAnswer : BaseAnswer
     {
-        public string Token { get; set; }
+        internal class DataObj
+        {
+            public string Token { get; set; }
+
+            public DataObj()
+            {
+                this.Token = null;
+            }
+        }
+
+        public DataObj Data { get; set; }
 
         public SignInAnswer()
         {
-            this.Token = null;
+            this.Data = new DataObj();
         }
     }
 }

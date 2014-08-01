@@ -1,14 +1,28 @@
-﻿namespace WAApiNET.Model
+﻿#region Using
+
+using Newtonsoft.Json;
+
+#endregion
+
+namespace WAApiNET.Model
 {
     public class Account
     {
         public int? Id { get; set; }
+
         public int? Balance { get; set; }
+
         public string Mail { get; set; }
+
         public int? Timebonus { get; set; }
+
         public string Login { get; set; }
+
         public bool Deleted { get; set; }
+
+        [JsonProperty( PropertyName = "Readonly key" )]
         public string ReadonlyKey { get; set; }
+
         public string Referer { get; set; }
 
         /// <summary>

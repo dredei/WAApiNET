@@ -32,16 +32,14 @@ namespace WAApiNET.Categories
         /// <summary>
         /// Авторизация
         /// </summary>
-        /// <param name="mail"></param>
-        /// <param name="password"></param>
         /// <param name="remember"></param>
         /// <returns></returns>
-        public async Task SignIn( string mail, string password, bool remember = false )
+        public async Task SignIn( bool remember = false )
         {
-            var signInQ = new SignInQuery( mail, password );
+            var signInQ = new SignInQuery( this._waApi.Email, this._waApi.Password );
             string answer = await this._waApi.SendPost( "Sign in", signInQ );
             var signInA = JsonConvert.DeserializeObject<SignInAnswer>( answer );
-            this.Token = signInA.Token;
+            this.Token = signInA.Data.Token;
         }
 
         /// <summary>

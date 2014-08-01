@@ -13,8 +13,6 @@ namespace WAApiNET
 {
     public class WAApi
     {
-        private string _email;
-        private string _password;
         private readonly string _address;
         private readonly WebClient _webClient;
 
@@ -23,6 +21,8 @@ namespace WAApiNET
 
         #region Поля
 
+        public string Email { get; private set; }
+        public string Password { get; private set; }
         public AccountCategory Account { get; private set; }
         public int Queries { get; private set; }
         public string LastJSONQuery { get; private set; }
@@ -37,14 +37,14 @@ namespace WAApiNET
         /// <param name="password"></param>
         /// <param name="remember"></param>
         /// <param name="address"></param>
-        public WAApi( string email, string password, bool remember, string address = "http://api.waspace.net/" )
+        public WAApi( string email, string password, bool remember = false, string address = "http://api.waspace.net" )
         {
-            if ( address[ address.Length - 1 ] != '/' )
+            if ( address[ address.Length - 1 ] == '/' )
             {
-                address += "/";
+                address = address.Remove( address.Length - 1, 1 );
             }
-            this._email = email;
-            this._password = password;
+            this.Email = email;
+            this.Password = password;
             this._address = address;
             this._webClient = new WebClient { Encoding = Encoding.UTF8 };
 
