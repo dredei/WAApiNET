@@ -57,8 +57,12 @@ namespace WAApiNET.Categories
         /// <returns></returns>
         public async Task<WATask> AddTask( int folderId, WATask task )
         {
+            if ( task == null )
+            {
+                throw new WAApiException( "Некорректный параметр: task!" );
+            }
             var addTasksQ = new AddTaskQuery( folderId, this._accountCategory.Token, task );
-            string answer = await this._waApi.SendPost( "Get tasks", addTasksQ );
+            string answer = await this._waApi.SendPost( "Add task", addTasksQ );
             var addTasksA = JsonConvert.DeserializeObject<AddTaskAnswer>( answer );
             return new WATask( task ) { TaskId = addTasksA.Data.TaskId };
         }
