@@ -52,11 +52,12 @@ namespace WAApiNET.Categories
         /// <summary>
         /// Добавление задания
         /// </summary>
+        /// <param name="folderId">Id папки</param>
         /// <param name="task">Задание</param>
         /// <returns></returns>
-        public async Task<WATask> AddTask( WATask task )
+        public async Task<WATask> AddTask( int folderId, WATask task )
         {
-            var addTasksQ = new AddTaskQuery( this._accountCategory.Token, task );
+            var addTasksQ = new AddTaskQuery( folderId, this._accountCategory.Token, task );
             string answer = await this._waApi.SendPost( "Get tasks", addTasksQ );
             var addTasksA = JsonConvert.DeserializeObject<AddTaskAnswer>( answer );
             return new WATask( task ) { TaskId = addTasksA.Data.TaskId };
