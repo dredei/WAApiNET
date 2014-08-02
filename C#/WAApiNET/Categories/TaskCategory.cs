@@ -61,5 +61,40 @@ namespace WAApiNET.Categories
             var addTasksA = JsonConvert.DeserializeObject<AddTaskAnswer>( answer );
             return new WATask( task ) { TaskId = addTasksA.Data.TaskId };
         }
+
+        /// <summary>
+        /// Удаление заданий
+        /// </summary>
+        /// <param name="folderId">Id папки</param>
+        /// <param name="taskIds">Массив id заданий</param>
+        /// <returns></returns>
+        public async Task DeleteTasks( int folderId, int[] taskIds )
+        {
+            if ( taskIds == null )
+            {
+                throw new WAApiException( "Некорректный параметр: taskIds!" );
+            }
+            var deleteTaskQ = new DeleteTasksQuery( this._accountCategory.Token, folderId, taskIds );
+            await this._waApi.SendPost( "Delete tasks", deleteTaskQ );
+        }
+
+        /// <summary>
+        /// Удаление заданий
+        /// </summary>
+        /// <param name="folder">Папка</param>
+        /// <param name="tasks">Массив заданий</param>
+        /// <returns></returns>
+        public async Task DeleteTasks( Folder folder, IEnumerable<WATask> tasks )
+        {
+            if ( folder == null || folder.FolderId == null )
+            {
+                throw new WAApiException( "Некорректный параметр: folder!" );
+            }
+            if ( tasks == null )
+            {
+                throw new WAApiException( "Некорректный параметр: folder!" );
+            }
+            await this.DeleteTasks( (int)folder.FolderId, tasks.Select( f => f.TaskId != null ? (int)f.TaskId : 0 ).ToArray() );
+        }
     }
 }
