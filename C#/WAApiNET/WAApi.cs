@@ -7,7 +7,6 @@ using ExtensionMethods;
 using Newtonsoft.Json;
 using WAApiNET.Categories;
 using WAApiNET.Exception;
-using WAApiNET.Model;
 using WAApiNET.ServerAnswers;
 
 #endregion

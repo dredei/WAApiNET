@@ -1,9 +1,6 @@
 ﻿#region Using
 
-using System;
-using System.Collections.Generic;
 using System.Threading.Tasks;
-using ExtensionMethods;
 using Newtonsoft.Json;
 using WAApiNET.Model;
 using WAApiNET.ServerAnswers;
