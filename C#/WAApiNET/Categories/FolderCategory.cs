@@ -1,9 +1,10 @@
 ﻿#region Using
 
 using System.Collections.Generic;
-using System.ComponentModel;
+using System.Linq;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
+using WAApiNET.Exception;
 using WAApiNET.Model;
 using WAApiNET.ServerAnswers;
 using WAApiNET.ServerQueries;
@@ -56,8 +57,8 @@ namespace WAApiNET.Categories
         /// <returns></returns>
         public async Task SetFolderName( int folderId, string newName )
         {
-            var changeFolderName = new ChangeFolderNameQuery( this._accountCategory.Token, folderId, newName );
-            await this._waApi.SendPost( "Set folder name", changeFolderName );
+            var changeFolderNameQ = new ChangeFolderNameQuery( this._accountCategory.Token, folderId, newName );
+            await this._waApi.SendPost( "Set folder name", changeFolderNameQ );
         }
 
         /// <summary>
@@ -70,9 +71,39 @@ namespace WAApiNET.Categories
         {
             if ( folder == null || folder.FolderId == null )
             {
-                throw new WarningException( "Некорректный параметр: Folder!" );
+                throw new WAApiException( "Некорректный параметр: folder!" );
             }
             await this.SetFolderName( (int)folder.FolderId, newName );
+        }
+
+        /// <summary>
+        /// Удаление папок
+        /// </summary>
+        /// <param name="folderIds">Массив id папок</param>
+        /// <returns></returns>
+        public async Task DeleteFolders( int[] folderIds )
+        {
+            if ( folderIds == null || folderIds.Length == 0 )
+            {
+                throw new WAApiException( "Некорректный параметр: foldersIds!" );
+            }
+            var deleteFoldersQ = new DeleteFoldersQuery( this._accountCategory.Token, folderIds );
+            await this._waApi.SendPost( "Delete folders", deleteFoldersQ );
+        }
+
+        /// <summary>
+        /// Удаление папок
+        /// </summary>
+        /// <param name="folders">Массив папок</param>
+        /// <returns></returns>
+        public async Task DeleteFolders( Folder[] folders )
+        {
+            if ( folders == null || folders.Length == 0 || folders.Any( f => f.FolderId == null ) )
+            {
+                throw new WAApiException( "Некорректный параметр: folders!" );
+            }
+            int[] folderIds = folders.Select( f => f.FolderId != null ? (int)f.FolderId : 0 ).ToArray();
+            await this.DeleteFolders( folderIds );
         }
     }
 }
