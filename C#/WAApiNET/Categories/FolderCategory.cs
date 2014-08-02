@@ -1,6 +1,7 @@
 ﻿#region Using
 
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
 using WAApiNET.Model;
@@ -45,6 +46,33 @@ namespace WAApiNET.Categories
             string answer = await this._waApi.SendPost( "Add folder", addFolderQ );
             var addFolderA = JsonConvert.DeserializeObject<AddFolderAnswer>( answer );
             return new Folder( addFolderA.Data.FolderId, name, 0 );
+        }
+
+        /// <summary>
+        /// Изменение имени папки
+        /// </summary>
+        /// <param name="folderId">Id папки</param>
+        /// <param name="newName">Новое имя</param>
+        /// <returns></returns>
+        public async Task SetFolderName( int folderId, string newName )
+        {
+            var changeFolderName = new ChangeFolderNameQuery( this._accountCategory.Token, folderId, newName );
+            await this._waApi.SendPost( "Set folder name", changeFolderName );
+        }
+
+        /// <summary>
+        /// Изменение имени папки
+        /// </summary>
+        /// <param name="folder">Объект папки</param>
+        /// <param name="newName">Новое имя</param>
+        /// <returns></returns>
+        public async Task SetFolderName( Folder folder, string newName )
+        {
+            if ( folder == null || folder.FolderId == null )
+            {
+                throw new WarningException( "Некорректный параметр: Folder!" );
+            }
+            await this.SetFolderName( (int)folder.FolderId, newName );
         }
     }
 }
