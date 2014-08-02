@@ -1,17 +1,20 @@
 ﻿#region Using
 
-using System;
-
 #endregion
 
-namespace WAApiNET.Model
+/* Пример ошибки:
+ * {"Status":"General error","Error":"AntiDOS block"}
+ */
+
+
+namespace WAApiNET.Exception
 {
     /// <summary>
     /// Класс для всех исключений, выбрасываемый библиотекой
     /// </summary>
-    public class WAApiException : Exception
+    public class WAApiException : System.Exception
     {
-        public Exception Exception { get; private set; }
+        public System.Exception Exception { get; private set; }
         public string JSONQuery { get; private set; }
         public string JSONAnswer { get; private set; }
 
@@ -22,7 +25,7 @@ namespace WAApiNET.Model
             this.JSONAnswer = null;
         }
 
-        public WAApiException( Exception exception, string jsonQuery, string jsonAnswer )
+        public WAApiException( System.Exception exception, string jsonQuery, string jsonAnswer )
             : this()
         {
             this.Exception = exception;
@@ -33,7 +36,7 @@ namespace WAApiNET.Model
         public WAApiException( string message, string jsonQuery = "", string jsonAnswer = "" )
             : this()
         {
-            this.Exception = new Exception( message );
+            this.Exception = new System.Exception( message );
             this.JSONQuery = jsonQuery;
             this.JSONAnswer = jsonAnswer;
         }

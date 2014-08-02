@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using ExtensionMethods;
 using Newtonsoft.Json;
 using WAApiNET.Categories;
+using WAApiNET.Exception;
 using WAApiNET.Model;
 using WAApiNET.ServerAnswers;
 
@@ -33,7 +34,7 @@ namespace WAApiNET
         #endregion
 
         /// <summary>
-        /// Создает новый экземпляр объекта WAApi с авторизацией
+        /// Создает новый экземпляр объекта WAApi
         /// </summary>
         /// <param name="email"></param>
         /// <param name="password"></param>
@@ -54,13 +55,18 @@ namespace WAApiNET
 
         public async Task<string> SendPost( string action, string jsonData )
         {
+            if ( this.Account.Token.IsNullOrEmpty() && action != "Sign in" )
+            {
+                throw new WAApiException( "Сначала авторизуйтесь!" );
+            }
             this.LastJSONQuery = jsonData;
             if ( this.Queries > MaxQueries )
             {
                 await TaskEx.Delay( RestTime );
                 this.Queries = 0;
             }
-            string answer = this._webClient.DownloadString( "{0}/{1}/{2}".F( this._address, action, jsonData ) );
+            string url = "{0}/{1}/{2}".F( this._address, action, jsonData );
+            string answer = this._webClient.DownloadString( url );
             this.LastJSONAnswer = answer;
             var baseAnswer = JsonConvert.DeserializeObject<BaseAnswer>( answer );
             if ( baseAnswer.Status != "Success" )

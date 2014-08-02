@@ -1,6 +1,7 @@
 ﻿#region Using
 
 using System;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 using ExtensionMethods;
 using Newtonsoft.Json;
@@ -47,14 +48,22 @@ namespace WAApiNET.Categories
         /// <returns></returns>
         public async Task GetGeneralInfo()
         {
-            if ( this.Token.IsNullOrEmpty() )
-            {
-                throw new WAApiException( "Сначала авторизуйтесь!" );
-            }
             var getGeneralInfoQ = new BaseQueryData( this.Token );
             string answer = await this._waApi.SendPost( "Get general info", getGeneralInfoQ );
             var getGeneralInfoA = JsonConvert.DeserializeObject<GetGeneralInfoAnswer>( answer );
             this.CurrentAccount = getGeneralInfoA.Data;
+        }
+
+        /// <summary>
+        /// Получение рефералов
+        /// </summary>
+        /// <returns></returns>
+        public async Task<Referral[]> GetReferrals()
+        {
+            var getReferralsQ = new BaseQueryData( this.Token );
+            string answer = await this._waApi.SendPost( "Get referrals", getReferralsQ );
+            var getReferralsA = JsonConvert.DeserializeObject<GetReferralsAnswer>( answer );
+            return getReferralsA.Data.Referrals.ToArray();
         }
     }
 }
