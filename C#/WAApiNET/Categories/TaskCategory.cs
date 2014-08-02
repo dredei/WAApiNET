@@ -48,5 +48,18 @@ namespace WAApiNET.Categories
             }
             return await this.GetTasks( (int)folder.FolderId );
         }
+
+        /// <summary>
+        /// Добавление задания
+        /// </summary>
+        /// <param name="task">Задание</param>
+        /// <returns></returns>
+        public async Task<WATask> AddTask( WATask task )
+        {
+            var addTasksQ = new AddTaskQuery( this._accountCategory.Token, task );
+            string answer = await this._waApi.SendPost( "Get tasks", addTasksQ );
+            var addTasksA = JsonConvert.DeserializeObject<AddTaskAnswer>( answer );
+            return new WATask( task ) { TaskId = addTasksA.Data.TaskId };
+        }
     }
 }

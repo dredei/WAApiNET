@@ -84,7 +84,7 @@ namespace WAApiNET
 
         public async Task<string> SendPost( string action, object data )
         {
-            string json = JsonConvert.SerializeObject( data );
+            string json = JsonConvert.SerializeObject( data, Formatting.None, this.JSONSettings );
             return await this.SendPost( action, json );
         }
     }

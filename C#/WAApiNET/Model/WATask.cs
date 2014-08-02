@@ -91,5 +91,27 @@ namespace WAApiNET.Model
             this.BeforeClick = beforeClick;
             this.ProfileSorage = profileSorage;
         }
+
+        public WATask( WATask task )
+        {
+            this.TaskId = task.TaskId;
+            this.ListId = task.ListId;
+            this.AfterClick = task.AfterClick;
+            this.AllowProxy = task.AllowProxy;
+            this.IgnoreGu = task.IgnoreGu;
+            this.Growth = task.Growth;
+            this.Domain = task.Domain;
+            this.Profile = task.Profile;
+            this.Frozen = task.Frozen;
+            this.ListMode = task.ListMode;
+            this.RangeSize = task.RangeSize;
+            this.UniquePeriod = task.UniquePeriod;
+            this.Name = task.Name;
+            this.Mask = task.Mask;
+            this.Days = task.Days;
+            this.ExtSource = task.ExtSource;
+            this.BeforeClick = task.BeforeClick;
+            this.ProfileSorage = task.ProfileSorage;
+        }
     }
 }
