@@ -67,6 +67,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Categories\FolderCategory.cs" />
+    <Compile Include="Categories\TaskCategory.cs" />
     <Compile Include="Model\Account.cs" />
     <Compile Include="Categories\AccountCategory.cs" />
     <Compile Include="Model\Folder.cs" />
@@ -78,12 +79,14 @@
     <Compile Include="ServerAnswers\GetFoldersAnswer.cs" />
     <Compile Include="ServerAnswers\GetGeneralInfoAnswer.cs" />
     <Compile Include="ServerAnswers\GetReferralsAnswer.cs" />
+    <Compile Include="ServerAnswers\GetTasksAnswer.cs" />
     <Compile Include="ServerAnswers\SignInAnswer.cs" />
     <Compile Include="ServerQueries\AddFolderQuery.cs" />
     <Compile Include="ServerQueries\BaseQuery.cs" />
     <Compile Include="ServerQueries\BaseQueryData.cs" />
     <Compile Include="ServerQueries\ChangeFolderNameQuery.cs" />
     <Compile Include="ServerQueries\DeleteFoldersQuery.cs" />
+    <Compile Include="ServerQueries\GetTasksQuery.cs" />
     <Compile Include="ServerQueries\SignInQuery.cs" />
     <Compile Include="WAApi.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

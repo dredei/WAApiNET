@@ -27,6 +27,7 @@ namespace WAApiNET
         public string Password { get; private set; }
         public AccountCategory Account { get; private set; }
         public FolderCategory Folder { get; private set; }
+        public TaskCategory Task { get; private set; }
         public int Queries { get; private set; }
         public string LastJSONQuery { get; private set; }
         public string LastJSONAnswer { get; private set; }
@@ -53,6 +54,7 @@ namespace WAApiNET
 
             this.Account = new AccountCategory( this );
             this.Folder = new FolderCategory( this, this.Account );
+            this.Task = new TaskCategory( this, this.Account );
             this.JSONSettings = new JsonSerializerSettings { NullValueHandling = NullValueHandling.Ignore };
         }
 
