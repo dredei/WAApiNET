@@ -82,6 +82,8 @@
     <Compile Include="ServerQueries\AddFolderQuery.cs" />
     <Compile Include="ServerQueries\BaseQuery.cs" />
     <Compile Include="ServerQueries\BaseQueryData.cs" />
+    <Compile Include="ServerQueries\ChangeFolderNameQuery.cs" />
+    <Compile Include="ServerQueries\DeleteFoldersQuery.cs" />
     <Compile Include="ServerQueries\SignInQuery.cs" />
     <Compile Include="WAApi.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
