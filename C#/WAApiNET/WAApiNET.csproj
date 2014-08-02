@@ -73,11 +73,13 @@
     <Compile Include="Model\Referral.cs" />
     <Compile Include="Exception\WAApiException.cs" />
     <Compile Include="Model\WATask.cs" />
+    <Compile Include="ServerAnswers\AddFolderAnswer.cs" />
     <Compile Include="ServerAnswers\BaseAnswer.cs" />
     <Compile Include="ServerAnswers\GetFoldersAnswer.cs" />
     <Compile Include="ServerAnswers\GetGeneralInfoAnswer.cs" />
     <Compile Include="ServerAnswers\GetReferralsAnswer.cs" />
     <Compile Include="ServerAnswers\SignInAnswer.cs" />
+    <Compile Include="ServerQueries\AddFolderQuery.cs" />
     <Compile Include="ServerQueries\BaseQuery.cs" />
     <Compile Include="ServerQueries\BaseQueryData.cs" />
     <Compile Include="ServerQueries\SignInQuery.cs" />

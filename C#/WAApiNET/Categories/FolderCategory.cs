@@ -33,5 +33,18 @@ namespace WAApiNET.Categories
             var getFoldersA = JsonConvert.DeserializeObject<GetFoldersAnswer>( answer );
             return getFoldersA.Data.Folders;
         }
+
+        /// <summary>
+        /// Добавление папки
+        /// </summary>
+        /// <param name="name">Имя папки</param>
+        /// <returns></returns>
+        public async Task<Folder> AddFolder( string name )
+        {
+            var addFolderQ = new AddFolderQuery( this._accountCategory.Token, name );
+            string answer = await this._waApi.SendPost( "Add folder", addFolderQ );
+            var addFolderA = JsonConvert.DeserializeObject<AddFolderAnswer>( answer );
+            return new Folder( addFolderA.Data.FolderId, name, 0 );
+        }
     }
 }
