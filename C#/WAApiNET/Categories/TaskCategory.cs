@@ -101,5 +101,38 @@ namespace WAApiNET.Categories
             }
             await this.DeleteTasks( (int)folder.FolderId, tasks.Select( f => f.TaskId != null ? (int)f.TaskId : 0 ).ToArray() );
         }
+
+        /// <summary>
+        /// Получение суточной статистики
+        /// </summary>
+        /// <param name="folderId">Id папки</param>
+        /// <param name="taskId">Id задания</param>
+        /// <returns></returns>
+        public async Task<DayTargeting[]> GetDaysStats( int folderId, int taskId )
+        {
+            var getDaysStatsQ = new FolderTaskQuery( this._accountCategory.Token, folderId, taskId );
+            string answer = await this._waApi.SendPost( "Get days stats", getDaysStatsQ );
+            var getDaysStatsA = JsonConvert.DeserializeObject<GetDaysStatsAnswer>( answer );
+            return getDaysStatsA.Data.DayTargeting.ToArray();
+        }
+
+        /// <summary>
+        /// Получение суточной статистики
+        /// </summary>
+        /// <param name="folder">Папка</param>
+        /// <param name="task">Задание</param>
+        /// <returns></returns>
+        public async Task<DayTargeting[]> GetDaysStats( Folder folder, WATask task )
+        {
+            if ( folder == null || folder.FolderId == null )
+            {
+                throw new WAApiException( "Некорректный параметр: folder!" );
+            }
+            if ( task == null || task.TaskId == null )
+            {
+                throw new WAApiException( "Неккоректный параметр: task!" );
+            }
+            return await this.GetDaysStats( (int)folder.FolderId, (int)task.TaskId );
+        }
     }
 }
