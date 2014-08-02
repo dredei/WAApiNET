@@ -63,6 +63,8 @@
   </Choose>
   <ItemGroup>
     <Compile Include="AccountTests.cs" />
+    <Compile Include="FolderTests.cs" />
+    <Compile Include="GetData.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

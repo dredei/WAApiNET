@@ -7,15 +7,15 @@ using WAApiNET.Model;
 
 namespace WAApiNET.ServerAnswers
 {
-    internal class GetReferralsAnswer : BaseAnswer
+    internal class GetFoldersAnswer : BaseAnswer
     {
         internal class DataObj
         {
-            public List<Referral> Referrals { get; set; }
+            public List<Folder> Folders { get; set; }
 
             public DataObj()
             {
-                this.Referrals = new List<Referral>();
+                this.Folders = new List<Folder>();
             }
         }
 

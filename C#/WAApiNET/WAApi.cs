@@ -26,9 +26,11 @@ namespace WAApiNET
         public string Email { get; private set; }
         public string Password { get; private set; }
         public AccountCategory Account { get; private set; }
+        public FolderCategory Folder { get; private set; }
         public int Queries { get; private set; }
         public string LastJSONQuery { get; private set; }
         public string LastJSONAnswer { get; private set; }
+        public JsonSerializerSettings JSONSettings { get; private set; }
 
         #endregion
 
@@ -50,6 +52,8 @@ namespace WAApiNET
             this._webClient = new WebClient { Encoding = Encoding.UTF8 };
 
             this.Account = new AccountCategory( this );
+            this.Folder = new FolderCategory( this, this.Account );
+            this.JSONSettings = new JsonSerializerSettings { NullValueHandling = NullValueHandling.Ignore };
         }
 
         public async Task<string> SendPost( string action, string jsonData )

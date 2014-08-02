@@ -14,17 +14,14 @@ namespace WAApiNETTests
     [TestClass]
     public class AccountTests
     {
-        private readonly string _email;
-        private readonly string _password;
         private readonly WAApi _waApi;
 
         public AccountTests()
         {
-            var content = File.ReadAllText( "loginInfo.txt" );
-            string[] arr = content.Split( ';' );
-            this._email = arr[ 0 ];
-            this._password = arr[ 1 ];
-            this._waApi = new WAApi( this._email, this._password );
+            var getData = new GetData();
+            string mail = getData.Mail;
+            string password = getData.Password;
+            this._waApi = new WAApi( mail, password );
         }
 
         [TestMethod]
