@@ -1,13 +1,15 @@
-﻿using System;
+﻿#region Using
+
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
 using WAApiNET.Exception;
 using WAApiNET.Model;
 using WAApiNET.ServerAnswers;
 using WAApiNET.ServerQueries;
+
+#endregion
 
 namespace WAApiNET.Categories
 {
@@ -99,7 +101,9 @@ namespace WAApiNET.Categories
             {
                 throw new WAApiException( "Некорректный параметр: folder!" );
             }
-            await this.DeleteTasks( (int)folder.FolderId, tasks.Select( f => f.TaskId != null ? (int)f.TaskId : 0 ).ToArray() );
+            await
+                this.DeleteTasks( (int)folder.FolderId,
+                    tasks.Select( f => f.TaskId != null ? (int)f.TaskId : 0 ).ToArray() );
         }
 
         /// <summary>
