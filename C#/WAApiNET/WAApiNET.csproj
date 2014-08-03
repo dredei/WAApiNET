@@ -78,6 +78,7 @@
     <Compile Include="Exception\WAApiException.cs" />
     <Compile Include="Model\TimeDistribution.cs" />
     <Compile Include="Model\WATask.cs" />
+    <Compile Include="Model\WATaskExtend.cs" />
     <Compile Include="Model\WeekTargeting.cs" />
     <Compile Include="ServerAnswers\AddFolderAnswer.cs" />
     <Compile Include="ServerAnswers\AddTaskAnswer.cs" />
@@ -91,6 +92,7 @@
     <Compile Include="ServerAnswers\GetTasksAnswer.cs" />
     <Compile Include="ServerAnswers\GetTimeDistributionAnswer.cs" />
     <Compile Include="ServerAnswers\GetWeekTargetingAnswer.cs" />
+    <Compile Include="ServerAnswers\GetWholeTaskAnswer.cs" />
     <Compile Include="ServerAnswers\SignInAnswer.cs" />
     <Compile Include="ServerQueries\AddFolderQuery.cs" />
     <Compile Include="ServerQueries\AddTaskQuery.cs" />

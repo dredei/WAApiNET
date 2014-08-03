@@ -73,5 +73,24 @@ namespace WAApiNETTests
             Assert.IsTrue( dayTargeting[ 0 ].Max == 9 && dayTargeting[ 0 ].Min == 3 && dayTargeting[ 1 ].Max == 12 &&
                            dayTargeting[ 1 ].Min == 3 && dayTargeting[ 2 ].Max == 9 && dayTargeting[ 2 ].Min == 4 );
         }
+
+        [TestMethod]
+        public async Task TestGetWholeTask()
+        {
+            await this._waApi.Account.SignIn();
+            WATaskExtend wholeTask = await this._waApi.Task.GetWholeTask( 1, 1 );
+            List<TimeDistribution> timeDistribution = wholeTask.TimeDistribution;
+            List<GeoTargeting> geoTargeting = wholeTask.GeoTargeting;
+            List<WeekTargeting> weekTargeting = wholeTask.WeekTargeting;
+            List<DayTargeting> dayTargeting = wholeTask.DayTargeting;
+            Assert.IsTrue( timeDistribution[ 0 ].Priority == 6 && timeDistribution[ 1 ].Priority == 5 &&
+                           timeDistribution[ 2 ].Priority == 5 && timeDistribution[ 3 ].Priority == 6 &&
+                           geoTargeting.FirstOrDefault( gt => gt.ZoneId == 18 ).Target == 100 &&
+                           geoTargeting.FirstOrDefault( gt => gt.ZoneId == 19 ).Target == 50 &&
+                           weekTargeting[ 0 ].Target == 59.38 && weekTargeting[ 1 ].Target == 58.04 &&
+                           weekTargeting[ 2 ].Target == 46.88 &&
+                           dayTargeting[ 0 ].Max == 9 && dayTargeting[ 0 ].Min == 3 && dayTargeting[ 1 ].Max == 12 &&
+                           dayTargeting[ 1 ].Min == 3 && dayTargeting[ 2 ].Max == 9 && dayTargeting[ 2 ].Min == 4 );
+        }
     }
 }

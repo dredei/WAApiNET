@@ -270,5 +270,38 @@ namespace WAApiNET.Categories
             }
             return await this.GetDayTargeting( (int)folder.FolderId, (int)task.TaskId );
         }
+
+        /// <summary>
+        /// Получение всех данных задания
+        /// </summary>
+        /// <param name="folderId">Id папки</param>
+        /// <param name="taskId">Id задания</param>
+        /// <returns></returns>
+        public async Task<WATaskExtend> GetWholeTask( int folderId, int taskId )
+        {
+            var getWholeTaskQ = new FolderTaskQuery( this._accountCategory.Token, folderId, taskId );
+            string answer = await this._waApi.SendPost( "Get whole task", getWholeTaskQ );
+            var getWholeTaskA = JsonConvert.DeserializeObject<GetWholeTaskAnswer>( answer );
+            return getWholeTaskA.Data.Task;
+        }
+
+        /// <summary>
+        /// Получение всех данных задания
+        /// </summary>
+        /// <param name="folder">Папка</param>
+        /// <param name="task">Задание</param>
+        /// <returns></returns>
+        public async Task<WATaskExtend> GetWholeTask( Folder folder, WATask task )
+        {
+            if ( folder == null || folder.FolderId == null )
+            {
+                throw new WAApiException( "Некорректный параметр: folder!" );
+            }
+            if ( task == null || task.TaskId == null )
+            {
+                throw new WAApiException( "Некорректный параметр: task!" );
+            }
+            return await this.GetWholeTask( (int)folder.FolderId, (int)task.TaskId );
+        }
     }
 }
