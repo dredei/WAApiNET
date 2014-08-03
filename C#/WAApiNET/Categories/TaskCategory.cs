@@ -112,12 +112,12 @@ namespace WAApiNET.Categories
         /// <param name="folderId">Id папки</param>
         /// <param name="taskId">Id задания</param>
         /// <returns></returns>
-        public async Task<DayTargeting[]> GetDaysStats( int folderId, int taskId )
+        public async Task<List<DayTargetingExtend>> GetDaysStats( int folderId, int taskId )
         {
             var getDaysStatsQ = new FolderTaskQuery( this._accountCategory.Token, folderId, taskId );
             string answer = await this._waApi.SendPost( "Get days stats", getDaysStatsQ );
             var getDaysStatsA = JsonConvert.DeserializeObject<GetDaysStatsAnswer>( answer );
-            return getDaysStatsA.Data.DayTargeting.ToArray();
+            return getDaysStatsA.Data.DayTargeting;
         }
 
         /// <summary>
@@ -126,7 +126,7 @@ namespace WAApiNET.Categories
         /// <param name="folder">Папка</param>
         /// <param name="task">Задание</param>
         /// <returns></returns>
-        public async Task<DayTargeting[]> GetDaysStats( Folder folder, WATask task )
+        public async Task<List<DayTargetingExtend>> GetDaysStats( Folder folder, WATask task )
         {
             if ( folder == null || folder.FolderId == null )
             {

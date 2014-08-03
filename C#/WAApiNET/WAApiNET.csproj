@@ -71,6 +71,7 @@
     <Compile Include="Model\Account.cs" />
     <Compile Include="Categories\AccountCategory.cs" />
     <Compile Include="Model\DayTargeting.cs" />
+    <Compile Include="Model\DayTargetingExtend.cs" />
     <Compile Include="Model\Folder.cs" />
     <Compile Include="Model\GeoTargeting.cs" />
     <Compile Include="Model\Referral.cs" />
