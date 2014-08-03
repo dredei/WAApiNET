@@ -138,5 +138,38 @@ namespace WAApiNET.Categories
             }
             return await this.GetDaysStats( (int)folder.FolderId, (int)task.TaskId );
         }
+
+        /// <summary>
+        /// Получение временного распределения
+        /// </summary>
+        /// <param name="folderId">Id папки</param>
+        /// <param name="taskId">Id задания</param>
+        /// <returns></returns>
+        public async Task<List<TimeDistribution>> GetTimeDistribution( int folderId, int taskId )
+        {
+            var getTimeDistributionQ = new FolderTaskQuery( this._accountCategory.Token, folderId, taskId );
+            string answer = await this._waApi.SendPost( "Get time distribution", getTimeDistributionQ );
+            var getTimeDistributionA = JsonConvert.DeserializeObject<GetTimeDistributionAnswer>( answer );
+            return getTimeDistributionA.Data.TimeDistribution;
+        }
+
+        /// <summary>
+        /// Получение временного распределения
+        /// </summary>
+        /// <param name="folder">Папка</param>
+        /// <param name="task">Задание</param>
+        /// <returns></returns>
+        public async Task<List<TimeDistribution>> GetTimeDistribution( Folder folder, WATask task )
+        {
+            if ( folder == null || folder.FolderId == null )
+            {
+                throw new WAApiException( "Некорректный параметр: folder!" );
+            }
+            if ( task == null || task.TaskId == null )
+            {
+                throw new WAApiException( "Некорректный параметр: task!" );
+            }
+            return await this.GetTimeDistribution( (int)folder.FolderId, (int)task.TaskId );
+        }
     }
 }

@@ -74,6 +74,7 @@
     <Compile Include="Model\Folder.cs" />
     <Compile Include="Model\Referral.cs" />
     <Compile Include="Exception\WAApiException.cs" />
+    <Compile Include="Model\TimeDistribution.cs" />
     <Compile Include="Model\WATask.cs" />
     <Compile Include="ServerAnswers\AddFolderAnswer.cs" />
     <Compile Include="ServerAnswers\AddTaskAnswer.cs" />
@@ -83,6 +84,7 @@
     <Compile Include="ServerAnswers\GetGeneralInfoAnswer.cs" />
     <Compile Include="ServerAnswers\GetReferralsAnswer.cs" />
     <Compile Include="ServerAnswers\GetTasksAnswer.cs" />
+    <Compile Include="ServerAnswers\GetTimeDistributionAnswer.cs" />
     <Compile Include="ServerAnswers\SignInAnswer.cs" />
     <Compile Include="ServerQueries\AddFolderQuery.cs" />
     <Compile Include="ServerQueries\AddTaskQuery.cs" />
