@@ -55,5 +55,14 @@ namespace WAApiNETTests
             Assert.IsTrue( geoTargeting.FirstOrDefault( gt => gt.Name == "UA" ).Target == 100 &&
                            geoTargeting.FirstOrDefault( gt => gt.Name == "RU" ).Target == 50 );
         }
+
+        [TestMethod]
+        public async Task TestGetWeekTargeting()
+        {
+            await this._waApi.Account.SignIn();
+            List<WeekTargeting> weekTargeting = await this._waApi.Task.GetWeekTargeting( 1, 1 );
+            Assert.IsTrue( weekTargeting[ 0 ].Target == 59.38 && weekTargeting[ 1 ].Target == 58.04 &&
+                           weekTargeting[ 2 ].Target == 46.88 );
+        }
     }
 }
