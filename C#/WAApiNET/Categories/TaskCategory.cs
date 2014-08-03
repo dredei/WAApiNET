@@ -171,5 +171,38 @@ namespace WAApiNET.Categories
             }
             return await this.GetTimeDistribution( (int)folder.FolderId, (int)task.TaskId );
         }
+
+        /// <summary>
+        /// Получение геотаргетинга
+        /// </summary>
+        /// <param name="folderId">Id папки</param>
+        /// <param name="taskId">Id задания</param>
+        /// <returns></returns>
+        public async Task<List<GeoTargeting>> GetGeoTargeting( int folderId, int taskId )
+        {
+            var getGeoTargetingQ = new FolderTaskQuery( this._accountCategory.Token, folderId, taskId );
+            string answer = await this._waApi.SendPost( "Get geo targeting", getGeoTargetingQ );
+            var getGeoTargetingA = JsonConvert.DeserializeObject<GetGeoTargetingAnswer>( answer );
+            return getGeoTargetingA.Data.GeoTargeting;
+        }
+
+        /// <summary>
+        /// Получение геотаргетинга
+        /// </summary>
+        /// <param name="folder">Папка</param>
+        /// <param name="task">Задание</param>
+        /// <returns></returns>
+        public async Task<List<GeoTargeting>> GetGeoTargeting( Folder folder, WATask task )
+        {
+            if ( folder == null || folder.FolderId == null )
+            {
+                throw new WAApiException( "Некорректный параметр: folder!" );
+            }
+            if ( task == null || task.TaskId == null )
+            {
+                throw new WAApiException( "Некорректный параметр: task!" );
+            }
+            return await this.GetGeoTargeting( (int)folder.FolderId, (int)task.TaskId );
+        }
     }
 }

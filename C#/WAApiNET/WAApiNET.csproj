@@ -72,6 +72,7 @@
     <Compile Include="Categories\AccountCategory.cs" />
     <Compile Include="Model\DayTargeting.cs" />
     <Compile Include="Model\Folder.cs" />
+    <Compile Include="Model\GeoTargeting.cs" />
     <Compile Include="Model\Referral.cs" />
     <Compile Include="Exception\WAApiException.cs" />
     <Compile Include="Model\TimeDistribution.cs" />
@@ -82,6 +83,7 @@
     <Compile Include="ServerAnswers\GetDaysStatsAnswer.cs" />
     <Compile Include="ServerAnswers\GetFoldersAnswer.cs" />
     <Compile Include="ServerAnswers\GetGeneralInfoAnswer.cs" />
+    <Compile Include="ServerAnswers\GetGeoTargetingAnswer.cs" />
     <Compile Include="ServerAnswers\GetReferralsAnswer.cs" />
     <Compile Include="ServerAnswers\GetTasksAnswer.cs" />
     <Compile Include="ServerAnswers\GetTimeDistributionAnswer.cs" />
