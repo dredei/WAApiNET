@@ -62,5 +62,17 @@ namespace WAApiNET.Categories
             var getReferralsA = JsonConvert.DeserializeObject<GetReferralsAnswer>( answer );
             return getReferralsA.Data.Referrals.ToArray();
         }
+
+        /// <summary>
+        /// Получение всех данных аккаунта
+        /// </summary>
+        /// <returns></returns>
+        public async Task<AllInfo> GetAll()
+        {
+            var getAllQ = new BaseQueryData( this.Token );
+            string answer = await this._waApi.SendPost( "Get all", getAllQ );
+            var getAllA = JsonConvert.DeserializeObject<GetAllAnswer>( answer );
+            return getAllA.Data;
+        }
     }
 }

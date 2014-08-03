@@ -70,6 +70,7 @@
     <Compile Include="Categories\TaskCategory.cs" />
     <Compile Include="Model\Account.cs" />
     <Compile Include="Categories\AccountCategory.cs" />
+    <Compile Include="Model\AllInfo.cs" />
     <Compile Include="Model\DayTargeting.cs" />
     <Compile Include="Model\DayTargetingExtend.cs" />
     <Compile Include="Model\Folder.cs" />
@@ -84,6 +85,7 @@
     <Compile Include="ServerAnswers\AddFolderAnswer.cs" />
     <Compile Include="ServerAnswers\AddTaskAnswer.cs" />
     <Compile Include="ServerAnswers\BaseAnswer.cs" />
+    <Compile Include="ServerAnswers\GetAllAnswer.cs" />
     <Compile Include="ServerAnswers\GetDaysStatsAnswer.cs" />
     <Compile Include="ServerAnswers\GetDayTargetingAnswer.cs" />
     <Compile Include="ServerAnswers\GetFoldersAnswer.cs" />
