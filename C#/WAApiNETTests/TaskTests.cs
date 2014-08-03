@@ -25,20 +25,6 @@ namespace WAApiNETTests
         }
 
         [TestMethod]
-        public async Task TestAddDeleteTask()
-        {
-            await this._waApi.Account.SignIn();
-            var task = new WATask( null, 0, 0, false, false, 0, "softez.pp.ua", "", true, false, 10, 1440,
-                "TaskFromTest", "", 0, "http://softez.pp.ua/1", 100, "" );
-            task = await this._waApi.Task.AddTask( 1, task );
-            List<Folder> folders = await this._waApi.Folder.GetFolders();
-            int tasksCountAfterAdd = (int)folders[ 0 ].Tasks;
-            await this._waApi.Task.DeleteTasks( folders[ 0 ], new[] { task } );
-            folders = await this._waApi.Folder.GetFolders();
-            Assert.IsTrue( tasksCountAfterAdd == 6 && folders[ 0 ].Tasks == 5 );
-        }
-
-        [TestMethod]
         public async Task TestGetTimeDistribution()
         {
             await this._waApi.Account.SignIn();
