@@ -303,5 +303,42 @@ namespace WAApiNET.Categories
             }
             return await this.GetWholeTask( (int)folder.FolderId, (int)task.TaskId );
         }
+
+        /// <summary>
+        /// Изменение настроек заданий
+        /// </summary>
+        /// <param name="folderId">Id папки</param>
+        /// <param name="taskParams">Настройки заданий</param>
+        /// <param name="taskIds">Массив id заданий</param>
+        /// <returns></returns>
+        public async Task SetTasksParams( int folderId, WATaskExtend taskParams, int[] taskIds )
+        {
+            if ( taskParams == null )
+            {
+                throw new WAApiException( "Некорректный параметр: taskParams!" );
+            }
+            var setTasksParamsQ = new SetTasksParamsQuery( this._accountCategory.Token, folderId, taskIds, taskParams );
+            await this._waApi.SendPost( "Set tasks params", setTasksParamsQ );
+        }
+
+        /// <summary>
+        /// Изменение настроек заданий
+        /// </summary>
+        /// <param name="folder">Папка</param>
+        /// <param name="taskParams">Настройки заданий</param>
+        /// <param name="tasks">Задания</param>
+        /// <returns></returns>
+        public async Task SetTasksParams( Folder folder, WATaskExtend taskParams, WATask[] tasks )
+        {
+            if ( taskParams == null )
+            {
+                throw new WAApiException( "Некорректный параметр: taskParams!" );
+            }
+            if ( folder == null || folder.FolderId == null )
+            {
+                throw new WAApiException( "Некорректный параметр: folder" );
+            }
+            await this.SetTasksParams( (int)folder.FolderId, taskParams, tasks.Select( t => t.TaskId != null ? (int)t.TaskId : 0 ).ToArray() );
+        }
     }
 }

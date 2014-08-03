@@ -18,18 +18,18 @@ namespace WAApiNET.Model
         public int? AfterClick { get; set; }
 
         [JsonProperty( PropertyName = "Allow proxy" )]
-        public bool AllowProxy { get; set; }
+        public bool? AllowProxy { get; set; }
 
         [JsonProperty( PropertyName = "Ignore GU" )]
-        public bool IgnoreGu { get; set; }
+        public bool? IgnoreGu { get; set; }
 
         public double? Growth { get; set; }
         public string Domain { get; set; }
         public string Profile { get; set; }
-        public bool Frozen { get; set; }
+        public bool? Frozen { get; set; }
 
         [JsonProperty( PropertyName = "List mode" )]
-        public bool ListMode { get; set; }
+        public bool? ListMode { get; set; }
 
         [JsonProperty( PropertyName = "Range size" )]
         public int? RangeSize { get; set; }
@@ -66,6 +66,10 @@ namespace WAApiNET.Model
             this.ExtSource = null;
             this.BeforeClick = null;
             this.ProfileSorage = null;
+            this.AllowProxy = null;
+            this.IgnoreGu = null;
+            this.Frozen = null;
+            this.ListMode = null;
         }
 
         public WATask( int? taskId, int? listId, int? afterClick, bool allowProxy, bool ignoreGu, double? growth,
