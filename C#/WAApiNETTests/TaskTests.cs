@@ -36,5 +36,14 @@ namespace WAApiNETTests
             folders = await this._waApi.Folder.GetFolders();
             Assert.IsTrue( tasksCountAfterAdd == 6 && folders[ 0 ].Tasks == 5 );
         }
+
+        [TestMethod]
+        public async Task TestGetTimeDistribution()
+        {
+            await this._waApi.Account.SignIn();
+            List<TimeDistribution> timeDistribution = await this._waApi.Task.GetTimeDistribution( 1, 1 );
+            Assert.IsTrue( timeDistribution[ 0 ].Priority == 6 && timeDistribution[ 1 ].Priority == 5 &&
+                           timeDistribution[ 2 ].Priority == 5 && timeDistribution[ 3 ].Priority == 6 );
+        }
     }
 }
