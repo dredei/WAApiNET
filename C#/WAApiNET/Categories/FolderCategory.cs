@@ -105,5 +105,32 @@ namespace WAApiNET.Categories
             int[] folderIds = folders.Select( f => f.FolderId != null ? (int)f.FolderId : 0 ).ToArray();
             await this.DeleteFolders( folderIds );
         }
+
+        /// <summary>
+        /// Получение всех данных папки
+        /// </summary>
+        /// <param name="folderId">Id папки</param>
+        /// <returns></returns>
+        public async Task<FolderWhole> GetWholeFolder( int folderId )
+        {
+            var getWholeFolderQ = new GetWholeFolderQuery( this._accountCategory.Token, folderId );
+            string answer = await this._waApi.SendPost( "Get whole folder", getWholeFolderQ );
+            var getWholeFolderA = JsonConvert.DeserializeObject<GetWholeFolderAnswer>( answer );
+            return getWholeFolderA.Data.Folder;
+        }
+
+        /// <summary>
+        /// Получение всех данных папки
+        /// </summary>
+        /// <param name="folder">Папка</param>
+        /// <returns></returns>
+        public async Task<FolderWhole> GetWholeFolder( Folder folder )
+        {
+            if ( folder == null || folder.FolderId == null )
+            {
+                throw new WAApiException( "Некорректный параметр: folder!" );
+            }
+            return await this.GetWholeFolder( (int)folder.FolderId );
+        }
     }
 }

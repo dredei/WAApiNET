@@ -73,6 +73,7 @@
     <Compile Include="Model\DayTargeting.cs" />
     <Compile Include="Model\DayTargetingExtend.cs" />
     <Compile Include="Model\Folder.cs" />
+    <Compile Include="Model\FolderWhole.cs" />
     <Compile Include="Model\GeoTargeting.cs" />
     <Compile Include="Model\Referral.cs" />
     <Compile Include="Exception\WAApiException.cs" />
@@ -92,6 +93,7 @@
     <Compile Include="ServerAnswers\GetTasksAnswer.cs" />
     <Compile Include="ServerAnswers\GetTimeDistributionAnswer.cs" />
     <Compile Include="ServerAnswers\GetWeekTargetingAnswer.cs" />
+    <Compile Include="ServerAnswers\GetWholeFolderAnswer.cs" />
     <Compile Include="ServerAnswers\GetWholeTaskAnswer.cs" />
     <Compile Include="ServerAnswers\SignInAnswer.cs" />
     <Compile Include="ServerQueries\AddFolderQuery.cs" />
@@ -103,6 +105,7 @@
     <Compile Include="ServerQueries\DeleteTasksQuery.cs" />
     <Compile Include="ServerQueries\FolderTaskQuery.cs" />
     <Compile Include="ServerQueries\GetTasksQuery.cs" />
+    <Compile Include="ServerQueries\GetWholeFolderQuery.cs" />
     <Compile Include="ServerQueries\SetTasksParamsQuery.cs" />
     <Compile Include="ServerQueries\SignInQuery.cs" />
     <Compile Include="WAApi.cs" />
