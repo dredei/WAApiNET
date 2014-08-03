@@ -64,5 +64,14 @@ namespace WAApiNETTests
             Assert.IsTrue( weekTargeting[ 0 ].Target == 59.38 && weekTargeting[ 1 ].Target == 58.04 &&
                            weekTargeting[ 2 ].Target == 46.88 );
         }
+
+        [TestMethod]
+        public async Task TestGetDayTargeting()
+        {
+            await this._waApi.Account.SignIn();
+            List<DayTargeting> dayTargeting = await this._waApi.Task.GetDayTargeting( 1, 1 );
+            Assert.IsTrue( dayTargeting[ 0 ].Max == 9 && dayTargeting[ 0 ].Min == 3 && dayTargeting[ 1 ].Max == 12 &&
+                           dayTargeting[ 1 ].Min == 3 && dayTargeting[ 2 ].Max == 9 && dayTargeting[ 2 ].Min == 4 );
+        }
     }
 }
