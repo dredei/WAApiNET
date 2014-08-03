@@ -1,6 +1,7 @@
 ﻿#region Using
 
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using WAApiNET;
@@ -44,6 +45,15 @@ namespace WAApiNETTests
             List<TimeDistribution> timeDistribution = await this._waApi.Task.GetTimeDistribution( 1, 1 );
             Assert.IsTrue( timeDistribution[ 0 ].Priority == 6 && timeDistribution[ 1 ].Priority == 5 &&
                            timeDistribution[ 2 ].Priority == 5 && timeDistribution[ 3 ].Priority == 6 );
+        }
+
+        [TestMethod]
+        public async Task TestGetGeoTargeting()
+        {
+            await this._waApi.Account.SignIn();
+            List<GeoTargeting> geoTargeting = await this._waApi.Task.GetGeoTargeting( 1, 1 );
+            Assert.IsTrue( geoTargeting.FirstOrDefault( gt => gt.Name == "UA" ).Target == 100 &&
+                           geoTargeting.FirstOrDefault( gt => gt.Name == "RU" ).Target == 50 );
         }
     }
 }
