@@ -1,0 +1,384 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpKI>
+  <HelpKINode Title="Account свойство" Url="html/238be289-68e3-67fe-b364-db8b8457d454.htm" />
+  <HelpKINode Title="AccountCategory - класс">
+    <HelpKINode Title="AccountCategory - класс" Url="html/2cc89fd2-3e06-c195-9448-5db04e155f5c.htm" />
+    <HelpKINode Title="конструктор" Url="html/b7592668-3690-5b50-5d11-29e9b3db16aa.htm" />
+    <HelpKINode Title="методы" Url="html/5e15d62f-e81d-5a30-bc35-3fa2881ec58b.htm" />
+    <HelpKINode Title="о AccountCategory - класс" Url="html/2cc89fd2-3e06-c195-9448-5db04e155f5c.htm" />
+    <HelpKINode Title="свойства" Url="html/5c8b94c6-b451-cd0c-1009-1b7dc517d67a.htm" />
+  </HelpKINode>
+  <HelpKINode Title="AccountCategory.AccountCategory конструктор" Url="html/b7592668-3690-5b50-5d11-29e9b3db16aa.htm" />
+  <HelpKINode Title="AccountCategory.CurrentAccount свойство" Url="html/b6c32dd3-93b7-d606-fc95-2f32c04b84c5.htm" />
+  <HelpKINode Title="AccountCategory.GetAll метод" Url="html/18d2e97e-6366-b6d0-156e-b9fb17533e6b.htm" />
+  <HelpKINode Title="AccountCategory.GetGeneralInfo метод" Url="html/d769f701-3682-f021-c14e-51abb44e1939.htm" />
+  <HelpKINode Title="AccountCategory.GetReferrals метод" Url="html/60002879-cf4f-2647-3bdf-6aeba3373414.htm" />
+  <HelpKINode Title="AccountCategory.SignIn метод" Url="html/cf66e4ae-9a0e-0a69-0fcd-f9306fed1474.htm" />
+  <HelpKINode Title="AccountCategory.SignOut метод" Url="html/ee7dd592-ef72-759b-65ec-a84242e1a822.htm" />
+  <HelpKINode Title="AccountCategory.Token свойство" Url="html/4b21decf-d096-039a-597a-7fc72fb7077c.htm" />
+  <HelpKINode Title="Action свойство" Url="html/e438f507-6db5-41d3-ddf5-0ce665c1ceb5.htm" />
+  <HelpKINode Title="AddFolder метод" Url="html/6b8f29e9-c863-4bb0-a694-7ee93e4b9662.htm" />
+  <HelpKINode Title="AddTask метод" Url="html/ebc0ac43-e42d-e9a6-4058-34bb1c9cb6a2.htm" />
+  <HelpKINode Title="AfterClick свойство" Url="html/151fdebe-4412-caeb-6a14-8a907e71b554.htm" />
+  <HelpKINode Title="AllowProxy свойство" Url="html/9dcc129a-3e9e-1b50-8ae6-391a944858ed.htm" />
+  <HelpKINode Title="AntiDOSBlocked событие" Url="html/9a5dab10-6261-0bf5-28e7-db2724681579.htm" />
+  <HelpKINode Title="Balance свойство" Url="html/1894594d-f154-4e71-68cb-314bef387f7c.htm" />
+  <HelpKINode Title="BaseQuery - класс">
+    <HelpKINode Title="BaseQuery - класс" Url="html/88eab7e0-213a-6cde-777a-97aecdfc853b.htm" />
+    <HelpKINode Title="конструктор" Url="html/6973a559-fd2f-f15c-5404-959353ded4f0.htm" />
+    <HelpKINode Title="методы" Url="html/0684999e-34ec-3467-e59c-a752075a5088.htm" />
+    <HelpKINode Title="о BaseQuery - класс" Url="html/88eab7e0-213a-6cde-777a-97aecdfc853b.htm" />
+    <HelpKINode Title="свойства" Url="html/a72d7697-e291-5257-679a-f82768a95538.htm" />
+  </HelpKINode>
+  <HelpKINode Title="BaseQuery.Action свойство" Url="html/e438f507-6db5-41d3-ddf5-0ce665c1ceb5.htm" />
+  <HelpKINode Title="BaseQuery.BaseQuery конструктор" Url="html/6973a559-fd2f-f15c-5404-959353ded4f0.htm" />
+  <HelpKINode Title="BaseQueryData - класс">
+    <HelpKINode Title="BaseQueryData - класс" Url="html/0a56299b-4bd8-24fd-977b-2329cfecc468.htm" />
+    <HelpKINode Title="конструктор" Url="html/5a85d1f3-b387-4689-8934-765ee7d0d724.htm" />
+    <HelpKINode Title="методы" Url="html/2fe8f6f8-3750-13fc-f277-acd0c6d5bf85.htm" />
+    <HelpKINode Title="о BaseQueryData - класс" Url="html/0a56299b-4bd8-24fd-977b-2329cfecc468.htm" />
+    <HelpKINode Title="свойства" Url="html/ab98818d-1d59-8d39-abd8-9fb42e47d792.htm" />
+  </HelpKINode>
+  <HelpKINode Title="BaseQueryData.BaseQueryData конструктор" Url="html/5a85d1f3-b387-4689-8934-765ee7d0d724.htm" />
+  <HelpKINode Title="BaseQueryData.Token свойство" Url="html/ae94b017-9bfe-ebfa-b273-1f8f40ff5716.htm" />
+  <HelpKINode Title="BeforeClick свойство" Url="html/b5fa14c9-fac4-684f-3ed4-70f237e1aed2.htm" />
+  <HelpKINode Title="CloneTask метод" Url="html/7fbcfd9f-f852-c1b2-23de-37c11f6251e1.htm" />
+  <HelpKINode Title="CopyTaskSettings метод" Url="html/ac7e36ae-0f1a-2c41-8aa5-dd9059330129.htm" />
+  <HelpKINode Title="CurrentAccount свойство" Url="html/b6c32dd3-93b7-d606-fc95-2f32c04b84c5.htm" />
+  <HelpKINode Title="Day свойство" Url="html/f8e069fa-986f-3c47-ab4c-e09604e0e29a.htm" />
+  <HelpKINode Title="Days свойство" Url="html/d8265a44-370b-dde8-d9f3-0087da0bc3fa.htm" />
+  <HelpKINode Title="DayStats свойство" Url="html/145283ba-c2e1-2e66-b4ab-484c67d1992c.htm" />
+  <HelpKINode Title="DayTargeting свойство" Url="html/645deb60-12e9-bb2d-15f2-19fdd872a6c5.htm" />
+  <HelpKINode Title="Deductions свойство" Url="html/5acfe29d-830e-6c03-d09a-e208d50d9b8e.htm" />
+  <HelpKINode Title="Deleted свойство" Url="html/0d61be0f-8fd1-2a17-47b4-d8ba7a0d2081.htm" />
+  <HelpKINode Title="DeleteFolders метод" Url="html/1f4cd2bd-0673-3ef4-487c-28412532e293.htm" />
+  <HelpKINode Title="DeleteTasks метод" Url="html/59640abb-de62-1ef7-cadc-32e3ade9cbb5.htm" />
+  <HelpKINode Title="Domain свойство" Url="html/fcf38971-98af-5f5c-c194-7653e1d2838f.htm" />
+  <HelpKINode Title="Email свойство" Url="html/f9d99671-ec0a-9312-55a4-d6741442769f.htm" />
+  <HelpKINode Title="Exception свойство" Url="html/6bed2831-17c1-725c-9946-2195940571b4.htm" />
+  <HelpKINode Title="ExtSource свойство" Url="html/0888f4b6-b162-8db2-d3f0-98216553437e.htm" />
+  <HelpKINode Title="Folder свойство" Url="html/19a6cc24-9de9-6e7e-8d6c-3173266952fc.htm" />
+  <HelpKINode Title="FolderCategory - класс">
+    <HelpKINode Title="FolderCategory - класс" Url="html/c7f99281-1d6b-e13d-af1e-57ad34a8c61c.htm" />
+    <HelpKINode Title="конструктор" Url="html/62e19154-a321-a815-b666-06857c70a9ef.htm" />
+    <HelpKINode Title="методы" Url="html/319325ed-6cef-0e69-78ce-c15d7a5e73c2.htm" />
+    <HelpKINode Title="о FolderCategory - класс" Url="html/c7f99281-1d6b-e13d-af1e-57ad34a8c61c.htm" />
+  </HelpKINode>
+  <HelpKINode Title="FolderCategory.AddFolder метод" Url="html/6b8f29e9-c863-4bb0-a694-7ee93e4b9662.htm" />
+  <HelpKINode Title="FolderCategory.DeleteFolders метод" Url="html/1f4cd2bd-0673-3ef4-487c-28412532e293.htm" />
+  <HelpKINode Title="FolderCategory.FolderCategory конструктор" Url="html/62e19154-a321-a815-b666-06857c70a9ef.htm" />
+  <HelpKINode Title="FolderCategory.GetFolders метод" Url="html/f861b33f-5b23-5c40-fd79-00e21114d96d.htm" />
+  <HelpKINode Title="FolderCategory.GetWholeFolder метод" Url="html/8ee9877d-6270-d2b6-cf5a-2915c16cbb77.htm" />
+  <HelpKINode Title="FolderCategory.SetFolderName метод" Url="html/768cfdc1-6338-6259-c839-437d186ecdce.htm" />
+  <HelpKINode Title="FolderId свойство" Url="html/897425f3-4418-33f9-6d0e-9f33e7b12ecc.htm" />
+  <HelpKINode Title="Folders свойство" Url="html/97c2aa5b-5d72-5b23-99a1-4ef378366473.htm" />
+  <HelpKINode Title="Frozen свойство" Url="html/fead44f9-f374-8fbb-2bbf-7ec58c375cf4.htm" />
+  <HelpKINode Title="GeoTargeting свойство" Url="html/1a331a7e-904b-247d-c917-306f155a0f01.htm" />
+  <HelpKINode Title="GetAll метод" Url="html/18d2e97e-6366-b6d0-156e-b9fb17533e6b.htm" />
+  <HelpKINode Title="GetDaysStats метод" Url="html/47d35d7b-78e3-af44-c5c6-a910c29bbde6.htm" />
+  <HelpKINode Title="GetDayTargeting метод" Url="html/43d5e52e-53f8-4a57-466c-e5743effbc4c.htm" />
+  <HelpKINode Title="GetFolders метод" Url="html/f861b33f-5b23-5c40-fd79-00e21114d96d.htm" />
+  <HelpKINode Title="GetGeneralInfo метод" Url="html/d769f701-3682-f021-c14e-51abb44e1939.htm" />
+  <HelpKINode Title="GetGeoTargeting метод" Url="html/d67c5861-dd77-af5e-089c-8e113634236a.htm" />
+  <HelpKINode Title="GetReferrals метод" Url="html/60002879-cf4f-2647-3bdf-6aeba3373414.htm" />
+  <HelpKINode Title="GetTasks метод" Url="html/daf7d25e-3939-aa2e-a6b2-d5ffcd308e17.htm" />
+  <HelpKINode Title="GetTimeDistribution метод" Url="html/8dd84edd-e38c-4d16-758d-7d54d9042879.htm" />
+  <HelpKINode Title="GetWeekTargeting метод" Url="html/ce7f9b20-7d4c-8c9b-dca3-9a7da479bd04.htm" />
+  <HelpKINode Title="GetWholeFolder метод" Url="html/8ee9877d-6270-d2b6-cf5a-2915c16cbb77.htm" />
+  <HelpKINode Title="GetWholeTask метод" Url="html/4410eef5-b7ed-80d5-2da2-97c4d1dbfc68.htm" />
+  <HelpKINode Title="Growth свойство" Url="html/cf930b01-1a9f-78df-627b-69c412845319.htm" />
+  <HelpKINode Title="Hour свойство" Url="html/d8742e97-9cd0-ac6f-4501-baf1271f5959.htm" />
+  <HelpKINode Title="Id свойство" Url="html/0a3a416f-eadd-97f1-d327-bc1cd9856366.htm" />
+  <HelpKINode Title="IgnoreGu свойство" Url="html/119d423e-6329-790a-c970-9e9ed641ae19.htm" />
+  <HelpKINode Title="Inactivity свойство" Url="html/217f2a77-aad7-ba72-14e0-8dd25d1e848b.htm" />
+  <HelpKINode Title="Incomplete свойство" Url="html/9e09accd-0fcb-a0bc-93fd-8136e9ec5d97.htm" />
+  <HelpKINode Title="JSONAnswer свойство" Url="html/7b53ba2e-912a-d944-6eaf-8816d90005a8.htm" />
+  <HelpKINode Title="JSONQuery свойство" Url="html/fd978463-b362-b34a-5a2e-b377ac337e09.htm" />
+  <HelpKINode Title="JSONSettings свойство" Url="html/ff22aab6-bc81-3d5e-b14c-95977c9c143b.htm" />
+  <HelpKINode Title="LastJSONAnswer свойство" Url="html/52d82b25-31bf-5b6c-598a-c9651f3d7e52.htm" />
+  <HelpKINode Title="LastJSONQuery свойство" Url="html/d22e8091-688d-2732-ac51-b59f606cb574.htm" />
+  <HelpKINode Title="ListId свойство" Url="html/4dc81151-d53c-6c41-a0a2-6e766ff493ff.htm" />
+  <HelpKINode Title="ListMode свойство" Url="html/c3812352-af21-9462-2ef4-eed5c2ab4d09.htm" />
+  <HelpKINode Title="Login свойство">
+    <HelpKINode Title="WAAccount.Login - свойство" Url="html/fd5c28eb-856c-d8f6-da7e-4d47650d4d90.htm" />
+    <HelpKINode Title="WAReferral.Login - свойство" Url="html/12dbbc29-ee94-d1b4-d2d0-cc8fd03a3592.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Mail свойство" Url="html/fdcba9b0-928c-66b8-e80f-61842f3c1ce1.htm" />
+  <HelpKINode Title="Mask свойство" Url="html/c3a3018e-599b-4563-5519-0abf6d6c6fd0.htm" />
+  <HelpKINode Title="Max свойство" Url="html/1826fb9a-1eb0-8859-8c5d-d141e0b71cb1.htm" />
+  <HelpKINode Title="Min свойство" Url="html/4d5bde3c-3a15-45c9-565d-632f73eebce2.htm" />
+  <HelpKINode Title="MoveTasks метод" Url="html/db819e74-8cce-7af7-4bea-9829d93b7a4f.htm" />
+  <HelpKINode Title="Name свойство">
+    <HelpKINode Title="WAFolder.Name - свойство" Url="html/8ebb7abe-a211-e0a7-51ff-9112df3db077.htm" />
+    <HelpKINode Title="WAGeoTargeting.Name - свойство" Url="html/4ad4ba7b-89e5-d266-f254-aee9618c8abc.htm" />
+    <HelpKINode Title="WATask.Name - свойство" Url="html/bc64b80e-ed37-3d9f-b2b9-89033f8a6267.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Overload свойство" Url="html/dc4a9807-d9f9-2617-bd78-2d3b78e2faea.htm" />
+  <HelpKINode Title="Password свойство" Url="html/5d81efc0-2a1a-5845-d5db-516174d3c7e8.htm" />
+  <HelpKINode Title="Percent свойство" Url="html/4ffb1a2e-70e3-cc63-536b-a603db3a0dba.htm" />
+  <HelpKINode Title="Priority свойство" Url="html/02c84256-ead2-aeaf-f406-d9b9fe057ba3.htm" />
+  <HelpKINode Title="Profile свойство" Url="html/512c9e46-dcf3-354e-76f9-56c6c29720cb.htm" />
+  <HelpKINode Title="ProfileSorage свойство" Url="html/beae799f-c6ab-aa80-4f9e-f629c4901407.htm" />
+  <HelpKINode Title="RangeSize свойство" Url="html/91a8451c-8e47-799b-a824-5c45deecc5d9.htm" />
+  <HelpKINode Title="ReadonlyKey свойство" Url="html/9d9b78f5-83e8-82e3-e54c-787fb9694878.htm" />
+  <HelpKINode Title="Recd свойство">
+    <HelpKINode Title="WADayTargetingExtend.Recd - свойство" Url="html/14f0f1e0-48ad-90d6-1c63-13f01bd4e8a0.htm" />
+    <HelpKINode Title="WAGeoTargeting.Recd - свойство" Url="html/3c3f68a1-2037-9ceb-0fdd-4c6dd72eb663.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Referer свойство" Url="html/7afcb298-5fff-786e-5d16-170c4133c6d3.htm" />
+  <HelpKINode Title="Referrals свойство" Url="html/7e243403-b39e-f1ad-2d71-365398396e75.htm" />
+  <HelpKINode Title="SendPost метод" Url="html/29c3ade5-2aaf-99d8-b969-09c679c5057e.htm" />
+  <HelpKINode Title="SetFolderName метод" Url="html/768cfdc1-6338-6259-c839-437d186ecdce.htm" />
+  <HelpKINode Title="SetTasksParams метод" Url="html/4b801a45-1ef5-e17e-1ab8-65ad1cecf6d6.htm" />
+  <HelpKINode Title="SignIn метод" Url="html/cf66e4ae-9a0e-0a69-0fcd-f9306fed1474.htm" />
+  <HelpKINode Title="SignOut метод" Url="html/ee7dd592-ef72-759b-65ec-a84242e1a822.htm" />
+  <HelpKINode Title="Target свойство">
+    <HelpKINode Title="WAGeoTargeting.Target - свойство" Url="html/d2db3352-238a-7285-094a-feb58c55e962.htm" />
+    <HelpKINode Title="WAWeekTargeting.Target - свойство" Url="html/e5e19b43-1956-e712-fa45-3ea936a1f72d.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Task свойство" Url="html/3f46f3c5-ea19-98de-9347-3e43edb40630.htm" />
+  <HelpKINode Title="TaskCategory - класс">
+    <HelpKINode Title="TaskCategory - класс" Url="html/e0dd8252-d252-a747-7aac-65352aa8a5fd.htm" />
+    <HelpKINode Title="конструктор" Url="html/a7149f86-d198-d8f0-7626-407bca6794cd.htm" />
+    <HelpKINode Title="методы" Url="html/e84acc78-0b4a-81af-a547-5d46b43e8c53.htm" />
+    <HelpKINode Title="о TaskCategory - класс" Url="html/e0dd8252-d252-a747-7aac-65352aa8a5fd.htm" />
+  </HelpKINode>
+  <HelpKINode Title="TaskCategory.AddTask метод" Url="html/ebc0ac43-e42d-e9a6-4058-34bb1c9cb6a2.htm" />
+  <HelpKINode Title="TaskCategory.CloneTask метод" Url="html/7fbcfd9f-f852-c1b2-23de-37c11f6251e1.htm" />
+  <HelpKINode Title="TaskCategory.CopyTaskSettings метод" Url="html/ac7e36ae-0f1a-2c41-8aa5-dd9059330129.htm" />
+  <HelpKINode Title="TaskCategory.DeleteTasks метод" Url="html/59640abb-de62-1ef7-cadc-32e3ade9cbb5.htm" />
+  <HelpKINode Title="TaskCategory.GetDaysStats метод" Url="html/47d35d7b-78e3-af44-c5c6-a910c29bbde6.htm" />
+  <HelpKINode Title="TaskCategory.GetDayTargeting метод" Url="html/43d5e52e-53f8-4a57-466c-e5743effbc4c.htm" />
+  <HelpKINode Title="TaskCategory.GetGeoTargeting метод" Url="html/d67c5861-dd77-af5e-089c-8e113634236a.htm" />
+  <HelpKINode Title="TaskCategory.GetTasks метод" Url="html/daf7d25e-3939-aa2e-a6b2-d5ffcd308e17.htm" />
+  <HelpKINode Title="TaskCategory.GetTimeDistribution метод" Url="html/8dd84edd-e38c-4d16-758d-7d54d9042879.htm" />
+  <HelpKINode Title="TaskCategory.GetWeekTargeting метод" Url="html/ce7f9b20-7d4c-8c9b-dca3-9a7da479bd04.htm" />
+  <HelpKINode Title="TaskCategory.GetWholeTask метод" Url="html/4410eef5-b7ed-80d5-2da2-97c4d1dbfc68.htm" />
+  <HelpKINode Title="TaskCategory.MoveTasks метод" Url="html/db819e74-8cce-7af7-4bea-9829d93b7a4f.htm" />
+  <HelpKINode Title="TaskCategory.SetTasksParams метод" Url="html/4b801a45-1ef5-e17e-1ab8-65ad1cecf6d6.htm" />
+  <HelpKINode Title="TaskCategory.TaskCategory конструктор" Url="html/a7149f86-d198-d8f0-7626-407bca6794cd.htm" />
+  <HelpKINode Title="TaskId свойство" Url="html/a6769a01-260c-982e-154b-a127ec5a9dd6.htm" />
+  <HelpKINode Title="Tasks свойство">
+    <HelpKINode Title="WAFolder.Tasks - свойство" Url="html/2f7f7df0-10d6-8e71-92f1-cb6c4f0aefe2.htm" />
+    <HelpKINode Title="WAFolderWhole.Tasks - свойство" Url="html/dce215e1-c73b-01b1-2452-084a61b51b2b.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Timebonus свойство" Url="html/b58ff47d-e0e1-7a11-6bbf-36b046eaed6f.htm" />
+  <HelpKINode Title="TimeDistribution свойство" Url="html/5b0ad124-e9f7-b920-68d7-730bf05451a7.htm" />
+  <HelpKINode Title="Token свойство">
+    <HelpKINode Title="AccountCategory.Token - свойство" Url="html/4b21decf-d096-039a-597a-7fc72fb7077c.htm" />
+    <HelpKINode Title="BaseQueryData.Token - свойство" Url="html/ae94b017-9bfe-ebfa-b273-1f8f40ff5716.htm" />
+  </HelpKINode>
+  <HelpKINode Title="UniquePeriod свойство" Url="html/5e532dd4-d9bf-27fc-ac1f-3a0709b6e947.htm" />
+  <HelpKINode Title="WAAccount - класс">
+    <HelpKINode Title="WAAccount - класс" Url="html/36ede53e-f446-ab48-c1ae-8228d521a334.htm" />
+    <HelpKINode Title="конструктор" Url="html/a63af8ea-5908-3f25-2869-6c19961bbf15.htm" />
+    <HelpKINode Title="методы" Url="html/34917b2e-efc2-55c7-da16-1d9c44fa6ea0.htm" />
+    <HelpKINode Title="о WAAccount - класс" Url="html/36ede53e-f446-ab48-c1ae-8228d521a334.htm" />
+    <HelpKINode Title="свойства" Url="html/75648405-ba22-559e-2500-512fd49e6c0f.htm" />
+  </HelpKINode>
+  <HelpKINode Title="WAAccount.Balance свойство" Url="html/1894594d-f154-4e71-68cb-314bef387f7c.htm" />
+  <HelpKINode Title="WAAccount.Deleted свойство" Url="html/0d61be0f-8fd1-2a17-47b4-d8ba7a0d2081.htm" />
+  <HelpKINode Title="WAAccount.Id свойство" Url="html/0a3a416f-eadd-97f1-d327-bc1cd9856366.htm" />
+  <HelpKINode Title="WAAccount.Login свойство" Url="html/fd5c28eb-856c-d8f6-da7e-4d47650d4d90.htm" />
+  <HelpKINode Title="WAAccount.Mail свойство" Url="html/fdcba9b0-928c-66b8-e80f-61842f3c1ce1.htm" />
+  <HelpKINode Title="WAAccount.ReadonlyKey свойство" Url="html/9d9b78f5-83e8-82e3-e54c-787fb9694878.htm" />
+  <HelpKINode Title="WAAccount.Referer свойство" Url="html/7afcb298-5fff-786e-5d16-170c4133c6d3.htm" />
+  <HelpKINode Title="WAAccount.Timebonus свойство" Url="html/b58ff47d-e0e1-7a11-6bbf-36b046eaed6f.htm" />
+  <HelpKINode Title="WAAccount.WAAccount конструктор" Url="html/a63af8ea-5908-3f25-2869-6c19961bbf15.htm" />
+  <HelpKINode Title="WAAllInfo - класс">
+    <HelpKINode Title="WAAllInfo - класс" Url="html/6d154268-653e-b283-4a93-0508d5d18ea0.htm" />
+    <HelpKINode Title="конструктор" Url="html/f71e2460-8fde-b277-2109-c0d089f8c397.htm" />
+    <HelpKINode Title="методы" Url="html/f9612098-fc5a-757e-dd88-3994f3e27d37.htm" />
+    <HelpKINode Title="о WAAllInfo - класс" Url="html/6d154268-653e-b283-4a93-0508d5d18ea0.htm" />
+    <HelpKINode Title="свойства" Url="html/0eb78538-dbc9-bf7d-d5cb-c9b9cc2eb10c.htm" />
+  </HelpKINode>
+  <HelpKINode Title="WAAllInfo.Folders свойство" Url="html/97c2aa5b-5d72-5b23-99a1-4ef378366473.htm" />
+  <HelpKINode Title="WAAllInfo.Referrals свойство" Url="html/7e243403-b39e-f1ad-2d71-365398396e75.htm" />
+  <HelpKINode Title="WAAllInfo.WAAllInfo конструктор" Url="html/f71e2460-8fde-b277-2109-c0d089f8c397.htm" />
+  <HelpKINode Title="WAApi - класс">
+    <HelpKINode Title="WAApi - класс" Url="html/e59534e3-66d2-2a7d-e87e-c17e7458f7f2.htm" />
+    <HelpKINode Title="конструктор" Url="html/e2f13df3-622d-24af-8933-f434e84acb44.htm" />
+    <HelpKINode Title="методы" Url="html/b0d4f878-d27f-83c8-53c6-75ac39cf722f.htm" />
+    <HelpKINode Title="о WAApi - класс" Url="html/e59534e3-66d2-2a7d-e87e-c17e7458f7f2.htm" />
+    <HelpKINode Title="свойства" Url="html/38ef39de-386c-a460-1421-baf317155454.htm" />
+    <HelpKINode Title="события" Url="html/a81faff6-3ccf-1370-cabc-d7f380a17320.htm" />
+  </HelpKINode>
+  <HelpKINode Title="WAApi.Account свойство" Url="html/238be289-68e3-67fe-b364-db8b8457d454.htm" />
+  <HelpKINode Title="WAApi.AntiDOSBlocked событие" Url="html/9a5dab10-6261-0bf5-28e7-db2724681579.htm" />
+  <HelpKINode Title="WAApi.Email свойство" Url="html/f9d99671-ec0a-9312-55a4-d6741442769f.htm" />
+  <HelpKINode Title="WAApi.Folder свойство" Url="html/19a6cc24-9de9-6e7e-8d6c-3173266952fc.htm" />
+  <HelpKINode Title="WAApi.JSONSettings свойство" Url="html/ff22aab6-bc81-3d5e-b14c-95977c9c143b.htm" />
+  <HelpKINode Title="WAApi.LastJSONAnswer свойство" Url="html/52d82b25-31bf-5b6c-598a-c9651f3d7e52.htm" />
+  <HelpKINode Title="WAApi.LastJSONQuery свойство" Url="html/d22e8091-688d-2732-ac51-b59f606cb574.htm" />
+  <HelpKINode Title="WAApi.Password свойство" Url="html/5d81efc0-2a1a-5845-d5db-516174d3c7e8.htm" />
+  <HelpKINode Title="WAApi.SendPost метод" Url="html/29c3ade5-2aaf-99d8-b969-09c679c5057e.htm" />
+  <HelpKINode Title="WAApi.Task свойство" Url="html/3f46f3c5-ea19-98de-9347-3e43edb40630.htm" />
+  <HelpKINode Title="WAApi.WAApi конструктор" Url="html/e2f13df3-622d-24af-8933-f434e84acb44.htm" />
+  <HelpKINode Title="WAApi.Waiting свойство" Url="html/7a732645-75e5-a8c1-b3f1-ed5daa5db59c.htm" />
+  <HelpKINode Title="WAApiException - класс">
+    <HelpKINode Title="WAApiException - класс" Url="html/ac8866fd-2791-34c9-ca8d-6b13cfde8fcb.htm" />
+    <HelpKINode Title="конструктор" Url="html/f3abe03a-57a1-f442-4465-6f0ffedd1b73.htm" />
+    <HelpKINode Title="методы" Url="html/79f94b75-2b21-2a46-27c9-bc66f018af5c.htm" />
+    <HelpKINode Title="о WAApiException - класс" Url="html/ac8866fd-2791-34c9-ca8d-6b13cfde8fcb.htm" />
+    <HelpKINode Title="свойства" Url="html/818015a9-8c76-d532-42c9-b4aa41d09a40.htm" />
+    <HelpKINode Title="события" Url="html/afe0cdd1-b4ac-595e-ecaa-36d5e01c6f10.htm" />
+  </HelpKINode>
+  <HelpKINode Title="WAApiException.Exception свойство" Url="html/6bed2831-17c1-725c-9946-2195940571b4.htm" />
+  <HelpKINode Title="WAApiException.JSONAnswer свойство" Url="html/7b53ba2e-912a-d944-6eaf-8816d90005a8.htm" />
+  <HelpKINode Title="WAApiException.JSONQuery свойство" Url="html/fd978463-b362-b34a-5a2e-b377ac337e09.htm" />
+  <HelpKINode Title="WAApiException.WAApiException конструктор" Url="html/f3abe03a-57a1-f442-4465-6f0ffedd1b73.htm" />
+  <HelpKINode Title="WAApiNET - пространство имён" Url="html/6ffbd470-65f1-c04d-18c5-e1fd0b5e27ae.htm" />
+  <HelpKINode Title="WAApiNET.Categories - пространство имён" Url="html/df309f30-1558-e83b-39ba-18e603d7fe52.htm" />
+  <HelpKINode Title="WAApiNET.Categories.AccountCategory - класс" Url="html/2cc89fd2-3e06-c195-9448-5db04e155f5c.htm" />
+  <HelpKINode Title="WAApiNET.Categories.FolderCategory - класс" Url="html/c7f99281-1d6b-e13d-af1e-57ad34a8c61c.htm" />
+  <HelpKINode Title="WAApiNET.Categories.TaskCategory - класс" Url="html/e0dd8252-d252-a747-7aac-65352aa8a5fd.htm" />
+  <HelpKINode Title="WAApiNET.Exception - пространство имён" Url="html/0b058046-ffaf-cd92-f35d-9b2fe737e71c.htm" />
+  <HelpKINode Title="WAApiNET.Exception.WAApiException - класс" Url="html/ac8866fd-2791-34c9-ca8d-6b13cfde8fcb.htm" />
+  <HelpKINode Title="WAApiNET.Model - пространство имён" Url="html/a2bfd843-6fd9-bed2-d9ad-ea32729fb89c.htm" />
+  <HelpKINode Title="WAApiNET.Model.Account - пространство имён" Url="html/8fee5cf5-4de0-e3ca-b741-93a6a2d6dae2.htm" />
+  <HelpKINode Title="WAApiNET.Model.Account.WAAccount - класс" Url="html/36ede53e-f446-ab48-c1ae-8228d521a334.htm" />
+  <HelpKINode Title="WAApiNET.Model.Account.WAReferral - класс" Url="html/6a168a7c-6d8d-9c4e-7e9e-abc55b909c63.htm" />
+  <HelpKINode Title="WAApiNET.Model.Folder - пространство имён" Url="html/64cb43bd-13d9-b6e4-8030-96df43cd45ed.htm" />
+  <HelpKINode Title="WAApiNET.Model.Folder.WAFolder - класс" Url="html/1e492313-d42e-0bd6-1cfc-7e87017c735f.htm" />
+  <HelpKINode Title="WAApiNET.Model.Folder.WAFolderWhole - класс" Url="html/d10ce31b-4b14-e2b7-043f-33da0bb22c0b.htm" />
+  <HelpKINode Title="WAApiNET.Model.Task - пространство имён" Url="html/4e0f5e81-f062-84a7-0e5c-7aafdb9409a1.htm" />
+  <HelpKINode Title="WAApiNET.Model.Task.WADayTargeting - класс" Url="html/ab8976cd-9a22-7d29-4ce5-73ef7d52d55e.htm" />
+  <HelpKINode Title="WAApiNET.Model.Task.WADayTargetingExtend - класс" Url="html/e8dea199-f0b5-27b7-005f-ecc7cef74c4a.htm" />
+  <HelpKINode Title="WAApiNET.Model.Task.WAGeoTargeting - класс" Url="html/84f12a78-c8b5-df70-f48e-c6826c07e9a8.htm" />
+  <HelpKINode Title="WAApiNET.Model.Task.WATask - класс" Url="html/d19c7646-225f-fc60-6e2c-d321772780f8.htm" />
+  <HelpKINode Title="WAApiNET.Model.Task.WATaskWhole - класс" Url="html/05fadb1f-462f-419e-9af9-1bc4650cae26.htm" />
+  <HelpKINode Title="WAApiNET.Model.Task.WATimeDistribution - класс" Url="html/2707aa2d-6036-b2ab-fab1-bc3362bbbecb.htm" />
+  <HelpKINode Title="WAApiNET.Model.Task.WAWeekTargeting - класс" Url="html/4da46f53-efb9-db8f-8970-9270e938ae0c.htm" />
+  <HelpKINode Title="WAApiNET.Model.WAAllInfo - класс" Url="html/6d154268-653e-b283-4a93-0508d5d18ea0.htm" />
+  <HelpKINode Title="WAApiNET.ServerQueries - пространство имён" Url="html/3eca535a-2c16-a74b-9586-769b3d7e1db2.htm" />
+  <HelpKINode Title="WAApiNET.ServerQueries.BaseQuery - класс" Url="html/88eab7e0-213a-6cde-777a-97aecdfc853b.htm" />
+  <HelpKINode Title="WAApiNET.ServerQueries.BaseQueryData - класс" Url="html/0a56299b-4bd8-24fd-977b-2329cfecc468.htm" />
+  <HelpKINode Title="WAApiNET.WAApi - класс" Url="html/e59534e3-66d2-2a7d-e87e-c17e7458f7f2.htm" />
+  <HelpKINode Title="WADayTargeting - класс">
+    <HelpKINode Title="WADayTargeting - класс" Url="html/ab8976cd-9a22-7d29-4ce5-73ef7d52d55e.htm" />
+    <HelpKINode Title="конструктор" Url="html/d54703ae-98f7-9408-ebdf-05adb3c59ca5.htm" />
+    <HelpKINode Title="методы" Url="html/9c462e18-43a3-8720-14ec-79d71289ba5b.htm" />
+    <HelpKINode Title="о WADayTargeting - класс" Url="html/ab8976cd-9a22-7d29-4ce5-73ef7d52d55e.htm" />
+    <HelpKINode Title="свойства" Url="html/fe6bbf10-587a-e426-c22b-a58bcd2e7b6e.htm" />
+  </HelpKINode>
+  <HelpKINode Title="WADayTargeting.Hour свойство" Url="html/d8742e97-9cd0-ac6f-4501-baf1271f5959.htm" />
+  <HelpKINode Title="WADayTargeting.Max свойство" Url="html/1826fb9a-1eb0-8859-8c5d-d141e0b71cb1.htm" />
+  <HelpKINode Title="WADayTargeting.Min свойство" Url="html/4d5bde3c-3a15-45c9-565d-632f73eebce2.htm" />
+  <HelpKINode Title="WADayTargeting.WADayTargeting конструктор" Url="html/d54703ae-98f7-9408-ebdf-05adb3c59ca5.htm" />
+  <HelpKINode Title="WADayTargetingExtend - класс">
+    <HelpKINode Title="WADayTargetingExtend - класс" Url="html/e8dea199-f0b5-27b7-005f-ecc7cef74c4a.htm" />
+    <HelpKINode Title="конструктор" Url="html/f0c5adeb-a51c-6d1c-a5ad-fd0c93a4ac4e.htm" />
+    <HelpKINode Title="методы" Url="html/9255ae4f-cb98-f28b-ae4e-0d4dc8fa0a5d.htm" />
+    <HelpKINode Title="о WADayTargetingExtend - класс" Url="html/e8dea199-f0b5-27b7-005f-ecc7cef74c4a.htm" />
+    <HelpKINode Title="свойства" Url="html/c5469e59-ad25-871b-ea7c-2f2c41d637f7.htm" />
+  </HelpKINode>
+  <HelpKINode Title="WADayTargetingExtend.Incomplete свойство" Url="html/9e09accd-0fcb-a0bc-93fd-8136e9ec5d97.htm" />
+  <HelpKINode Title="WADayTargetingExtend.Overload свойство" Url="html/dc4a9807-d9f9-2617-bd78-2d3b78e2faea.htm" />
+  <HelpKINode Title="WADayTargetingExtend.Recd свойство" Url="html/14f0f1e0-48ad-90d6-1c63-13f01bd4e8a0.htm" />
+  <HelpKINode Title="WADayTargetingExtend.WADayTargetingExtend конструктор" Url="html/f0c5adeb-a51c-6d1c-a5ad-fd0c93a4ac4e.htm" />
+  <HelpKINode Title="WAFolder - класс">
+    <HelpKINode Title="WAFolder - класс" Url="html/1e492313-d42e-0bd6-1cfc-7e87017c735f.htm" />
+    <HelpKINode Title="конструктор" Url="html/8974be0e-26cf-b52d-a7f3-c92d397da315.htm" />
+    <HelpKINode Title="методы" Url="html/1cb76b73-bbe0-4e91-b7bd-1ad219a23e2d.htm" />
+    <HelpKINode Title="о WAFolder - класс" Url="html/1e492313-d42e-0bd6-1cfc-7e87017c735f.htm" />
+    <HelpKINode Title="свойства" Url="html/401eed96-babd-41c6-67bc-70cc9ce70508.htm" />
+  </HelpKINode>
+  <HelpKINode Title="WAFolder.FolderId свойство" Url="html/897425f3-4418-33f9-6d0e-9f33e7b12ecc.htm" />
+  <HelpKINode Title="WAFolder.Name свойство" Url="html/8ebb7abe-a211-e0a7-51ff-9112df3db077.htm" />
+  <HelpKINode Title="WAFolder.Tasks свойство" Url="html/2f7f7df0-10d6-8e71-92f1-cb6c4f0aefe2.htm" />
+  <HelpKINode Title="WAFolder.WAFolder конструктор" Url="html/8974be0e-26cf-b52d-a7f3-c92d397da315.htm" />
+  <HelpKINode Title="WAFolderWhole - класс">
+    <HelpKINode Title="WAFolderWhole - класс" Url="html/d10ce31b-4b14-e2b7-043f-33da0bb22c0b.htm" />
+    <HelpKINode Title="конструктор" Url="html/3cc887a6-57d7-019f-d733-abded516d40c.htm" />
+    <HelpKINode Title="методы" Url="html/c396c126-ebac-a702-bdc3-0055d5148103.htm" />
+    <HelpKINode Title="о WAFolderWhole - класс" Url="html/d10ce31b-4b14-e2b7-043f-33da0bb22c0b.htm" />
+    <HelpKINode Title="свойства" Url="html/c9a0b188-9e27-80c1-91f9-3fadbd27c9cb.htm" />
+  </HelpKINode>
+  <HelpKINode Title="WAFolderWhole.Tasks свойство" Url="html/dce215e1-c73b-01b1-2452-084a61b51b2b.htm" />
+  <HelpKINode Title="WAFolderWhole.WAFolderWhole конструктор" Url="html/3cc887a6-57d7-019f-d733-abded516d40c.htm" />
+  <HelpKINode Title="WAGeoTargeting - класс">
+    <HelpKINode Title="WAGeoTargeting - класс" Url="html/84f12a78-c8b5-df70-f48e-c6826c07e9a8.htm" />
+    <HelpKINode Title="конструктор" Url="html/756a3e90-d9e3-ba05-1efc-008d66c139fa.htm" />
+    <HelpKINode Title="методы" Url="html/35bfbb77-5489-380b-2fd9-fe715f66954a.htm" />
+    <HelpKINode Title="о WAGeoTargeting - класс" Url="html/84f12a78-c8b5-df70-f48e-c6826c07e9a8.htm" />
+    <HelpKINode Title="свойства" Url="html/a644c619-5e40-2103-97ab-c4478065eeba.htm" />
+  </HelpKINode>
+  <HelpKINode Title="WAGeoTargeting.Name свойство" Url="html/4ad4ba7b-89e5-d266-f254-aee9618c8abc.htm" />
+  <HelpKINode Title="WAGeoTargeting.Recd свойство" Url="html/3c3f68a1-2037-9ceb-0fdd-4c6dd72eb663.htm" />
+  <HelpKINode Title="WAGeoTargeting.Target свойство" Url="html/d2db3352-238a-7285-094a-feb58c55e962.htm" />
+  <HelpKINode Title="WAGeoTargeting.WAGeoTargeting конструктор" Url="html/756a3e90-d9e3-ba05-1efc-008d66c139fa.htm" />
+  <HelpKINode Title="WAGeoTargeting.ZoneId свойство" Url="html/40e25e62-ee38-808c-6187-638d8acc4ea0.htm" />
+  <HelpKINode Title="Waiting свойство" Url="html/7a732645-75e5-a8c1-b3f1-ed5daa5db59c.htm" />
+  <HelpKINode Title="WAReferral - класс">
+    <HelpKINode Title="WAReferral - класс" Url="html/6a168a7c-6d8d-9c4e-7e9e-abc55b909c63.htm" />
+    <HelpKINode Title="конструктор" Url="html/c776000a-ba4c-60ce-30a4-293e6cf8bc15.htm" />
+    <HelpKINode Title="методы" Url="html/eb945b77-3caf-73fc-721a-e6a66daf328f.htm" />
+    <HelpKINode Title="о WAReferral - класс" Url="html/6a168a7c-6d8d-9c4e-7e9e-abc55b909c63.htm" />
+    <HelpKINode Title="свойства" Url="html/2e832fa1-1114-f790-ed25-af621d3c3a4c.htm" />
+  </HelpKINode>
+  <HelpKINode Title="WAReferral.Deductions свойство" Url="html/5acfe29d-830e-6c03-d09a-e208d50d9b8e.htm" />
+  <HelpKINode Title="WAReferral.Inactivity свойство" Url="html/217f2a77-aad7-ba72-14e0-8dd25d1e848b.htm" />
+  <HelpKINode Title="WAReferral.Login свойство" Url="html/12dbbc29-ee94-d1b4-d2d0-cc8fd03a3592.htm" />
+  <HelpKINode Title="WAReferral.WAReferral конструктор" Url="html/c776000a-ba4c-60ce-30a4-293e6cf8bc15.htm" />
+  <HelpKINode Title="WATask - класс">
+    <HelpKINode Title="WATask - класс" Url="html/d19c7646-225f-fc60-6e2c-d321772780f8.htm" />
+    <HelpKINode Title="конструктор" Url="html/112135e1-ac01-bed6-ad34-d877e71c4c71.htm" />
+    <HelpKINode Title="методы" Url="html/99fb5815-dbf6-ccff-6eac-006ac2dd3d48.htm" />
+    <HelpKINode Title="о WATask - класс" Url="html/d19c7646-225f-fc60-6e2c-d321772780f8.htm" />
+    <HelpKINode Title="свойства" Url="html/04b42e74-1e3f-81ef-759d-1b936172fb93.htm" />
+  </HelpKINode>
+  <HelpKINode Title="WATask.AfterClick свойство" Url="html/151fdebe-4412-caeb-6a14-8a907e71b554.htm" />
+  <HelpKINode Title="WATask.AllowProxy свойство" Url="html/9dcc129a-3e9e-1b50-8ae6-391a944858ed.htm" />
+  <HelpKINode Title="WATask.BeforeClick свойство" Url="html/b5fa14c9-fac4-684f-3ed4-70f237e1aed2.htm" />
+  <HelpKINode Title="WATask.Days свойство" Url="html/d8265a44-370b-dde8-d9f3-0087da0bc3fa.htm" />
+  <HelpKINode Title="WATask.Domain свойство" Url="html/fcf38971-98af-5f5c-c194-7653e1d2838f.htm" />
+  <HelpKINode Title="WATask.ExtSource свойство" Url="html/0888f4b6-b162-8db2-d3f0-98216553437e.htm" />
+  <HelpKINode Title="WATask.Frozen свойство" Url="html/fead44f9-f374-8fbb-2bbf-7ec58c375cf4.htm" />
+  <HelpKINode Title="WATask.Growth свойство" Url="html/cf930b01-1a9f-78df-627b-69c412845319.htm" />
+  <HelpKINode Title="WATask.IgnoreGu свойство" Url="html/119d423e-6329-790a-c970-9e9ed641ae19.htm" />
+  <HelpKINode Title="WATask.ListId свойство" Url="html/4dc81151-d53c-6c41-a0a2-6e766ff493ff.htm" />
+  <HelpKINode Title="WATask.ListMode свойство" Url="html/c3812352-af21-9462-2ef4-eed5c2ab4d09.htm" />
+  <HelpKINode Title="WATask.Mask свойство" Url="html/c3a3018e-599b-4563-5519-0abf6d6c6fd0.htm" />
+  <HelpKINode Title="WATask.Name свойство" Url="html/bc64b80e-ed37-3d9f-b2b9-89033f8a6267.htm" />
+  <HelpKINode Title="WATask.Profile свойство" Url="html/512c9e46-dcf3-354e-76f9-56c6c29720cb.htm" />
+  <HelpKINode Title="WATask.ProfileSorage свойство" Url="html/beae799f-c6ab-aa80-4f9e-f629c4901407.htm" />
+  <HelpKINode Title="WATask.RangeSize свойство" Url="html/91a8451c-8e47-799b-a824-5c45deecc5d9.htm" />
+  <HelpKINode Title="WATask.TaskId свойство" Url="html/a6769a01-260c-982e-154b-a127ec5a9dd6.htm" />
+  <HelpKINode Title="WATask.UniquePeriod свойство" Url="html/5e532dd4-d9bf-27fc-ac1f-3a0709b6e947.htm" />
+  <HelpKINode Title="WATask.WATask конструктор" Url="html/112135e1-ac01-bed6-ad34-d877e71c4c71.htm" />
+  <HelpKINode Title="WATaskWhole - класс">
+    <HelpKINode Title="WATaskWhole - класс" Url="html/05fadb1f-462f-419e-9af9-1bc4650cae26.htm" />
+    <HelpKINode Title="конструктор" Url="html/0c50ee1a-1392-edca-7d76-f29739f5db1f.htm" />
+    <HelpKINode Title="методы" Url="html/52fafa5d-318a-b1fd-6584-9faeaf3f4198.htm" />
+    <HelpKINode Title="о WATaskWhole - класс" Url="html/05fadb1f-462f-419e-9af9-1bc4650cae26.htm" />
+    <HelpKINode Title="свойства" Url="html/edbcef6e-bcba-ca78-feb6-c0e729355ef1.htm" />
+  </HelpKINode>
+  <HelpKINode Title="WATaskWhole.DayStats свойство" Url="html/145283ba-c2e1-2e66-b4ab-484c67d1992c.htm" />
+  <HelpKINode Title="WATaskWhole.DayTargeting свойство" Url="html/645deb60-12e9-bb2d-15f2-19fdd872a6c5.htm" />
+  <HelpKINode Title="WATaskWhole.GeoTargeting свойство" Url="html/1a331a7e-904b-247d-c917-306f155a0f01.htm" />
+  <HelpKINode Title="WATaskWhole.TimeDistribution свойство" Url="html/5b0ad124-e9f7-b920-68d7-730bf05451a7.htm" />
+  <HelpKINode Title="WATaskWhole.WATaskWhole конструктор" Url="html/0c50ee1a-1392-edca-7d76-f29739f5db1f.htm" />
+  <HelpKINode Title="WATaskWhole.WeekTargeting свойство" Url="html/53762933-a682-d301-cb49-6acd11fa2c58.htm" />
+  <HelpKINode Title="WATimeDistribution - класс">
+    <HelpKINode Title="WATimeDistribution - класс" Url="html/2707aa2d-6036-b2ab-fab1-bc3362bbbecb.htm" />
+    <HelpKINode Title="конструктор" Url="html/10fb7a16-d628-37dd-7aa8-01608c4456b6.htm" />
+    <HelpKINode Title="методы" Url="html/501415a0-2821-012e-dc8e-f137ac881230.htm" />
+    <HelpKINode Title="о WATimeDistribution - класс" Url="html/2707aa2d-6036-b2ab-fab1-bc3362bbbecb.htm" />
+    <HelpKINode Title="свойства" Url="html/62849d1d-2271-a997-39f7-66530cf54f07.htm" />
+  </HelpKINode>
+  <HelpKINode Title="WATimeDistribution.Percent свойство" Url="html/4ffb1a2e-70e3-cc63-536b-a603db3a0dba.htm" />
+  <HelpKINode Title="WATimeDistribution.Priority свойство" Url="html/02c84256-ead2-aeaf-f406-d9b9fe057ba3.htm" />
+  <HelpKINode Title="WATimeDistribution.WATimeDistribution конструктор" Url="html/10fb7a16-d628-37dd-7aa8-01608c4456b6.htm" />
+  <HelpKINode Title="WAWeekTargeting - класс">
+    <HelpKINode Title="WAWeekTargeting - класс" Url="html/4da46f53-efb9-db8f-8970-9270e938ae0c.htm" />
+    <HelpKINode Title="конструктор" Url="html/b1914e53-8f03-f1e5-763b-23af90d87b87.htm" />
+    <HelpKINode Title="методы" Url="html/09a53a35-4d02-c72e-6946-f551196209b1.htm" />
+    <HelpKINode Title="о WAWeekTargeting - класс" Url="html/4da46f53-efb9-db8f-8970-9270e938ae0c.htm" />
+    <HelpKINode Title="свойства" Url="html/fabed1f9-8b63-60f6-fd29-395502715bd5.htm" />
+  </HelpKINode>
+  <HelpKINode Title="WAWeekTargeting.Day свойство" Url="html/f8e069fa-986f-3c47-ab4c-e09604e0e29a.htm" />
+  <HelpKINode Title="WAWeekTargeting.Target свойство" Url="html/e5e19b43-1956-e712-fa45-3ea936a1f72d.htm" />
+  <HelpKINode Title="WAWeekTargeting.WAWeekTargeting конструктор" Url="html/b1914e53-8f03-f1e5-763b-23af90d87b87.htm" />
+  <HelpKINode Title="WeekTargeting свойство" Url="html/53762933-a682-d301-cb49-6acd11fa2c58.htm" />
+  <HelpKINode Title="ZoneId свойство" Url="html/40e25e62-ee38-808c-6187-638d8acc4ea0.htm" />
+</HelpKI>
