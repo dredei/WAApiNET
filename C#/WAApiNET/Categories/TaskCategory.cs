@@ -6,8 +6,12 @@ using System.Threading.Tasks;
 using Newtonsoft.Json;
 using WAApiNET.Exception;
 using WAApiNET.Model;
+using WAApiNET.Model.Folder;
+using WAApiNET.Model.Task;
 using WAApiNET.ServerAnswers;
+using WAApiNET.ServerAnswers.Task;
 using WAApiNET.ServerQueries;
+using WAApiNET.ServerQueries.Task;
 
 #endregion
 

@@ -3,7 +3,9 @@
 using System.Threading.Tasks;
 using Newtonsoft.Json;
 using WAApiNET.Model;
+using WAApiNET.Model.Account;
 using WAApiNET.ServerAnswers;
+using WAApiNET.ServerAnswers.Account;
 using WAApiNET.ServerQueries;
 
 #endregion
