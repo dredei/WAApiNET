@@ -7,14 +7,21 @@ using WAApiNET.Model.Task;
 
 namespace WAApiNET.Model.Folder
 {
+    /// <summary>
+    /// Объект папки (со списком заданий)
+    /// </summary>
     public class WAFolderWhole : WAFolder
     {
-        public string Name { get; set; }
-        public List<WATaskWhole> Tasks { get; set; }
+        /// <summary>
+        /// Список заданий
+        /// </summary>
+        public new List<WATaskWhole> Tasks { get; set; }
 
+        /// <summary>
+        /// Создает новый экземпляр
+        /// </summary>
         public WAFolderWhole()
         {
-            this.Name = null;
             this.Tasks = new List<WATaskWhole>();
         }
     }

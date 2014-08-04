@@ -15,6 +15,9 @@ using WAApiNET.ServerAnswers;
 
 namespace WAApiNET
 {
+    /// <summary>
+    /// Главный класс для работы с WaspAce API
+    /// </summary>
     public class WAApi
     {
         private readonly string _address;
@@ -23,14 +26,49 @@ namespace WAApiNET
 
         #region Поля
 
+        /// <summary>
+        /// Почта
+        /// </summary>
         public string Email { get; private set; }
+
+        /// <summary>
+        /// Пароль
+        /// </summary>
         public string Password { get; private set; }
+
+        /// <summary>
+        /// Методы для работы с аккаунтом
+        /// </summary>
         public AccountCategory Account { get; private set; }
+
+        /// <summary>
+        /// Методы для работы с папками
+        /// </summary>
         public FolderCategory Folder { get; private set; }
+
+        /// <summary>
+        /// Методы для работы с заданиями
+        /// </summary>
         public TaskCategory Task { get; private set; }
+
+        /// <summary>
+        /// Последний JSON запрос
+        /// </summary>
         public string LastJSONQuery { get; private set; }
+
+        /// <summary>
+        /// Последний JSON ответ
+        /// </summary>
         public string LastJSONAnswer { get; private set; }
+
+        /// <summary>
+        /// Настройки сериализации
+        /// </summary>
         public JsonSerializerSettings JSONSettings { get; private set; }
+
+        /// <summary>
+        /// Состояние ожидания
+        /// </summary>
         public bool Waiting { get; private set; }
 
         /// <summary>
@@ -43,9 +81,9 @@ namespace WAApiNET
         /// <summary>
         /// Создает новый экземпляр объекта WAApi
         /// </summary>
-        /// <param name="email"></param>
-        /// <param name="password"></param>
-        /// <param name="address"></param>
+        /// <param name="email">Почта</param>
+        /// <param name="password">Пароль</param>
+        /// <param name="address">Адрес сервера</param>
         public WAApi( string email, string password, string address = "http://api.waspace.net" )
         {
             if ( address[ address.Length - 1 ] == '/' )
@@ -57,7 +95,7 @@ namespace WAApiNET
             this._address = address;
             this._webClient = new WebClient { Encoding = Encoding.UTF8 };
             this._waitingTimer = new Timer { Interval = 200 };
-            this._waitingTimer.Elapsed += _waitingTimer_Elapsed;
+            this._waitingTimer.Elapsed += this._waitingTimer_Elapsed;
 
             this.Account = new AccountCategory( this );
             this.Folder = new FolderCategory( this, this.Account );
@@ -65,7 +103,7 @@ namespace WAApiNET
             this.JSONSettings = new JsonSerializerSettings { NullValueHandling = NullValueHandling.Ignore };
         }
 
-        void _waitingTimer_Elapsed( object sender, ElapsedEventArgs e )
+        private void _waitingTimer_Elapsed( object sender, ElapsedEventArgs e )
         {
             this.Waiting = false;
             this._waitingTimer.Stop();
@@ -93,6 +131,13 @@ namespace WAApiNET
             throw new WAApiException( "Ошибка \"{0}\"!".F( errorAnswer.Error ), jsonData, answer );
         }
 
+        /// <summary>
+        /// Отправляет GET-запрос серверу
+        /// </summary>
+        /// <param name="action">Тип действия</param>
+        /// <param name="jsonData">Данные</param>
+        /// <returns>Возвращает ответ от сервера</returns>
+        /// <exception cref="WAApiException">Когда не авторизовались или произошла другая ошибка</exception>
         public async Task<string> SendPost( string action, string jsonData )
         {
             if ( this.Account.Token.IsNullOrEmpty() && action != "Sign in" )
@@ -120,6 +165,12 @@ namespace WAApiNET
             return answer;
         }
 
+        /// <summary>
+        /// Отправляет GET-запрос серверу
+        /// </summary>
+        /// <param name="action">Тип действия</param>
+        /// <param name="data">Объект с данными</param>
+        /// <returns>Возвращает ответ от сервера</returns>
         public async Task<string> SendPost( string action, object data )
         {
             string json = JsonConvert.SerializeObject( data, Formatting.None, this.JSONSettings );

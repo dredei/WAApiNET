@@ -15,11 +15,19 @@ using WAApiNET.ServerQueries.Task;
 
 namespace WAApiNET.Categories
 {
+    /// <summary>
+    /// Методы для работы с заданиями
+    /// </summary>
     public class TaskCategory
     {
         private readonly WAApi _waApi;
         private readonly AccountCategory _accountCategory;
 
+        /// <summary>
+        /// Создает новый экземпляр
+        /// </summary>
+        /// <param name="waApi"></param>
+        /// <param name="accountCategory"></param>
         public TaskCategory( WAApi waApi, AccountCategory accountCategory )
         {
             this._waApi = waApi;

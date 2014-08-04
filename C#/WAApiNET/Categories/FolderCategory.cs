@@ -14,11 +14,19 @@ using WAApiNET.ServerQueries.Folder;
 
 namespace WAApiNET.Categories
 {
+    /// <summary>
+    /// Методы для работы с папками
+    /// </summary>
     public class FolderCategory
     {
         private readonly WAApi _waApi;
         private readonly AccountCategory _accountCategory;
 
+        /// <summary>
+        /// Создает новый экземпляр
+        /// </summary>
+        /// <param name="waApi"></param>
+        /// <param name="accountCategory"></param>
         public FolderCategory( WAApi waApi, AccountCategory accountCategory )
         {
             this._waApi = waApi;

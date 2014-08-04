@@ -12,21 +12,35 @@ using WAApiNET.ServerQueries;
 
 namespace WAApiNET.Categories
 {
+    /// <summary>
+    /// Методы для работы с аккаунтом
+    /// </summary>
     public class AccountCategory
     {
         private readonly WAApi _waApi;
 
         #region Поля
 
+        /// <summary>
+        /// Ссылка на текущий аккаунт (null, если не вызывался метод получения всех данных аккаунта)
+        /// </summary>
         public WAAccount CurrentAccount { get; private set; }
+        /// <summary>
+        /// Сессионный токен
+        /// </summary>
         public string Token { get; set; }
 
         #endregion
 
+        /// <summary>
+        /// Создает новый экземпляр
+        /// </summary>
+        /// <param name="waApi"></param>
         public AccountCategory( WAApi waApi )
         {
             this._waApi = waApi;
             this.Token = null;
+            this.CurrentAccount = null;
         }
 
         /// <summary>

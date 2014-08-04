@@ -6,50 +6,110 @@ using Newtonsoft.Json;
 
 namespace WAApiNET.Model.Task
 {
+    /// <summary>
+    /// Объект задания
+    /// </summary>
     public class WATask
     {
+        /// <summary>
+        /// Id задания
+        /// </summary>
         [JsonProperty( PropertyName = "Task ID" )]
         public int? TaskId { get; set; }
 
+        /// <summary>
+        /// Id списка
+        /// </summary>
         [JsonProperty( PropertyName = "List ID" )]
         public int? ListId { get; set; }
 
+        /// <summary>
+        /// Время после клика
+        /// </summary>
         [JsonProperty( PropertyName = "After click" )]
         public int? AfterClick { get; set; }
 
+        /// <summary>
+        /// Разрешить прокси
+        /// </summary>
         [JsonProperty( PropertyName = "Allow proxy" )]
         public bool? AllowProxy { get; set; }
 
+        /// <summary>
+        /// Игнорировать глобальную уникальность
+        /// </summary>
         [JsonProperty( PropertyName = "Ignore GU" )]
         public bool? IgnoreGu { get; set; }
 
+        /// <summary>
+        /// Прирост
+        /// </summary>
         public double? Growth { get; set; }
+        /// <summary>
+        /// Домен
+        /// </summary>
         public string Domain { get; set; }
+        /// <summary>
+        /// Имя профиля
+        /// </summary>
         public string Profile { get; set; }
+        /// <summary>
+        /// Статус активации
+        /// </summary>
         public bool? Frozen { get; set; }
 
+        /// <summary>
+        /// Использовать список IP
+        /// </summary>
         [JsonProperty( PropertyName = "List mode" )]
         public bool? ListMode { get; set; }
 
+        /// <summary>
+        /// Размер разброса подсети
+        /// </summary>
         [JsonProperty( PropertyName = "Range size" )]
         public int? RangeSize { get; set; }
 
+        /// <summary>
+        /// Время уникальности
+        /// </summary>
         [JsonProperty( PropertyName = "Unique period" )]
         public int? UniquePeriod { get; set; }
 
+        /// <summary>
+        /// Имя
+        /// </summary>
         public string Name { get; set; }
+        /// <summary>
+        /// Маска
+        /// </summary>
         public string Mask { get; set; }
+        /// <summary>
+        /// Количество дней работы задания
+        /// </summary>
         public int? Days { get; set; }
 
+        /// <summary>
+        /// Внешний источник
+        /// </summary>
         [JsonProperty( PropertyName = "Ext source" )]
         public string ExtSource { get; set; }
 
+        /// <summary>
+        /// Время до клика
+        /// </summary>
         [JsonProperty( PropertyName = "Before click" )]
         public int? BeforeClick { get; set; }
 
+        /// <summary>
+        /// Ссылка на хранилище профилей
+        /// </summary>
         [JsonProperty( PropertyName = "Profile storage" )]
         public string ProfileSorage { get; set; }
 
+        /// <summary>
+        /// Создает новый экземпляр, все поля имеют значения null
+        /// </summary>
         public WATask()
         {
             this.TaskId = null;
@@ -72,6 +132,27 @@ namespace WAApiNET.Model.Task
             this.ListMode = null;
         }
 
+        /// <summary>
+        /// Создает новый экземпляр с указанными параметрами
+        /// </summary>
+        /// <param name="taskId"></param>
+        /// <param name="listId"></param>
+        /// <param name="afterClick"></param>
+        /// <param name="allowProxy"></param>
+        /// <param name="ignoreGu"></param>
+        /// <param name="growth"></param>
+        /// <param name="domain"></param>
+        /// <param name="profile"></param>
+        /// <param name="frozen"></param>
+        /// <param name="listMode"></param>
+        /// <param name="rangeSize"></param>
+        /// <param name="uniquePeriod"></param>
+        /// <param name="name"></param>
+        /// <param name="mask"></param>
+        /// <param name="days"></param>
+        /// <param name="extSource"></param>
+        /// <param name="beforeClick"></param>
+        /// <param name="profileSorage"></param>
         public WATask( int? taskId, int? listId, int? afterClick, bool allowProxy, bool ignoreGu, double? growth,
             string domain, string profile, bool frozen, bool listMode, int? rangeSize, int? uniquePeriod, string name,
             string mask, int? days, string extSource, int? beforeClick, string profileSorage )
@@ -96,6 +177,10 @@ namespace WAApiNET.Model.Task
             this.ProfileSorage = profileSorage;
         }
 
+        /// <summary>
+        /// Создает новый экземпляр (клонирует указанное задание)
+        /// </summary>
+        /// <param name="task"></param>
         public WATask( WATask task )
         {
             this.TaskId = task.TaskId;
