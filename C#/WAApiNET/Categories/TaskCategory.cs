@@ -349,7 +349,7 @@ namespace WAApiNET.Categories
         /// <param name="sourceFolderId">Исходный Id папки</param>
         /// <param name="sourceTaskId">Исходный Id заданий</param>
         /// <param name="targetFolderId">Id папки назначения</param>
-        /// <param name="targetTasksIds">Ids заданий назначения</param>
+        /// <param name="targetTasksIds">Массив id заданий назначения</param>
         /// <param name="taskSettings">Настройки</param>
         /// <returns></returns>
         public async Task CopyTaskSettings( int sourceFolderId, int sourceTaskId, int targetFolderId,
@@ -388,6 +388,39 @@ namespace WAApiNET.Categories
             await
                 this.CopyTaskSettings( (int)sourceFolder.FolderId, (int)sourceTask.TaskId, (int)targetFolder.FolderId,
                     targetTasks.Select( t => t.TaskId != null ? (int)t.TaskId : 0 ).ToArray(), taskSettings );
+        }
+
+        /// <summary>
+        /// Перенос заданий в другую папку
+        /// </summary>
+        /// <param name="sourceFolderId">Id исходной папки</param>
+        /// <param name="targetFolderId">Id папки назначения</param>
+        /// <param name="taskIds">Массив id заданий</param>
+        /// <returns></returns>
+        public async Task MoveTasks( int sourceFolderId, int targetFolderId, int[] taskIds )
+        {
+            var copyTaskSettingsQ = new MoveTasksQuery( this._accountCategory.Token, sourceFolderId, targetFolderId, taskIds );
+            await this._waApi.SendPost( "Move tasks", copyTaskSettingsQ );
+        }
+
+        /// <summary>
+        /// Перенос заданий в другую папку
+        /// </summary>
+        /// <param name="sourceFolder">Исходная папка</param>
+        /// <param name="targetFolder">Папка назначения</param>
+        /// <param name="taskIds">Массив id заданий</param>
+        /// <returns></returns>
+        public async Task MoveTasks( Folder sourceFolder, Folder targetFolder, int[] taskIds )
+        {
+            if ( sourceFolder == null || sourceFolder.FolderId == null )
+            {
+                throw new WAApiException( "Некорректный параметр: sourceFolder!" );
+            }
+            if ( targetFolder == null || targetFolder.FolderId == null )
+            {
+                throw new WAApiException( "Некорректный параметр: sourceFolder!" );
+            }
+            await this.MoveTasks( (int)sourceFolder.FolderId, (int)targetFolder.FolderId, taskIds );
         }
     }
 }

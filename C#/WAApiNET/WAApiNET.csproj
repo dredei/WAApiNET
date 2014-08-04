@@ -110,6 +110,7 @@
     <Compile Include="ServerQueries\FolderTaskQuery.cs" />
     <Compile Include="ServerQueries\GetTasksQuery.cs" />
     <Compile Include="ServerQueries\GetWholeFolderQuery.cs" />
+    <Compile Include="ServerQueries\MoveTasksQuery.cs" />
     <Compile Include="ServerQueries\SetTasksParamsQuery.cs" />
     <Compile Include="ServerQueries\SignInQuery.cs" />
     <Compile Include="WAApi.cs" />
