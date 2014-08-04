@@ -85,6 +85,7 @@
     <Compile Include="ServerAnswers\AddFolderAnswer.cs" />
     <Compile Include="ServerAnswers\AddTaskAnswer.cs" />
     <Compile Include="ServerAnswers\BaseAnswer.cs" />
+    <Compile Include="ServerAnswers\ErrorAnswer.cs" />
     <Compile Include="ServerAnswers\GetAllAnswer.cs" />
     <Compile Include="ServerAnswers\GetDaysStatsAnswer.cs" />
     <Compile Include="ServerAnswers\GetDayTargetingAnswer.cs" />

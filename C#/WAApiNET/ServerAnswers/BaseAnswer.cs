@@ -1,6 +1,6 @@
 ﻿namespace WAApiNET.ServerAnswers
 {
-    public class BaseAnswer
+    internal class BaseAnswer
     {
         public string Status { get; set; }
 
