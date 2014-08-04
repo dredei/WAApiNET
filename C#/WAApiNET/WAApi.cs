@@ -56,7 +56,7 @@ namespace WAApiNET
             this.Password = password;
             this._address = address;
             this._webClient = new WebClient { Encoding = Encoding.UTF8 };
-            this._waitingTimer = new Timer { Interval = 500 };
+            this._waitingTimer = new Timer { Interval = 200 };
             this._waitingTimer.Elapsed += _waitingTimer_Elapsed;
 
             this.Account = new AccountCategory( this );
@@ -115,7 +115,7 @@ namespace WAApiNET
              */
             while ( this.Waiting )
             {
-                await TaskEx.Delay( 500 );
+                await TaskEx.Delay( 200 );
             }
             return answer;
         }
