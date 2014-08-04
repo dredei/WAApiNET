@@ -1,19 +1,19 @@
 ﻿namespace WAApiNET.Model
 {
-    public class Referral
+    public class WAReferral
     {
         public string Login { get; set; }
         public int? Inactivity { get; set; }
         public int? Deductions { get; set; }
 
-        public Referral()
+        public WAReferral()
         {
             this.Login = null;
             this.Inactivity = null;
             this.Deductions = null;
         }
 
-        public Referral( string login, int? inactivity, int? deductions )
+        public WAReferral( string login, int? inactivity, int? deductions )
         {
             this.Login = login;
             this.Inactivity = inactivity;

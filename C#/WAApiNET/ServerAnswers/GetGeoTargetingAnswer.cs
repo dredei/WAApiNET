@@ -13,11 +13,11 @@ namespace WAApiNET.ServerAnswers
         internal class DataObj
         {
             [JsonProperty( PropertyName = "Geo targeting" )]
-            public List<GeoTargeting> GeoTargeting { get; set; }
+            public List<WAGeoTargeting> GeoTargeting { get; set; }
 
             public DataObj()
             {
-                this.GeoTargeting = new List<GeoTargeting>();
+                this.GeoTargeting = new List<WAGeoTargeting>();
             }
         }
 

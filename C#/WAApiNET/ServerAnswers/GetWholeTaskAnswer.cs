@@ -10,11 +10,11 @@ namespace WAApiNET.ServerAnswers
     {
         internal class DataObj
         {
-            public WATaskExtend Task { get; set; }
+            public WATaskWhole Task { get; set; }
 
             public DataObj()
             {
-                this.Task = new WATaskExtend();
+                this.Task = new WATaskWhole();
             }
         }
 

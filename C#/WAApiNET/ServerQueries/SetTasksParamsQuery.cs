@@ -7,7 +7,7 @@ using WAApiNET.Model;
 
 namespace WAApiNET.ServerQueries
 {
-    internal class SetTasksParamsQuery : WATaskExtend
+    internal class SetTasksParamsQuery : WATaskWhole
     {
         public string Token { get; set; }
 
@@ -24,7 +24,7 @@ namespace WAApiNET.ServerQueries
             this.TaskIds = null;
         }
 
-        public SetTasksParamsQuery( string token, int? folderId, int[] taskIds, WATaskExtend task )
+        public SetTasksParamsQuery( string token, int? folderId, int[] taskIds, WATaskWhole task )
             : base( task, task.GeoTargeting, task.DayTargeting, task.DayStats, task.WeekTargeting,
                 task.TimeDistribution )
         {

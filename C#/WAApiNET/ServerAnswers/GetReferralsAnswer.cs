@@ -11,11 +11,11 @@ namespace WAApiNET.ServerAnswers
     {
         internal class DataObj
         {
-            public List<Referral> Referrals { get; set; }
+            public List<WAReferral> Referrals { get; set; }
 
             public DataObj()
             {
-                this.Referrals = new List<Referral>();
+                this.Referrals = new List<WAReferral>();
             }
         }
 

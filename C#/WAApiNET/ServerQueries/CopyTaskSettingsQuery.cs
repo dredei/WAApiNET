@@ -21,7 +21,7 @@ namespace WAApiNET.ServerQueries
         [JsonProperty( PropertyName = "Target tasks" )]
         public int[] TargetTasks { get; set; }
 
-        public WATaskExtend Settings { get; set; }
+        public WATaskWhole Settings { get; set; }
 
         public CopyTaskSettingsQuery()
         {
@@ -33,7 +33,7 @@ namespace WAApiNET.ServerQueries
         }
 
         public CopyTaskSettingsQuery( string token, int? sourceFolder, int? sourceTask, int? targetFolder,
-            int[] targetTasks, WATaskExtend settings )
+            int[] targetTasks, WATaskWhole settings )
             : base( token )
         {
             this.SourceFolder = sourceFolder;

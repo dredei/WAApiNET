@@ -28,7 +28,7 @@ namespace WAApiNET.Categories
         /// Получение списка папок
         /// </summary>
         /// <returns></returns>
-        public async Task<List<Folder>> GetFolders()
+        public async Task<List<WAFolder>> GetFolders()
         {
             var getFoldersQ = new BaseQueryData( this._accountCategory.Token );
             string answer = await this._waApi.SendPost( "Get folders", getFoldersQ );
@@ -41,12 +41,12 @@ namespace WAApiNET.Categories
         /// </summary>
         /// <param name="name">Имя папки</param>
         /// <returns></returns>
-        public async Task<Folder> AddFolder( string name )
+        public async Task<WAFolder> AddFolder( string name )
         {
             var addFolderQ = new AddFolderQuery( this._accountCategory.Token, name );
             string answer = await this._waApi.SendPost( "Add folder", addFolderQ );
             var addFolderA = JsonConvert.DeserializeObject<AddFolderAnswer>( answer );
-            return new Folder( addFolderA.Data.FolderId, name, 0 );
+            return new WAFolder( addFolderA.Data.FolderId, name, 0 );
         }
 
         /// <summary>
@@ -67,7 +67,7 @@ namespace WAApiNET.Categories
         /// <param name="folder">Объект папки</param>
         /// <param name="newName">Новое имя</param>
         /// <returns></returns>
-        public async Task SetFolderName( Folder folder, string newName )
+        public async Task SetFolderName( WAFolder folder, string newName )
         {
             if ( folder == null || folder.FolderId == null )
             {
@@ -96,7 +96,7 @@ namespace WAApiNET.Categories
         /// </summary>
         /// <param name="folders">Массив папок</param>
         /// <returns></returns>
-        public async Task DeleteFolders( Folder[] folders )
+        public async Task DeleteFolders( WAFolder[] folders )
         {
             if ( folders == null || folders.Length == 0 || folders.Any( f => f.FolderId == null ) )
             {
@@ -111,7 +111,7 @@ namespace WAApiNET.Categories
         /// </summary>
         /// <param name="folderId">Id папки</param>
         /// <returns></returns>
-        public async Task<FolderWhole> GetWholeFolder( int folderId )
+        public async Task<WAFolderWhole> GetWholeFolder( int folderId )
         {
             var getWholeFolderQ = new GetWholeFolderQuery( this._accountCategory.Token, folderId );
             string answer = await this._waApi.SendPost( "Get whole folder", getWholeFolderQ );
@@ -124,7 +124,7 @@ namespace WAApiNET.Categories
         /// </summary>
         /// <param name="folder">Папка</param>
         /// <returns></returns>
-        public async Task<FolderWhole> GetWholeFolder( Folder folder )
+        public async Task<WAFolderWhole> GetWholeFolder( WAFolder folder )
         {
             if ( folder == null || folder.FolderId == null )
             {

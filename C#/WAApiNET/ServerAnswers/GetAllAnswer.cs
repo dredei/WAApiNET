@@ -8,7 +8,7 @@ namespace WAApiNET.ServerAnswers
 {
     internal class GetAllAnswer
     {
-        public AllInfo Data { get; set; }
+        public WAAllInfo Data { get; set; }
 
         public GetAllAnswer()
         {

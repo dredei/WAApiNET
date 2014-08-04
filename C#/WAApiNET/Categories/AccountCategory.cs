@@ -16,7 +16,7 @@ namespace WAApiNET.Categories
 
         #region Поля
 
-        public Account CurrentAccount { get; private set; }
+        public WAAccount CurrentAccount { get; private set; }
         public string Token { get; set; }
 
         #endregion
@@ -65,7 +65,7 @@ namespace WAApiNET.Categories
         /// Получение рефералов
         /// </summary>
         /// <returns></returns>
-        public async Task<Referral[]> GetReferrals()
+        public async Task<WAReferral[]> GetReferrals()
         {
             var getReferralsQ = new BaseQueryData( this.Token );
             string answer = await this._waApi.SendPost( "Get referrals", getReferralsQ );
@@ -77,7 +77,7 @@ namespace WAApiNET.Categories
         /// Получение всех данных аккаунта
         /// </summary>
         /// <returns></returns>
-        public async Task<AllInfo> GetAll()
+        public async Task<WAAllInfo> GetAll()
         {
             var getAllQ = new BaseQueryData( this.Token );
             string answer = await this._waApi.SendPost( "Get all", getAllQ );

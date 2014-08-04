@@ -8,11 +8,11 @@ namespace WAApiNET.ServerAnswers
 {
     internal class GetGeneralInfoAnswer : BaseAnswer
     {
-        public Account Data { get; set; }
+        public WAAccount Data { get; set; }
 
         public GetGeneralInfoAnswer()
         {
-            this.Data = new Account();
+            this.Data = new WAAccount();
         }
     }
 }

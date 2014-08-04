@@ -28,7 +28,7 @@ namespace WAApiNETTests
         public async Task TestGetTimeDistribution()
         {
             await this._waApi.Account.SignIn();
-            List<TimeDistribution> timeDistribution = await this._waApi.Task.GetTimeDistribution( 1, 1 );
+            List<WATimeDistribution> timeDistribution = await this._waApi.Task.GetTimeDistribution( 1, 1 );
             Assert.IsTrue( timeDistribution[ 0 ].Priority == 6 && timeDistribution[ 1 ].Priority == 5 &&
                            timeDistribution[ 2 ].Priority == 5 && timeDistribution[ 3 ].Priority == 6 );
         }
@@ -37,7 +37,7 @@ namespace WAApiNETTests
         public async Task TestGetGeoTargeting()
         {
             await this._waApi.Account.SignIn();
-            List<GeoTargeting> geoTargeting = await this._waApi.Task.GetGeoTargeting( 1, 1 );
+            List<WAGeoTargeting> geoTargeting = await this._waApi.Task.GetGeoTargeting( 1, 1 );
             Assert.IsTrue( geoTargeting.FirstOrDefault( gt => gt.Name == "UA" ).Target == 100 &&
                            geoTargeting.FirstOrDefault( gt => gt.Name == "RU" ).Target == 50 );
         }
@@ -46,7 +46,7 @@ namespace WAApiNETTests
         public async Task TestGetWeekTargeting()
         {
             await this._waApi.Account.SignIn();
-            List<WeekTargeting> weekTargeting = await this._waApi.Task.GetWeekTargeting( 1, 1 );
+            List<WAWeekTargeting> weekTargeting = await this._waApi.Task.GetWeekTargeting( 1, 1 );
             Assert.IsTrue( weekTargeting[ 0 ].Target == 59.38 && weekTargeting[ 1 ].Target == 58.04 &&
                            weekTargeting[ 2 ].Target == 46.88 );
         }
@@ -55,7 +55,7 @@ namespace WAApiNETTests
         public async Task TestGetDayTargeting()
         {
             await this._waApi.Account.SignIn();
-            List<DayTargeting> dayTargeting = await this._waApi.Task.GetDayTargeting( 1, 1 );
+            List<WADayTargeting> dayTargeting = await this._waApi.Task.GetDayTargeting( 1, 1 );
             Assert.IsTrue( dayTargeting[ 0 ].Max == 9 && dayTargeting[ 0 ].Min == 3 && dayTargeting[ 1 ].Max == 12 &&
                            dayTargeting[ 1 ].Min == 3 && dayTargeting[ 2 ].Max == 9 && dayTargeting[ 2 ].Min == 4 );
         }
@@ -64,11 +64,11 @@ namespace WAApiNETTests
         public async Task TestGetWholeTask()
         {
             await this._waApi.Account.SignIn();
-            WATaskExtend wholeTask = await this._waApi.Task.GetWholeTask( 1, 1 );
-            List<TimeDistribution> timeDistribution = wholeTask.TimeDistribution;
-            List<GeoTargeting> geoTargeting = wholeTask.GeoTargeting;
-            List<WeekTargeting> weekTargeting = wholeTask.WeekTargeting;
-            List<DayTargeting> dayTargeting = wholeTask.DayTargeting;
+            WATaskWhole wholeTask = await this._waApi.Task.GetWholeTask( 1, 1 );
+            List<WATimeDistribution> timeDistribution = wholeTask.TimeDistribution;
+            List<WAGeoTargeting> geoTargeting = wholeTask.GeoTargeting;
+            List<WAWeekTargeting> weekTargeting = wholeTask.WeekTargeting;
+            List<WADayTargeting> dayTargeting = wholeTask.DayTargeting;
             Assert.IsTrue( timeDistribution[ 0 ].Priority == 6 && timeDistribution[ 1 ].Priority == 5 &&
                            timeDistribution[ 2 ].Priority == 5 && timeDistribution[ 3 ].Priority == 6 &&
                            geoTargeting.FirstOrDefault( gt => gt.ZoneId == 18 ).Target == 100 &&
@@ -87,20 +87,20 @@ namespace WAApiNETTests
             var task = new WATask( null, 0, 0, false, false, 0, "softez.pp.ua", "", true, false, 10, 1440,
                 "TaskFromTest", "", 0, "http://softez.pp.ua/1", 100, "" );
             task = await this._waApi.Task.AddTask( folderId, task );
-            var newTask = new WATaskExtend
+            var newTask = new WATaskWhole
             {
                 ExtSource = "http://softez.pp.ua/2",
                 AfterClick = 35,
                 Mask = "mask",
-                DayTargeting = new List<DayTargeting>( new[]
+                DayTargeting = new List<WADayTargeting>( new[]
                 {
-                    new DayTargeting( 5, 10, 0 ),
-                    new DayTargeting( 6, 11, 1 )
+                    new WADayTargeting( 5, 10, 0 ),
+                    new WADayTargeting( 6, 11, 1 )
                 } ),
-                WeekTargeting = new List<WeekTargeting>( new[]
+                WeekTargeting = new List<WAWeekTargeting>( new[]
                 {
-                    new WeekTargeting( 0, 35 ),
-                    new WeekTargeting( 1, 45.5 )
+                    new WAWeekTargeting( 0, 35 ),
+                    new WAWeekTargeting( 1, 45.5 )
                 } )
             };
             if ( task.TaskId == null )

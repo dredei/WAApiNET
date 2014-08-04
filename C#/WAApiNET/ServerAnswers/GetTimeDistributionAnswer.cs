@@ -13,11 +13,11 @@ namespace WAApiNET.ServerAnswers
         internal class DataObj
         {
             [JsonProperty( PropertyName = "Time distribution" )]
-            public List<TimeDistribution> TimeDistribution { get; set; }
+            public List<WATimeDistribution> TimeDistribution { get; set; }
 
             public DataObj()
             {
-                this.TimeDistribution = new List<TimeDistribution>();
+                this.TimeDistribution = new List<WATimeDistribution>();
             }
         }
 

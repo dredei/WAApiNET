@@ -42,7 +42,7 @@ namespace WAApiNET.Categories
         /// </summary>
         /// <param name="folder">Папка</param>
         /// <returns></returns>
-        public async Task<List<WATask>> GetTasks( Folder folder )
+        public async Task<List<WATask>> GetTasks( WAFolder folder )
         {
             if ( folder == null || folder.FolderId == null )
             {
@@ -91,7 +91,7 @@ namespace WAApiNET.Categories
         /// <param name="folder">Папка</param>
         /// <param name="tasks">Массив заданий</param>
         /// <returns></returns>
-        public async Task DeleteTasks( Folder folder, IEnumerable<WATask> tasks )
+        public async Task DeleteTasks( WAFolder folder, IEnumerable<WATask> tasks )
         {
             if ( folder == null || folder.FolderId == null )
             {
@@ -112,7 +112,7 @@ namespace WAApiNET.Categories
         /// <param name="folderId">Id папки</param>
         /// <param name="taskId">Id задания</param>
         /// <returns></returns>
-        public async Task<List<DayTargetingExtend>> GetDaysStats( int folderId, int taskId )
+        public async Task<List<WADayTargetingExtend>> GetDaysStats( int folderId, int taskId )
         {
             var getDaysStatsQ = new FolderTaskQuery( this._accountCategory.Token, folderId, taskId );
             string answer = await this._waApi.SendPost( "Get days stats", getDaysStatsQ );
@@ -126,7 +126,7 @@ namespace WAApiNET.Categories
         /// <param name="folder">Папка</param>
         /// <param name="task">Задание</param>
         /// <returns></returns>
-        public async Task<List<DayTargetingExtend>> GetDaysStats( Folder folder, WATask task )
+        public async Task<List<WADayTargetingExtend>> GetDaysStats( WAFolder folder, WATask task )
         {
             if ( folder == null || folder.FolderId == null )
             {
@@ -145,7 +145,7 @@ namespace WAApiNET.Categories
         /// <param name="folderId">Id папки</param>
         /// <param name="taskId">Id задания</param>
         /// <returns></returns>
-        public async Task<List<TimeDistribution>> GetTimeDistribution( int folderId, int taskId )
+        public async Task<List<WATimeDistribution>> GetTimeDistribution( int folderId, int taskId )
         {
             var getTimeDistributionQ = new FolderTaskQuery( this._accountCategory.Token, folderId, taskId );
             string answer = await this._waApi.SendPost( "Get time distribution", getTimeDistributionQ );
@@ -159,7 +159,7 @@ namespace WAApiNET.Categories
         /// <param name="folder">Папка</param>
         /// <param name="task">Задание</param>
         /// <returns></returns>
-        public async Task<List<TimeDistribution>> GetTimeDistribution( Folder folder, WATask task )
+        public async Task<List<WATimeDistribution>> GetTimeDistribution( WAFolder folder, WATask task )
         {
             if ( folder == null || folder.FolderId == null )
             {
@@ -178,7 +178,7 @@ namespace WAApiNET.Categories
         /// <param name="folderId">Id папки</param>
         /// <param name="taskId">Id задания</param>
         /// <returns></returns>
-        public async Task<List<GeoTargeting>> GetGeoTargeting( int folderId, int taskId )
+        public async Task<List<WAGeoTargeting>> GetGeoTargeting( int folderId, int taskId )
         {
             var getGeoTargetingQ = new FolderTaskQuery( this._accountCategory.Token, folderId, taskId );
             string answer = await this._waApi.SendPost( "Get geo targeting", getGeoTargetingQ );
@@ -192,7 +192,7 @@ namespace WAApiNET.Categories
         /// <param name="folder">Папка</param>
         /// <param name="task">Задание</param>
         /// <returns></returns>
-        public async Task<List<GeoTargeting>> GetGeoTargeting( Folder folder, WATask task )
+        public async Task<List<WAGeoTargeting>> GetGeoTargeting( WAFolder folder, WATask task )
         {
             if ( folder == null || folder.FolderId == null )
             {
@@ -211,7 +211,7 @@ namespace WAApiNET.Categories
         /// <param name="folderId">Id папки</param>
         /// <param name="taskId">Id задания</param>
         /// <returns></returns>
-        public async Task<List<WeekTargeting>> GetWeekTargeting( int folderId, int taskId )
+        public async Task<List<WAWeekTargeting>> GetWeekTargeting( int folderId, int taskId )
         {
             var getWeekTargetingQ = new FolderTaskQuery( this._accountCategory.Token, folderId, taskId );
             string answer = await this._waApi.SendPost( "Get week targeting", getWeekTargetingQ );
@@ -225,7 +225,7 @@ namespace WAApiNET.Categories
         /// <param name="folder">Папка</param>
         /// <param name="task">Задание</param>
         /// <returns></returns>
-        public async Task<List<WeekTargeting>> GetWeekTargeting( Folder folder, WATask task )
+        public async Task<List<WAWeekTargeting>> GetWeekTargeting( WAFolder folder, WATask task )
         {
             if ( folder == null || folder.FolderId == null )
             {
@@ -244,7 +244,7 @@ namespace WAApiNET.Categories
         /// <param name="folderId">Id папки</param>
         /// <param name="taskId">Id задания</param>
         /// <returns></returns>
-        public async Task<List<DayTargeting>> GetDayTargeting( int folderId, int taskId )
+        public async Task<List<WADayTargeting>> GetDayTargeting( int folderId, int taskId )
         {
             var getDayTargetingQ = new FolderTaskQuery( this._accountCategory.Token, folderId, taskId );
             string answer = await this._waApi.SendPost( "Get day targeting", getDayTargetingQ );
@@ -258,7 +258,7 @@ namespace WAApiNET.Categories
         /// <param name="folder">Папка</param>
         /// <param name="task">Задание</param>
         /// <returns></returns>
-        public async Task<List<DayTargeting>> GetDayTargeting( Folder folder, WATask task )
+        public async Task<List<WADayTargeting>> GetDayTargeting( WAFolder folder, WATask task )
         {
             if ( folder == null || folder.FolderId == null )
             {
@@ -277,7 +277,7 @@ namespace WAApiNET.Categories
         /// <param name="folderId">Id папки</param>
         /// <param name="taskId">Id задания</param>
         /// <returns></returns>
-        public async Task<WATaskExtend> GetWholeTask( int folderId, int taskId )
+        public async Task<WATaskWhole> GetWholeTask( int folderId, int taskId )
         {
             var getWholeTaskQ = new FolderTaskQuery( this._accountCategory.Token, folderId, taskId );
             string answer = await this._waApi.SendPost( "Get whole task", getWholeTaskQ );
@@ -291,7 +291,7 @@ namespace WAApiNET.Categories
         /// <param name="folder">Папка</param>
         /// <param name="task">Задание</param>
         /// <returns></returns>
-        public async Task<WATaskExtend> GetWholeTask( Folder folder, WATask task )
+        public async Task<WATaskWhole> GetWholeTask( WAFolder folder, WATask task )
         {
             if ( folder == null || folder.FolderId == null )
             {
@@ -311,7 +311,7 @@ namespace WAApiNET.Categories
         /// <param name="taskParams">Настройки заданий</param>
         /// <param name="taskIds">Массив id заданий</param>
         /// <returns></returns>
-        public async Task SetTasksParams( int folderId, WATaskExtend taskParams, int[] taskIds )
+        public async Task SetTasksParams( int folderId, WATaskWhole taskParams, int[] taskIds )
         {
             if ( taskParams == null )
             {
@@ -328,7 +328,7 @@ namespace WAApiNET.Categories
         /// <param name="taskParams">Настройки заданий</param>
         /// <param name="tasks">Задания</param>
         /// <returns></returns>
-        public async Task SetTasksParams( Folder folder, WATaskExtend taskParams, WATask[] tasks )
+        public async Task SetTasksParams( WAFolder folder, WATaskWhole taskParams, WATask[] tasks )
         {
             if ( taskParams == null )
             {
@@ -354,7 +354,7 @@ namespace WAApiNET.Categories
         /// <returns></returns>
         public async Task CopyTaskSettings( int sourceFolderId, int sourceTaskId, int targetFolderId,
             int[] targetTasksIds,
-            WATaskExtend taskSettings )
+            WATaskWhole taskSettings )
         {
             var copyTaskSettingsQ = new CopyTaskSettingsQuery( this._accountCategory.Token, sourceFolderId, sourceTaskId,
                 targetFolderId, targetTasksIds, taskSettings );
@@ -370,8 +370,8 @@ namespace WAApiNET.Categories
         /// <param name="targetTasks">Задания назначения</param>
         /// <param name="taskSettings">Настройки</param>
         /// <returns></returns>
-        public async Task CopyTaskSettings( Folder sourceFolder, WATask sourceTask, Folder targetFolder,
-            IEnumerable<WATask> targetTasks, WATaskExtend taskSettings )
+        public async Task CopyTaskSettings( WAFolder sourceFolder, WATask sourceTask, WAFolder targetFolder,
+            IEnumerable<WATask> targetTasks, WATaskWhole taskSettings )
         {
             if ( sourceFolder == null || sourceFolder.FolderId == null )
             {
@@ -410,7 +410,7 @@ namespace WAApiNET.Categories
         /// <param name="targetFolder">Папка назначения</param>
         /// <param name="taskIds">Массив id заданий</param>
         /// <returns></returns>
-        public async Task MoveTasks( Folder sourceFolder, Folder targetFolder, int[] taskIds )
+        public async Task MoveTasks( WAFolder sourceFolder, WAFolder targetFolder, int[] taskIds )
         {
             if ( sourceFolder == null || sourceFolder.FolderId == null )
             {
@@ -445,7 +445,7 @@ namespace WAApiNET.Categories
         /// <param name="task">Задание</param>
         /// <param name="name">Имя нового задания</param>
         /// <returns></returns>
-        public async Task CloneTask( Folder sourceFolder, Folder targetFolder, WATask task, string name )
+        public async Task CloneTask( WAFolder sourceFolder, WAFolder targetFolder, WATask task, string name )
         {
             if ( sourceFolder == null || sourceFolder.FolderId == null )
             {

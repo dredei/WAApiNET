@@ -41,7 +41,7 @@ namespace WAApiNETTests
         public async Task TestReferrals()
         {
             await _waApi.Account.SignIn();
-            Referral[] referrals = await _waApi.Account.GetReferrals();
+            WAReferral[] referrals = await _waApi.Account.GetReferrals();
             Assert.IsTrue( referrals.Length >= 0 );
         }
     }
