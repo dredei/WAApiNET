@@ -40,6 +40,16 @@ namespace WAApiNET.Categories
         }
 
         /// <summary>
+        /// Завершение сессии
+        /// </summary>
+        /// <returns></returns>
+        public async Task SignOut()
+        {
+            var signOutQ = new BaseQueryData( this.Token );
+            await this._waApi.SendPost( "Sign out", signOutQ );
+        }
+
+        /// <summary>
         /// Получение основных данных аккаунта
         /// </summary>
         /// <returns></returns>
