@@ -1,6 +1,8 @@
 ﻿#region Using
 
 using System.Collections.Generic;
+using WAApiNET.Model.Account;
+using WAApiNET.Model.Folder;
 
 #endregion
 
