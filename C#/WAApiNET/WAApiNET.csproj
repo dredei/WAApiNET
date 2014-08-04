@@ -104,6 +104,7 @@
     <Compile Include="ServerQueries\BaseQuery.cs" />
     <Compile Include="ServerQueries\BaseQueryData.cs" />
     <Compile Include="ServerQueries\ChangeFolderNameQuery.cs" />
+    <Compile Include="ServerQueries\CopyTaskSettingsQuery.cs" />
     <Compile Include="ServerQueries\DeleteFoldersQuery.cs" />
     <Compile Include="ServerQueries\DeleteTasksQuery.cs" />
     <Compile Include="ServerQueries\FolderTaskQuery.cs" />

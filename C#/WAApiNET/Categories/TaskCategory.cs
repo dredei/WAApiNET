@@ -338,7 +338,56 @@ namespace WAApiNET.Categories
             {
                 throw new WAApiException( "Некорректный параметр: folder" );
             }
-            await this.SetTasksParams( (int)folder.FolderId, taskParams, tasks.Select( t => t.TaskId != null ? (int)t.TaskId : 0 ).ToArray() );
+            await
+                this.SetTasksParams( (int)folder.FolderId, taskParams,
+                    tasks.Select( t => t.TaskId != null ? (int)t.TaskId : 0 ).ToArray() );
+        }
+
+        /// <summary>
+        /// Копирование настроек задания
+        /// </summary>
+        /// <param name="sourceFolderId">Исходный Id папки</param>
+        /// <param name="sourceTaskId">Исходный Id заданий</param>
+        /// <param name="targetFolderId">Id папки назначения</param>
+        /// <param name="targetTasksIds">Ids заданий назначения</param>
+        /// <param name="taskSettings">Настройки</param>
+        /// <returns></returns>
+        public async Task CopyTaskSettings( int sourceFolderId, int sourceTaskId, int targetFolderId,
+            int[] targetTasksIds,
+            WATaskExtend taskSettings )
+        {
+            var copyTaskSettingsQ = new CopyTaskSettingsQuery( this._accountCategory.Token, sourceFolderId, sourceTaskId,
+                targetFolderId, targetTasksIds, taskSettings );
+            await this._waApi.SendPost( "Copy task settings", copyTaskSettingsQ );
+        }
+
+        /// <summary>
+        /// Копирование настроек задания
+        /// </summary>
+        /// <param name="sourceFolder">Исходная папка</param>
+        /// <param name="sourceTask">Исходное задание</param>
+        /// <param name="targetFolder">Папка назначения</param>
+        /// <param name="targetTasks">Задания назначения</param>
+        /// <param name="taskSettings">Настройки</param>
+        /// <returns></returns>
+        public async Task CopyTaskSettings( Folder sourceFolder, WATask sourceTask, Folder targetFolder,
+            IEnumerable<WATask> targetTasks, WATaskExtend taskSettings )
+        {
+            if ( sourceFolder == null || sourceFolder.FolderId == null )
+            {
+                throw new WAApiException( "Некорректный параметр: sourceFolder!" );
+            }
+            if ( sourceTask == null || sourceTask.TaskId == null )
+            {
+                throw new WAApiException( "Некорректный параметр: sourceTask!" );
+            }
+            if ( targetFolder == null || targetFolder.FolderId == null )
+            {
+                throw new WAApiException( "Некорректный параметр: sourceFolder!" );
+            }
+            await
+                this.CopyTaskSettings( (int)sourceFolder.FolderId, (int)sourceTask.TaskId, (int)targetFolder.FolderId,
+                    targetTasks.Select( t => t.TaskId != null ? (int)t.TaskId : 0 ).ToArray(), taskSettings );
         }
     }
 }
