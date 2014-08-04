@@ -1,19 +1,19 @@
 ﻿namespace WAApiNET.Model
 {
-    public class DayTargeting
+    public class WADayTargeting
     {
         public int? Min { get; set; }
         public int? Max { get; set; }
         public int? Hour { get; set; }
 
-        public DayTargeting()
+        public WADayTargeting()
         {
             this.Min = null;
             this.Max = null;
             this.Hour = null;
         }
 
-        public DayTargeting( int? min, int? max, int? hour )
+        public WADayTargeting( int? min, int? max, int? hour )
         {
             this.Min = min;
             this.Max = max;

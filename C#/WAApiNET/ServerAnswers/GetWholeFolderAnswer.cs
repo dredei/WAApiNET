@@ -10,7 +10,7 @@ namespace WAApiNET.ServerAnswers
     {
         internal class DataObj
         {
-            public FolderWhole Folder { get; set; }
+            public WAFolderWhole Folder { get; set; }
 
             public DataObj()
             {

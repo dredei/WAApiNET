@@ -1,17 +1,17 @@
 ﻿namespace WAApiNET.Model
 {
-    public class TimeDistribution
+    public class WATimeDistribution
     {
         public int? Percent { get; set; }
         public int? Priority { get; set; }
 
-        public TimeDistribution()
+        public WATimeDistribution()
         {
             this.Percent = null;
             this.Priority = null;
         }
 
-        public TimeDistribution( int percent, int priority )
+        public WATimeDistribution( int percent, int priority )
         {
             this.Percent = percent;
             this.Priority = priority;

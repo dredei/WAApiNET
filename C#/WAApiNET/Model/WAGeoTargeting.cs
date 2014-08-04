@@ -6,7 +6,7 @@ using Newtonsoft.Json;
 
 namespace WAApiNET.Model
 {
-    public class GeoTargeting
+    public class WAGeoTargeting
     {
         [JsonProperty( PropertyName = "Zone ID" )]
         public int ZoneId { get; set; }

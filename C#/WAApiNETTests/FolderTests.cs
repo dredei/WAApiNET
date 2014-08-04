@@ -28,7 +28,7 @@ namespace WAApiNETTests
         public async Task TestGetFolders()
         {
             await this._waApi.Account.SignIn();
-            List<Folder> folders = await this._waApi.Folder.GetFolders();
+            List<WAFolder> folders = await this._waApi.Folder.GetFolders();
             Assert.IsTrue( folders.Count >= 3 && folders[ 0 ].Name == "12" && folders[ 1 ].Name == "3" &&
                            folders[ 2 ].Name == "test" && folders[ 0 ].Tasks >= 5 &&
                            folders[ 1 ].Tasks >= 1 && folders[ 2 ].Tasks >= 0 );
@@ -38,8 +38,8 @@ namespace WAApiNETTests
         public async Task TestAddChangeDeleteFolder()
         {
             await this._waApi.Account.SignIn();
-            Folder newFolder = await this._waApi.Folder.AddFolder( "FolderFromTests" );
-            List<Folder> folders = await this._waApi.Folder.GetFolders();
+            WAFolder newFolder = await this._waApi.Folder.AddFolder( "FolderFromTests" );
+            List<WAFolder> folders = await this._waApi.Folder.GetFolders();
             int foldersCountAfterAdd = folders.Count;
             await this._waApi.Folder.SetFolderName( newFolder, "FolderFromTests2" );
             folders = await this._waApi.Folder.GetFolders();

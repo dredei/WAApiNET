@@ -6,12 +6,12 @@ using System.Collections.Generic;
 
 namespace WAApiNET.Model
 {
-    public class AllInfo
+    public class WAAllInfo
     {
-        public List<FolderWhole> Folders { get; set; }
-        public List<Referral> Referrals { get; set; }
+        public List<WAFolderWhole> Folders { get; set; }
+        public List<WAReferral> Referrals { get; set; }
 
-        public AllInfo()
+        public WAAllInfo()
         {
             this.Folders = null;
             this.Referrals = null;

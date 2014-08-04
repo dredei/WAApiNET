@@ -13,11 +13,11 @@ namespace WAApiNET.ServerAnswers
         internal class DataObj
         {
             [JsonProperty( PropertyName = "Week targeting" )]
-            public List<WeekTargeting> WeekTargeting { get; set; }
+            public List<WAWeekTargeting> WeekTargeting { get; set; }
 
             public DataObj()
             {
-                this.WeekTargeting = new List<WeekTargeting>();
+                this.WeekTargeting = new List<WAWeekTargeting>();
             }
         }
 

@@ -6,7 +6,7 @@ using Newtonsoft.Json;
 
 namespace WAApiNET.Model
 {
-    public class Account
+    public class WAAccount
     {
         public int? Id { get; set; }
 
@@ -28,7 +28,7 @@ namespace WAApiNET.Model
         /// <summary>
         /// Создает новый экземпляр класса, все поля имеют значение null
         /// </summary>
-        public Account()
+        public WAAccount()
         {
             this.Id = null;
             this.Balance = null;
@@ -40,7 +40,7 @@ namespace WAApiNET.Model
             this.Referer = null;
         }
 
-        public Account( int? id, int? balance, string mail, int? timebonus, string login, bool deleted,
+        public WAAccount( int? id, int? balance, string mail, int? timebonus, string login, bool deleted,
             string readonlyKey, string referer )
         {
             this.Id = id;

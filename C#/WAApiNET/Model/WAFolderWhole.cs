@@ -6,15 +6,15 @@ using System.Collections.Generic;
 
 namespace WAApiNET.Model
 {
-    public class FolderWhole : Folder
+    public class WAFolderWhole : WAFolder
     {
         public string Name { get; set; }
-        public List<WATaskExtend> Tasks { get; set; }
+        public List<WATaskWhole> Tasks { get; set; }
 
-        public FolderWhole()
+        public WAFolderWhole()
         {
             this.Name = null;
-            this.Tasks = new List<WATaskExtend>();
+            this.Tasks = new List<WATaskWhole>();
         }
     }
 }

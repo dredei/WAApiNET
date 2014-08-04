@@ -11,11 +11,11 @@ namespace WAApiNET.ServerAnswers
     {
         internal class DataObj
         {
-            public List<Folder> Folders { get; set; }
+            public List<WAFolder> Folders { get; set; }
 
             public DataObj()
             {
-                this.Folders = new List<Folder>();
+                this.Folders = new List<WAFolder>();
             }
         }
 

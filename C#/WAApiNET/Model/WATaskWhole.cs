@@ -7,24 +7,24 @@ using Newtonsoft.Json;
 
 namespace WAApiNET.Model
 {
-    public class WATaskExtend : WATask
+    public class WATaskWhole : WATask
     {
         [JsonProperty( PropertyName = "Geo targeting" )]
-        public List<GeoTargeting> GeoTargeting { get; set; }
+        public List<WAGeoTargeting> GeoTargeting { get; set; }
 
         [JsonProperty( PropertyName = "Day targeting" )]
-        public List<DayTargeting> DayTargeting { get; set; }
+        public List<WADayTargeting> DayTargeting { get; set; }
 
         [JsonProperty( PropertyName = "Day stats" )]
-        public List<DayTargetingExtend> DayStats { get; set; }
+        public List<WADayTargetingExtend> DayStats { get; set; }
 
         [JsonProperty( PropertyName = "Week targeting" )]
-        public List<WeekTargeting> WeekTargeting { get; set; }
+        public List<WAWeekTargeting> WeekTargeting { get; set; }
 
         [JsonProperty( PropertyName = "Time distribution" )]
-        public List<TimeDistribution> TimeDistribution { get; set; }
+        public List<WATimeDistribution> TimeDistribution { get; set; }
 
-        public WATaskExtend()
+        public WATaskWhole()
         {
             this.GeoTargeting = null;
             this.DayTargeting = null;
@@ -33,11 +33,11 @@ namespace WAApiNET.Model
             this.TimeDistribution = null;
         }
 
-        public WATaskExtend( int? taskId, int? listId, int? afterClick, bool allowProxy, bool ignoreGu, double? growth,
+        public WATaskWhole( int? taskId, int? listId, int? afterClick, bool allowProxy, bool ignoreGu, double? growth,
             string domain, string profile, bool frozen, bool listMode, int? rangeSize, int? uniquePeriod, string name,
             string mask, int? days, string extSource, int? beforeClick, string profileSorage,
-            List<GeoTargeting> geoTargeting, List<DayTargeting> dayTargeting, List<DayTargetingExtend> dayStats,
-            List<WeekTargeting> weekTargeting, List<TimeDistribution> timeDistribution )
+            List<WAGeoTargeting> geoTargeting, List<WADayTargeting> dayTargeting, List<WADayTargetingExtend> dayStats,
+            List<WAWeekTargeting> weekTargeting, List<WATimeDistribution> timeDistribution )
             : base( taskId, listId, afterClick, allowProxy, ignoreGu, growth, domain, profile, frozen, listMode,
                 rangeSize, uniquePeriod, name, mask, days, extSource, beforeClick, profileSorage )
         {
@@ -48,9 +48,9 @@ namespace WAApiNET.Model
             this.TimeDistribution = timeDistribution;
         }
 
-        public WATaskExtend( WATask task, List<GeoTargeting> geoTargeting, List<DayTargeting> dayTargeting,
-            List<DayTargetingExtend> dayStats, List<WeekTargeting> weekTargeting,
-            List<TimeDistribution> timeDistribution )
+        public WATaskWhole( WATask task, List<WAGeoTargeting> geoTargeting, List<WADayTargeting> dayTargeting,
+            List<WADayTargetingExtend> dayStats, List<WAWeekTargeting> weekTargeting,
+            List<WATimeDistribution> timeDistribution )
             : base( task )
         {
             this.GeoTargeting = geoTargeting;

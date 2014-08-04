@@ -68,20 +68,20 @@
   <ItemGroup>
     <Compile Include="Categories\FolderCategory.cs" />
     <Compile Include="Categories\TaskCategory.cs" />
-    <Compile Include="Model\Account.cs" />
+    <Compile Include="Model\WAAccount.cs" />
     <Compile Include="Categories\AccountCategory.cs" />
-    <Compile Include="Model\AllInfo.cs" />
-    <Compile Include="Model\DayTargeting.cs" />
-    <Compile Include="Model\DayTargetingExtend.cs" />
-    <Compile Include="Model\Folder.cs" />
-    <Compile Include="Model\FolderWhole.cs" />
-    <Compile Include="Model\GeoTargeting.cs" />
-    <Compile Include="Model\Referral.cs" />
+    <Compile Include="Model\WAAllInfo.cs" />
+    <Compile Include="Model\WADayTargeting.cs" />
+    <Compile Include="Model\WADayTargetingExtend.cs" />
+    <Compile Include="Model\WAFolder.cs" />
+    <Compile Include="Model\WAFolderWhole.cs" />
+    <Compile Include="Model\WAGeoTargeting.cs" />
+    <Compile Include="Model\WAReferral.cs" />
     <Compile Include="Exception\WAApiException.cs" />
-    <Compile Include="Model\TimeDistribution.cs" />
+    <Compile Include="Model\WATimeDistribution.cs" />
     <Compile Include="Model\WATask.cs" />
-    <Compile Include="Model\WATaskExtend.cs" />
-    <Compile Include="Model\WeekTargeting.cs" />
+    <Compile Include="Model\WATaskWhole.cs" />
+    <Compile Include="Model\WAWeekTargeting.cs" />
     <Compile Include="ServerAnswers\AddFolderAnswer.cs" />
     <Compile Include="ServerAnswers\AddTaskAnswer.cs" />
     <Compile Include="ServerAnswers\BaseAnswer.cs" />
@@ -121,6 +121,7 @@
     <None Include="app.config" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PostBuildEvent>xcopy /y "$(ProjectDir)$(OutDir)$(TargetFileName)" "$(SolutionDir)\..\Release\"

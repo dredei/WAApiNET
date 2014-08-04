@@ -7,7 +7,7 @@ using Newtonsoft.Json;
 
 namespace WAApiNET.Model
 {
-    public class Folder
+    public class WAFolder
     {
         [JsonProperty( PropertyName = "Folder ID" )]
         public int? FolderId { get; set; }
@@ -15,14 +15,14 @@ namespace WAApiNET.Model
         public string Name { get; set; }
         public int? Tasks { get; set; }
 
-        public Folder()
+        public WAFolder()
         {
             this.FolderId = null;
             this.Name = null;
             this.Tasks = null;
         }
 
-        public Folder( int? folderId, string name, int? tasks )
+        public WAFolder( int? folderId, string name, int? tasks )
             : this()
         {
             this.FolderId = folderId;
