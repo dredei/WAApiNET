@@ -5,10 +5,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
 using WAApiNET.Exception;
-using WAApiNET.Model;
 using WAApiNET.Model.Folder;
 using WAApiNET.Model.Task;
-using WAApiNET.ServerAnswers;
 using WAApiNET.ServerAnswers.Task;
 using WAApiNET.ServerQueries;
 using WAApiNET.ServerQueries.Task;
@@ -403,7 +401,8 @@ namespace WAApiNET.Categories
         /// <returns></returns>
         public async Task MoveTasks( int sourceFolderId, int targetFolderId, int[] taskIds )
         {
-            var copyTaskSettingsQ = new MoveTasksQuery( this._accountCategory.Token, sourceFolderId, targetFolderId, taskIds );
+            var copyTaskSettingsQ = new MoveTasksQuery( this._accountCategory.Token, sourceFolderId, targetFolderId,
+                taskIds );
             await this._waApi.SendPost( "Move tasks", copyTaskSettingsQ );
         }
 
@@ -437,7 +436,8 @@ namespace WAApiNET.Categories
         /// <returns></returns>
         public async Task CloneTask( int sourceFolderId, int targetFolderId, int taskId, string name )
         {
-            var copyTaskSettingsQ = new CloneTaskQuery( this._accountCategory.Token, sourceFolderId, targetFolderId, taskId, name );
+            var copyTaskSettingsQ = new CloneTaskQuery( this._accountCategory.Token, sourceFolderId, targetFolderId,
+                taskId, name );
             await this._waApi.SendPost( "Clone task", copyTaskSettingsQ );
         }
 

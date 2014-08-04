@@ -10,6 +10,7 @@ namespace WAApiNET.ServerQueries.Task
     internal class AddTaskQuery : WATask
     {
         public string Token { get; set; }
+
         [JsonProperty( PropertyName = "Folder ID" )]
         public int? FolderId { get; set; }
 
