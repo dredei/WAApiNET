@@ -88,7 +88,7 @@ namespace WAApiNET.Categories
         /// <summary>
         /// Изменение имени папки
         /// </summary>
-        /// <param name="folder">Объект папки</param>
+        /// <param name="folder">Папка</param>
         /// <param name="newName">Новое имя</param>
         /// <returns></returns>
         public async Task SetFolderName( WAFolder folder, string newName )
