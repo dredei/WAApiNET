@@ -8,3 +8,5 @@ WAApiNET
 Все, что касается работы с папками и заданиями (также рефералы и получение всех данных аккаунта) реализовано.
 
 Разобраться достаточно легко, так что нет смысла в большом количестве примеров. Несколько примеров можно глянуть [здесь](https://github.com/dredei/WAApiNET/wiki/%D0%9D%D0%B5%D1%81%D0%BA%D0%BE%D0%BB%D1%8C%D0%BA%D0%BE-%D0%BF%D1%80%D0%B8%D0%BC%D0%B5%D1%80%D0%BE%D0%B2). Остальное можно посмотреть в [тестах](https://github.com/dredei/WAApiNET/tree/master/C%23/WAApiNETTests).
+
+Классы, методы и свойства (и их описанием) можно глянуть [здесь](https://rawgit.com/dredei/WAApiNET/master/Help/Help/html/e59534e3-66d2-2a7d-e87e-c17e7458f7f2.htm).
