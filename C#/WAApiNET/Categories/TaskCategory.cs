@@ -42,7 +42,7 @@ namespace WAApiNET.Categories
         public async Task<List<WATask>> GetTasks( int folderId )
         {
             var getTasksQ = new GetTasksQuery( this._accountCategory.Token, folderId );
-            string answer = await this._waApi.SendPost( "Get tasks", getTasksQ );
+            string answer = await this._waApi.SendGet( "Get tasks", getTasksQ );
             var getTasksA = JsonConvert.DeserializeObject<GetTasksAnswer>( answer );
             return getTasksA.Data.Tasks;
         }
@@ -74,7 +74,7 @@ namespace WAApiNET.Categories
                 throw new WAApiException( "Некорректный параметр: task!" );
             }
             var addTasksQ = new AddTaskQuery( folderId, this._accountCategory.Token, task );
-            string answer = await this._waApi.SendPost( "Add task", addTasksQ );
+            string answer = await this._waApi.SendGet( "Add task", addTasksQ );
             var addTasksA = JsonConvert.DeserializeObject<AddTaskAnswer>( answer );
             return new WATask( task ) { TaskId = addTasksA.Data.TaskId };
         }
@@ -92,7 +92,7 @@ namespace WAApiNET.Categories
                 throw new WAApiException( "Некорректный параметр: taskIds!" );
             }
             var deleteTaskQ = new DeleteTasksQuery( this._accountCategory.Token, folderId, taskIds );
-            await this._waApi.SendPost( "Delete tasks", deleteTaskQ );
+            await this._waApi.SendGet( "Delete tasks", deleteTaskQ );
         }
 
         /// <summary>
@@ -125,7 +125,7 @@ namespace WAApiNET.Categories
         public async Task<List<WADayTargetingExtend>> GetDaysStats( int folderId, int taskId )
         {
             var getDaysStatsQ = new FolderTaskQuery( this._accountCategory.Token, folderId, taskId );
-            string answer = await this._waApi.SendPost( "Get days stats", getDaysStatsQ );
+            string answer = await this._waApi.SendGet( "Get days stats", getDaysStatsQ );
             var getDaysStatsA = JsonConvert.DeserializeObject<GetDaysStatsAnswer>( answer );
             return getDaysStatsA.Data.DayTargeting;
         }
@@ -158,7 +158,7 @@ namespace WAApiNET.Categories
         public async Task<List<WATimeDistribution>> GetTimeDistribution( int folderId, int taskId )
         {
             var getTimeDistributionQ = new FolderTaskQuery( this._accountCategory.Token, folderId, taskId );
-            string answer = await this._waApi.SendPost( "Get time distribution", getTimeDistributionQ );
+            string answer = await this._waApi.SendGet( "Get time distribution", getTimeDistributionQ );
             var getTimeDistributionA = JsonConvert.DeserializeObject<GetTimeDistributionAnswer>( answer );
             return getTimeDistributionA.Data.TimeDistribution;
         }
@@ -191,7 +191,7 @@ namespace WAApiNET.Categories
         public async Task<List<WAGeoTargeting>> GetGeoTargeting( int folderId, int taskId )
         {
             var getGeoTargetingQ = new FolderTaskQuery( this._accountCategory.Token, folderId, taskId );
-            string answer = await this._waApi.SendPost( "Get geo targeting", getGeoTargetingQ );
+            string answer = await this._waApi.SendGet( "Get geo targeting", getGeoTargetingQ );
             var getGeoTargetingA = JsonConvert.DeserializeObject<GetGeoTargetingAnswer>( answer );
             return getGeoTargetingA.Data.GeoTargeting;
         }
@@ -224,7 +224,7 @@ namespace WAApiNET.Categories
         public async Task<List<WAWeekTargeting>> GetWeekTargeting( int folderId, int taskId )
         {
             var getWeekTargetingQ = new FolderTaskQuery( this._accountCategory.Token, folderId, taskId );
-            string answer = await this._waApi.SendPost( "Get week targeting", getWeekTargetingQ );
+            string answer = await this._waApi.SendGet( "Get week targeting", getWeekTargetingQ );
             var getWeekTargetingA = JsonConvert.DeserializeObject<GetWeekTargetingAnswer>( answer );
             return getWeekTargetingA.Data.WeekTargeting;
         }
@@ -257,7 +257,7 @@ namespace WAApiNET.Categories
         public async Task<List<WADayTargeting>> GetDayTargeting( int folderId, int taskId )
         {
             var getDayTargetingQ = new FolderTaskQuery( this._accountCategory.Token, folderId, taskId );
-            string answer = await this._waApi.SendPost( "Get day targeting", getDayTargetingQ );
+            string answer = await this._waApi.SendGet( "Get day targeting", getDayTargetingQ );
             var getDayTargetingA = JsonConvert.DeserializeObject<GetDayTargetingAnswer>( answer );
             return getDayTargetingA.Data.DayTargeting;
         }
@@ -290,7 +290,7 @@ namespace WAApiNET.Categories
         public async Task<WATaskWhole> GetWholeTask( int folderId, int taskId )
         {
             var getWholeTaskQ = new FolderTaskQuery( this._accountCategory.Token, folderId, taskId );
-            string answer = await this._waApi.SendPost( "Get whole task", getWholeTaskQ );
+            string answer = await this._waApi.SendGet( "Get whole task", getWholeTaskQ );
             var getWholeTaskA = JsonConvert.DeserializeObject<GetWholeTaskAnswer>( answer );
             return getWholeTaskA.Data.Task;
         }
@@ -328,7 +328,7 @@ namespace WAApiNET.Categories
                 throw new WAApiException( "Некорректный параметр: taskParams!" );
             }
             var setTasksParamsQ = new SetTasksParamsQuery( this._accountCategory.Token, folderId, taskIds, taskParams );
-            await this._waApi.SendPost( "Set tasks params", setTasksParamsQ );
+            await this._waApi.SendGet( "Set tasks params", setTasksParamsQ );
         }
 
         /// <summary>
@@ -368,7 +368,7 @@ namespace WAApiNET.Categories
         {
             var copyTaskSettingsQ = new CopyTaskSettingsQuery( this._accountCategory.Token, sourceFolderId, sourceTaskId,
                 targetFolderId, targetTasksIds, taskSettings );
-            await this._waApi.SendPost( "Copy task settings", copyTaskSettingsQ );
+            await this._waApi.SendGet( "Copy task settings", copyTaskSettingsQ );
         }
 
         /// <summary>
@@ -411,7 +411,7 @@ namespace WAApiNET.Categories
         {
             var copyTaskSettingsQ = new MoveTasksQuery( this._accountCategory.Token, sourceFolderId, targetFolderId,
                 taskIds );
-            await this._waApi.SendPost( "Move tasks", copyTaskSettingsQ );
+            await this._waApi.SendGet( "Move tasks", copyTaskSettingsQ );
         }
 
         /// <summary>
@@ -446,7 +446,7 @@ namespace WAApiNET.Categories
         {
             var copyTaskSettingsQ = new CloneTaskQuery( this._accountCategory.Token, sourceFolderId, targetFolderId,
                 taskId, name );
-            await this._waApi.SendPost( "Clone task", copyTaskSettingsQ );
+            await this._waApi.SendGet( "Clone task", copyTaskSettingsQ );
         }
 
         /// <summary>

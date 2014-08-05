@@ -138,7 +138,7 @@ namespace WAApiNET
         /// <param name="jsonData">Данные</param>
         /// <returns>Возвращает ответ от сервера</returns>
         /// <exception cref="WAApiException">Когда не авторизовались или произошла другая ошибка</exception>
-        public async Task<string> SendPost( string action, string jsonData )
+        public async Task<string> SendGet( string action, string jsonData )
         {
             if ( this.Account.Token.IsNullOrEmpty() && action != "Sign in" )
             {
@@ -171,10 +171,10 @@ namespace WAApiNET
         /// <param name="action">Тип действия</param>
         /// <param name="data">Объект с данными</param>
         /// <returns>Возвращает ответ от сервера</returns>
-        public async Task<string> SendPost( string action, object data )
+        public async Task<string> SendGet( string action, object data )
         {
             string json = JsonConvert.SerializeObject( data, Formatting.None, this.JSONSettings );
-            return await this.SendPost( action, json );
+            return await this.SendGet( action, json );
         }
     }
 }

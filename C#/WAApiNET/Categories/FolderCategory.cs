@@ -40,7 +40,7 @@ namespace WAApiNET.Categories
         public async Task<List<WAFolder>> GetFolders()
         {
             var getFoldersQ = new BaseQueryData( this._accountCategory.Token );
-            string answer = await this._waApi.SendPost( "Get folders", getFoldersQ );
+            string answer = await this._waApi.SendGet( "Get folders", getFoldersQ );
             var getFoldersA = JsonConvert.DeserializeObject<GetFoldersAnswer>( answer );
             return getFoldersA.Data.Folders;
         }
@@ -53,7 +53,7 @@ namespace WAApiNET.Categories
         public async Task<WAFolder> AddFolder( string name )
         {
             var addFolderQ = new AddFolderQuery( this._accountCategory.Token, name );
-            string answer = await this._waApi.SendPost( "Add folder", addFolderQ );
+            string answer = await this._waApi.SendGet( "Add folder", addFolderQ );
             var addFolderA = JsonConvert.DeserializeObject<AddFolderAnswer>( answer );
             return new WAFolder( addFolderA.Data.FolderId, name, 0 );
         }
@@ -67,7 +67,7 @@ namespace WAApiNET.Categories
         public async Task SetFolderName( int folderId, string newName )
         {
             var changeFolderNameQ = new ChangeFolderNameQuery( this._accountCategory.Token, folderId, newName );
-            await this._waApi.SendPost( "Set folder name", changeFolderNameQ );
+            await this._waApi.SendGet( "Set folder name", changeFolderNameQ );
         }
 
         /// <summary>
@@ -97,7 +97,7 @@ namespace WAApiNET.Categories
                 throw new WAApiException( "Некорректный параметр: foldersIds!" );
             }
             var deleteFoldersQ = new DeleteFoldersQuery( this._accountCategory.Token, folderIds );
-            await this._waApi.SendPost( "Delete folders", deleteFoldersQ );
+            await this._waApi.SendGet( "Delete folders", deleteFoldersQ );
         }
 
         /// <summary>
@@ -123,7 +123,7 @@ namespace WAApiNET.Categories
         public async Task<WAFolderWhole> GetWholeFolder( int folderId )
         {
             var getWholeFolderQ = new GetWholeFolderQuery( this._accountCategory.Token, folderId );
-            string answer = await this._waApi.SendPost( "Get whole folder", getWholeFolderQ );
+            string answer = await this._waApi.SendGet( "Get whole folder", getWholeFolderQ );
             var getWholeFolderA = JsonConvert.DeserializeObject<GetWholeFolderAnswer>( answer );
             return getWholeFolderA.Data.Folder;
         }

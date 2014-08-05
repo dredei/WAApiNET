@@ -16,7 +16,7 @@
         /// <summary>
         /// Доход (в кредитах)
         /// </summary>
-        public int? Deductions { get; set; }
+        public double? Deductions { get; set; }
 
         /// <summary>
         /// Создает новый экземпляр, все поля имеют значения null

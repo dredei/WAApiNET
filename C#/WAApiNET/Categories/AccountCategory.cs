@@ -50,7 +50,7 @@ namespace WAApiNET.Categories
         public async Task SignIn()
         {
             var signInQ = new SignInQuery( this._waApi.Email, this._waApi.Password );
-            string answer = await this._waApi.SendPost( "Sign in", signInQ );
+            string answer = await this._waApi.SendGet( "Sign in", signInQ );
             var signInA = JsonConvert.DeserializeObject<SignInAnswer>( answer );
             this.Token = signInA.Data.Token;
         }
@@ -62,7 +62,7 @@ namespace WAApiNET.Categories
         public async Task SignOut()
         {
             var signOutQ = new BaseQueryData( this.Token );
-            await this._waApi.SendPost( "Sign out", signOutQ );
+            await this._waApi.SendGet( "Sign out", signOutQ );
         }
 
         /// <summary>
@@ -72,7 +72,7 @@ namespace WAApiNET.Categories
         public async Task GetGeneralInfo()
         {
             var getGeneralInfoQ = new BaseQueryData( this.Token );
-            string answer = await this._waApi.SendPost( "Get general info", getGeneralInfoQ );
+            string answer = await this._waApi.SendGet( "Get general info", getGeneralInfoQ );
             var getGeneralInfoA = JsonConvert.DeserializeObject<GetGeneralInfoAnswer>( answer );
             this.CurrentAccount = getGeneralInfoA.Data;
         }
@@ -84,7 +84,7 @@ namespace WAApiNET.Categories
         public async Task<WAReferral[]> GetReferrals()
         {
             var getReferralsQ = new BaseQueryData( this.Token );
-            string answer = await this._waApi.SendPost( "Get referrals", getReferralsQ );
+            string answer = await this._waApi.SendGet( "Get referrals", getReferralsQ );
             var getReferralsA = JsonConvert.DeserializeObject<GetReferralsAnswer>( answer );
             return getReferralsA.Data.Referrals.ToArray();
         }
@@ -96,7 +96,7 @@ namespace WAApiNET.Categories
         public async Task<WAAllInfo> GetAll()
         {
             var getAllQ = new BaseQueryData( this.Token );
-            string answer = await this._waApi.SendPost( "Get all", getAllQ );
+            string answer = await this._waApi.SendGet( "Get all", getAllQ );
             var getAllA = JsonConvert.DeserializeObject<GetAllAnswer>( answer );
             return getAllA.Data;
         }
