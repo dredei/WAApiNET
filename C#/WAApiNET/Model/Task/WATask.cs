@@ -14,6 +14,7 @@ namespace WAApiNET.Model.Task
         /// <summary>
         /// Id задания
         /// </summary>
+        [JsonIgnore]
         [JsonProperty( PropertyName = "Task ID" )]
         public int? TaskId { get; set; }
 

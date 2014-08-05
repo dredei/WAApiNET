@@ -31,6 +31,7 @@ namespace WAApiNET.Model.Task
         /// <summary>
         /// Имя (не всегда указано)
         /// </summary>
+        [JsonIgnore]
         public string Name { get; set; }
     }
 }

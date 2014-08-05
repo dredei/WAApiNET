@@ -27,6 +27,7 @@ namespace WAApiNET.Model.Task
         /// <summary>
         /// Дневная статистика выполнений
         /// </summary>
+        [JsonIgnore]
         [JsonProperty( PropertyName = "Day stats" )]
         public List<WADayTargetingExtend> DayStats { get; set; }
 

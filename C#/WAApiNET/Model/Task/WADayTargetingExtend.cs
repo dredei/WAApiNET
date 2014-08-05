@@ -1,4 +1,6 @@
-﻿namespace WAApiNET.Model.Task
+﻿using Newtonsoft.Json;
+
+namespace WAApiNET.Model.Task
 {
     /// <summary>
     /// Объект суточного таргетинга (с к-вом выполненных и незавершенных)
@@ -8,14 +10,17 @@
         /// <summary>
         /// Выполнено
         /// </summary>
+        [JsonIgnore]
         public int? Recd { get; set; }
         /// <summary>
         /// Незавершено (не найдена маска)
         /// </summary>
+        [JsonIgnore]
         public int? Incomplete { get; set; }
         /// <summary>
         /// Незавершено (высокое потребление ресурсов)
         /// </summary>
+        [JsonIgnore]
         public int? Overload { get; set; }
 
         /// <summary>
