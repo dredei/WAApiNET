@@ -9,6 +9,7 @@
         /// Процент
         /// </summary>
         public int? Percent { get; set; }
+
         /// <summary>
         /// Приоритет
         /// </summary>

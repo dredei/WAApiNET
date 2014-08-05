@@ -1,4 +1,8 @@
-﻿using Newtonsoft.Json;
+﻿#region Using
+
+using Newtonsoft.Json;
+
+#endregion
 
 namespace WAApiNET.Model.Task
 {
@@ -12,11 +16,13 @@ namespace WAApiNET.Model.Task
         /// </summary>
         [JsonIgnore]
         public int? Recd { get; set; }
+
         /// <summary>
         /// Незавершено (не найдена маска)
         /// </summary>
         [JsonIgnore]
         public int? Incomplete { get; set; }
+
         /// <summary>
         /// Незавершено (высокое потребление ресурсов)
         /// </summary>

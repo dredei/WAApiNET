@@ -25,6 +25,7 @@ namespace WAApiNET.Categories
         /// Ссылка на текущий аккаунт (null, если не вызывался метод получения всех данных аккаунта)
         /// </summary>
         public WAAccount CurrentAccount { get; private set; }
+
         /// <summary>
         /// Сессионный токен
         /// </summary>

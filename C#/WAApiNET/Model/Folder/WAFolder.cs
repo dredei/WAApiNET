@@ -21,6 +21,7 @@ namespace WAApiNET.Model.Folder
         /// Имя папки
         /// </summary>
         public string Name { get; set; }
+
         /// <summary>
         /// Количество заданий
         /// </summary>

@@ -17,6 +17,7 @@ namespace WAApiNET.Model
         /// Список папок аккаунта
         /// </summary>
         public List<WAFolderWhole> Folders { get; set; }
+
         /// <summary>
         /// Список рефералов аккаунта
         /// </summary>

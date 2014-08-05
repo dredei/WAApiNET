@@ -46,14 +46,17 @@ namespace WAApiNET.Model.Task
         /// Прирост
         /// </summary>
         public double? Growth { get; set; }
+
         /// <summary>
         /// Домен
         /// </summary>
         public string Domain { get; set; }
+
         /// <summary>
         /// Имя профиля
         /// </summary>
         public string Profile { get; set; }
+
         /// <summary>
         /// Статус активации
         /// </summary>
@@ -81,10 +84,12 @@ namespace WAApiNET.Model.Task
         /// Имя
         /// </summary>
         public string Name { get; set; }
+
         /// <summary>
         /// Маска
         /// </summary>
         public string Mask { get; set; }
+
         /// <summary>
         /// Количество дней работы задания
         /// </summary>

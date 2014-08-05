@@ -9,10 +9,12 @@
         /// Логин
         /// </summary>
         public string Login { get; set; }
+
         /// <summary>
         /// Время неактивности (в днях)
         /// </summary>
         public int? Inactivity { get; set; }
+
         /// <summary>
         /// Доход (в кредитах)
         /// </summary>

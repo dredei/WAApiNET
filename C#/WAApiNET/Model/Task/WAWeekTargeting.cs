@@ -9,6 +9,7 @@
         /// Номер дня (начинается с нуля)
         /// </summary>
         public int? Day { get; set; }
+
         /// <summary>
         /// Цель (в %)
         /// </summary>

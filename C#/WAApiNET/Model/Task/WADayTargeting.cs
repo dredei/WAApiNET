@@ -9,10 +9,12 @@
         /// Минимум
         /// </summary>
         public int? Min { get; set; }
+
         /// <summary>
         /// Маскимум
         /// </summary>
         public int? Max { get; set; }
+
         /// <summary>
         /// Время (часы)
         /// </summary>

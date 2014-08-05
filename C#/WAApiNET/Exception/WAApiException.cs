@@ -18,10 +18,12 @@ namespace WAApiNET.Exception
         /// Исключение
         /// </summary>
         public System.Exception Exception { get; private set; }
+
         /// <summary>
         /// JSON запрос
         /// </summary>
         public string JSONQuery { get; private set; }
+
         /// <summary>
         /// JSON ответ
         /// </summary>
