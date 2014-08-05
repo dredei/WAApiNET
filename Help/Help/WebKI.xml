@@ -17,7 +17,7 @@
   <HelpKINode Title="AccountCategory.SignOut метод" Url="html/ee7dd592-ef72-759b-65ec-a84242e1a822.htm" />
   <HelpKINode Title="AccountCategory.Token свойство" Url="html/4b21decf-d096-039a-597a-7fc72fb7077c.htm" />
   <HelpKINode Title="Action свойство" Url="html/e438f507-6db5-41d3-ddf5-0ce665c1ceb5.htm" />
-  <HelpKINode Title="AddFolder метод" Url="html/6b8f29e9-c863-4bb0-a694-7ee93e4b9662.htm" />
+  <HelpKINode Title="AddFolder метод" Url="html/96f646e1-b608-7889-7a0e-2157d057fe39.htm" />
   <HelpKINode Title="AddTask метод" Url="html/ebc0ac43-e42d-e9a6-4058-34bb1c9cb6a2.htm" />
   <HelpKINode Title="AfterClick свойство" Url="html/151fdebe-4412-caeb-6a14-8a907e71b554.htm" />
   <HelpKINode Title="AllowProxy свойство" Url="html/9dcc129a-3e9e-1b50-8ae6-391a944858ed.htm" />
@@ -64,7 +64,7 @@
     <HelpKINode Title="методы" Url="html/319325ed-6cef-0e69-78ce-c15d7a5e73c2.htm" />
     <HelpKINode Title="о FolderCategory - класс" Url="html/c7f99281-1d6b-e13d-af1e-57ad34a8c61c.htm" />
   </HelpKINode>
-  <HelpKINode Title="FolderCategory.AddFolder метод" Url="html/6b8f29e9-c863-4bb0-a694-7ee93e4b9662.htm" />
+  <HelpKINode Title="FolderCategory.AddFolder метод" Url="html/96f646e1-b608-7889-7a0e-2157d057fe39.htm" />
   <HelpKINode Title="FolderCategory.DeleteFolders метод" Url="html/1f4cd2bd-0673-3ef4-487c-28412532e293.htm" />
   <HelpKINode Title="FolderCategory.FolderCategory конструктор" Url="html/62e19154-a321-a815-b666-06857c70a9ef.htm" />
   <HelpKINode Title="FolderCategory.GetFolders метод" Url="html/f861b33f-5b23-5c40-fd79-00e21114d96d.htm" />
@@ -127,7 +127,7 @@
   </HelpKINode>
   <HelpKINode Title="Referer свойство" Url="html/7afcb298-5fff-786e-5d16-170c4133c6d3.htm" />
   <HelpKINode Title="Referrals свойство" Url="html/7e243403-b39e-f1ad-2d71-365398396e75.htm" />
-  <HelpKINode Title="SendPost метод" Url="html/29c3ade5-2aaf-99d8-b969-09c679c5057e.htm" />
+  <HelpKINode Title="SendGet метод" Url="html/faad6265-fd6d-2caa-50cd-2af5a58ee910.htm" />
   <HelpKINode Title="SetFolderName метод" Url="html/768cfdc1-6338-6259-c839-437d186ecdce.htm" />
   <HelpKINode Title="SetTasksParams метод" Url="html/4b801a45-1ef5-e17e-1ab8-65ad1cecf6d6.htm" />
   <HelpKINode Title="SignIn метод" Url="html/cf66e4ae-9a0e-0a69-0fcd-f9306fed1474.htm" />
@@ -211,7 +211,7 @@
   <HelpKINode Title="WAApi.LastJSONAnswer свойство" Url="html/52d82b25-31bf-5b6c-598a-c9651f3d7e52.htm" />
   <HelpKINode Title="WAApi.LastJSONQuery свойство" Url="html/d22e8091-688d-2732-ac51-b59f606cb574.htm" />
   <HelpKINode Title="WAApi.Password свойство" Url="html/5d81efc0-2a1a-5845-d5db-516174d3c7e8.htm" />
-  <HelpKINode Title="WAApi.SendPost метод" Url="html/29c3ade5-2aaf-99d8-b969-09c679c5057e.htm" />
+  <HelpKINode Title="WAApi.SendGet метод" Url="html/faad6265-fd6d-2caa-50cd-2af5a58ee910.htm" />
   <HelpKINode Title="WAApi.Task свойство" Url="html/3f46f3c5-ea19-98de-9347-3e43edb40630.htm" />
   <HelpKINode Title="WAApi.WAApi конструктор" Url="html/e2f13df3-622d-24af-8933-f434e84acb44.htm" />
   <HelpKINode Title="WAApi.Waiting свойство" Url="html/7a732645-75e5-a8c1-b3f1-ed5daa5db59c.htm" />
