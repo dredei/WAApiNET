@@ -59,6 +59,21 @@ namespace WAApiNET.Categories
         }
 
         /// <summary>
+        /// Добавление папки
+        /// </summary>
+        /// <param name="folder">Папка</param>
+        /// <returns></returns>
+        /// <exception cref="WAApiException">При неуказанном имени папки</exception>
+        public async Task<WAFolder> AddFolder( WAFolder folder )
+        {
+            if ( folder.Name == null )
+            {
+                throw new WAApiException( "Некоректный параметр: folder!" );
+            }
+            return await this.AddFolder( folder.Name );
+        }
+
+        /// <summary>
         /// Изменение имени папки
         /// </summary>
         /// <param name="folderId">Id папки</param>
