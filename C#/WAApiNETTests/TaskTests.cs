@@ -39,8 +39,8 @@ namespace WAApiNETTests
         {
             await this._waApi.Account.SignIn();
             List<WAGeoTargeting> geoTargeting = await this._waApi.Task.GetGeoTargeting( 1, 1 );
-            Assert.IsTrue( geoTargeting.FirstOrDefault( gt => gt.Name == "UA" ).Target == 100 &&
-                           geoTargeting.FirstOrDefault( gt => gt.Name == "RU" ).Target == 50 );
+            Assert.IsTrue( geoTargeting.FirstOrDefault( gt => gt.ZoneId == 18 ).Target == 100 &&
+                           geoTargeting.FirstOrDefault( gt => gt.ZoneId == 19 ).Target == 50 );
         }
 
         [TestMethod]
