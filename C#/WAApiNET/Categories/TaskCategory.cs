@@ -80,6 +80,22 @@ namespace WAApiNET.Categories
         }
 
         /// <summary>
+        /// Добавление задания
+        /// </summary>
+        /// <param name="folder">Папка</param>
+        /// <param name="task">Задание</param>
+        /// <returns></returns>
+        /// <exception cref="WAApiException">Когда folder или folder.FolderId равны null</exception>
+        public async Task<WATask> AddTask( WAFolder folder, WATask task )
+        {
+            if ( folder == null || folder.FolderId == null )
+            {
+                throw new WAApiException( "Некорректный параметр: folder!" );
+            }
+            return await this.AddTask( (int)folder.FolderId, task );
+        }
+
+        /// <summary>
         /// Удаление заданий
         /// </summary>
         /// <param name="folderId">Id папки</param>
