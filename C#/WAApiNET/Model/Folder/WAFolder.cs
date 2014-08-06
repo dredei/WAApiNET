@@ -1,5 +1,6 @@
 ﻿#region Using
 
+using System;
 using Newtonsoft.Json;
 
 #endregion
@@ -9,7 +10,7 @@ namespace WAApiNET.Model.Folder
     /// <summary>
     /// Объект папки
     /// </summary>
-    public class WAFolder
+    public class WAFolder : IEquatable<WAFolder>
     {
         /// <summary>
         /// Id папки
@@ -50,5 +51,61 @@ namespace WAApiNET.Model.Folder
             this.Name = name;
             this.Tasks = tasks;
         }
+
+        public bool Equals( WAFolder other )
+        {
+            if ( ReferenceEquals( null, other ) )
+            {
+                return false;
+            }
+            if ( ReferenceEquals( this, other ) )
+            {
+                return true;
+            }
+            return this.FolderId == other.FolderId && string.Equals( this.Name, other.Name ) &&
+                   this.Tasks == other.Tasks;
+        }
+
+        #region Members
+
+        public override bool Equals( object obj )
+        {
+            if ( ReferenceEquals( null, obj ) )
+            {
+                return false;
+            }
+            if ( ReferenceEquals( this, obj ) )
+            {
+                return true;
+            }
+            if ( obj.GetType() != this.GetType() )
+            {
+                return false;
+            }
+            return this.Equals( (WAFolder)obj );
+        }
+
+        public override int GetHashCode()
+        {
+            unchecked
+            {
+                int hashCode = this.FolderId.GetHashCode();
+                hashCode = ( hashCode * 397 ) ^ ( this.Name != null ? this.Name.GetHashCode() : 0 );
+                hashCode = ( hashCode * 397 ) ^ this.Tasks.GetHashCode();
+                return hashCode;
+            }
+        }
+
+        public static bool operator ==( WAFolder left, WAFolder right )
+        {
+            return Equals( left, right );
+        }
+
+        public static bool operator !=( WAFolder left, WAFolder right )
+        {
+            return !Equals( left, right );
+        }
+
+        #endregion
     }
 }
