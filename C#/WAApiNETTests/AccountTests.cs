@@ -54,5 +54,14 @@ namespace WAApiNETTests
             var acc3 = new WAAccount( 2, 2003, "mail.ru", 7836, "login", true, "lol2", "ref2" );
             Assert.IsTrue( acc1 == acc2 && acc2 != acc3 );
         }
+
+        [TestMethod]
+        public void TestTwoReferrals()
+        {
+            var ref1 = new WAReferral( "login", 500, 300 );
+            var ref2 = new WAReferral( "login", 5300, 1300 );
+            var ref3 = new WAReferral( "login2", 500, 300 );
+            Assert.IsTrue( ref1 == ref2 && ref2 != ref3 );
+        }
     }
 }

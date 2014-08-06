@@ -1,9 +1,15 @@
-﻿namespace WAApiNET.Model.Account
+﻿#region Using
+
+using System;
+
+#endregion
+
+namespace WAApiNET.Model.Account
 {
     /// <summary>
     /// Объект реферала
     /// </summary>
-    public class WAReferral
+    public class WAReferral : IEquatable<WAReferral>
     {
         /// <summary>
         /// Логин
@@ -42,5 +48,54 @@
             this.Inactivity = inactivity;
             this.Deductions = deductions;
         }
+
+        #region Members
+
+        public bool Equals( WAReferral other )
+        {
+            if ( ReferenceEquals( null, other ) )
+            {
+                return false;
+            }
+            if ( ReferenceEquals( this, other ) )
+            {
+                return true;
+            }
+            return string.Equals( this.Login, other.Login );
+        }
+
+        public override bool Equals( object obj )
+        {
+            if ( ReferenceEquals( null, obj ) )
+            {
+                return false;
+            }
+            if ( ReferenceEquals( this, obj ) )
+            {
+                return true;
+            }
+            if ( obj.GetType() != this.GetType() )
+            {
+                return false;
+            }
+            return this.Equals( (WAReferral)obj );
+        }
+
+        public override int GetHashCode()
+        {
+            return ( this.Login != null ? this.Login.GetHashCode() : 0 );
+        }
+
+        public static bool operator ==( WAReferral left, WAReferral right )
+        {
+            return Equals( left, right );
+        }
+
+        public static bool operator !=( WAReferral left, WAReferral right )
+        {
+            return !Equals( left, right );
+        }
+
+        #endregion
     }
 }
