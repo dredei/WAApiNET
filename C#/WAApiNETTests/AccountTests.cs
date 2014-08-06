@@ -45,5 +45,14 @@ namespace WAApiNETTests
             WAReferral[] referrals = await _waApi.Account.GetReferrals();
             Assert.IsTrue( referrals.Length >= 0 );
         }
+
+        [TestMethod]
+        public void TestTwoAccounts()
+        {
+            var acc1 = new WAAccount( 1, 200, "mail.ru", 786, "login", true, "lol", "ref" );
+            var acc2 = new WAAccount( 1, 2003, "mail.ru", 7836, "login", true, "lol2", "ref" );
+            var acc3 = new WAAccount( 2, 2003, "mail.ru", 7836, "login", true, "lol2", "ref2" );
+            Assert.IsTrue( acc1 == acc2 && acc2 != acc3 );
+        }
     }
 }

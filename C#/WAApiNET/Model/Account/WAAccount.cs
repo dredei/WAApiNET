@@ -1,5 +1,6 @@
 ﻿#region Using
 
+using System;
 using Newtonsoft.Json;
 
 #endregion
@@ -9,7 +10,7 @@ namespace WAApiNET.Model.Account
     /// <summary>
     /// Объект аккаунта
     /// </summary>
-    public class WAAccount
+    public class WAAccount : IEquatable<WAAccount>
     {
         /// <summary>
         /// Id аккаунта
@@ -90,5 +91,62 @@ namespace WAApiNET.Model.Account
             this.ReadonlyKey = readonlyKey;
             this.Referer = referer;
         }
+
+        #region Members
+
+        public bool Equals( WAAccount other )
+        {
+            if ( ReferenceEquals( null, other ) )
+            {
+                return false;
+            }
+            if ( ReferenceEquals( this, other ) )
+            {
+                return true;
+            }
+            return this.Id == other.Id && string.Equals( this.Mail, other.Mail ) &&
+                   string.Equals( this.Login, other.Login ) && string.Equals( this.Referer, other.Referer );
+        }
+
+        public override bool Equals( object obj )
+        {
+            if ( ReferenceEquals( null, obj ) )
+            {
+                return false;
+            }
+            if ( ReferenceEquals( this, obj ) )
+            {
+                return true;
+            }
+            if ( obj.GetType() != this.GetType() )
+            {
+                return false;
+            }
+            return this.Equals( (WAAccount)obj );
+        }
+
+        public override int GetHashCode()
+        {
+            unchecked
+            {
+                int hashCode = this.Id.GetHashCode();
+                hashCode = ( hashCode * 397 ) ^ ( this.Mail != null ? this.Mail.GetHashCode() : 0 );
+                hashCode = ( hashCode * 397 ) ^ ( this.Login != null ? this.Login.GetHashCode() : 0 );
+                hashCode = ( hashCode * 397 ) ^ ( this.Referer != null ? this.Referer.GetHashCode() : 0 );
+                return hashCode;
+            }
+        }
+
+        public static bool operator ==( WAAccount left, WAAccount right )
+        {
+            return Equals( left, right );
+        }
+
+        public static bool operator !=( WAAccount left, WAAccount right )
+        {
+            return !Equals( left, right );
+        }
+
+        #endregion
     }
 }
