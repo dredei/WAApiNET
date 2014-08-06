@@ -1,5 +1,6 @@
 ﻿#region Using
 
+using System;
 using Newtonsoft.Json;
 
 #endregion
@@ -9,7 +10,7 @@ namespace WAApiNET.Model.Task
     /// <summary>
     /// Объект задания
     /// </summary>
-    public class WATask
+    public class WATask : IEquatable<WATask>
     {
         /// <summary>
         /// Id задания
@@ -208,5 +209,83 @@ namespace WAApiNET.Model.Task
             this.BeforeClick = task.BeforeClick;
             this.ProfileSorage = task.ProfileSorage;
         }
+
+        #region Members
+
+        public bool Equals( WATask other )
+        {
+            if ( ReferenceEquals( null, other ) )
+            {
+                return false;
+            }
+            if ( ReferenceEquals( this, other ) )
+            {
+                return true;
+            }
+            return this.TaskId == other.TaskId && string.Equals( this.Name, other.Name ) &&
+                   string.Equals( this.ProfileSorage, other.ProfileSorage ) && this.BeforeClick == other.BeforeClick &&
+                   string.Equals( this.ExtSource, other.ExtSource ) && this.Days == other.Days &&
+                   string.Equals( this.Mask, other.Mask ) && this.UniquePeriod == other.UniquePeriod &&
+                   this.RangeSize == other.RangeSize && this.ListMode.Equals( other.ListMode ) &&
+                   this.Frozen.Equals( other.Frozen ) && string.Equals( this.Profile, other.Profile ) &&
+                   string.Equals( this.Domain, other.Domain ) && this.IgnoreGu.Equals( other.IgnoreGu ) &&
+                   this.Growth.Equals( other.Growth ) && this.AllowProxy.Equals( other.AllowProxy ) &&
+                   this.AfterClick == other.AfterClick && this.ListId == other.ListId;
+        }
+
+        public override bool Equals( object obj )
+        {
+            if ( ReferenceEquals( null, obj ) )
+            {
+                return false;
+            }
+            if ( ReferenceEquals( this, obj ) )
+            {
+                return true;
+            }
+            if ( obj.GetType() != this.GetType() )
+            {
+                return false;
+            }
+            return this.Equals( (WATask)obj );
+        }
+
+        public override int GetHashCode()
+        {
+            unchecked
+            {
+                int hashCode = this.TaskId.GetHashCode();
+                hashCode = ( hashCode * 397 ) ^ ( this.Name != null ? this.Name.GetHashCode() : 0 );
+                hashCode = ( hashCode * 397 ) ^ ( this.ProfileSorage != null ? this.ProfileSorage.GetHashCode() : 0 );
+                hashCode = ( hashCode * 397 ) ^ this.BeforeClick.GetHashCode();
+                hashCode = ( hashCode * 397 ) ^ ( this.ExtSource != null ? this.ExtSource.GetHashCode() : 0 );
+                hashCode = ( hashCode * 397 ) ^ this.Days.GetHashCode();
+                hashCode = ( hashCode * 397 ) ^ ( this.Mask != null ? this.Mask.GetHashCode() : 0 );
+                hashCode = ( hashCode * 397 ) ^ this.UniquePeriod.GetHashCode();
+                hashCode = ( hashCode * 397 ) ^ this.RangeSize.GetHashCode();
+                hashCode = ( hashCode * 397 ) ^ this.ListMode.GetHashCode();
+                hashCode = ( hashCode * 397 ) ^ this.Frozen.GetHashCode();
+                hashCode = ( hashCode * 397 ) ^ ( this.Profile != null ? this.Profile.GetHashCode() : 0 );
+                hashCode = ( hashCode * 397 ) ^ ( this.Domain != null ? this.Domain.GetHashCode() : 0 );
+                hashCode = ( hashCode * 397 ) ^ this.IgnoreGu.GetHashCode();
+                hashCode = ( hashCode * 397 ) ^ this.Growth.GetHashCode();
+                hashCode = ( hashCode * 397 ) ^ this.AllowProxy.GetHashCode();
+                hashCode = ( hashCode * 397 ) ^ this.AfterClick.GetHashCode();
+                hashCode = ( hashCode * 397 ) ^ this.ListId.GetHashCode();
+                return hashCode;
+            }
+        }
+
+        public static bool operator ==( WATask left, WATask right )
+        {
+            return Equals( left, right );
+        }
+
+        public static bool operator !=( WATask left, WATask right )
+        {
+            return !Equals( left, right );
+        }
+
+        #endregion
     }
 }
