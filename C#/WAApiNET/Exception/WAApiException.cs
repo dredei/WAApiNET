@@ -66,5 +66,11 @@ namespace WAApiNET.Exception
             this.JSONQuery = jsonQuery;
             this.JSONAnswer = jsonAnswer;
         }
+
+        public override string ToString()
+        {
+            return string.Format( "Message: {0}, JSONAnswer: {1}, JSONQuery: {2}", this.Message, this.JSONAnswer,
+                this.JSONQuery );
+        }
     }
 }
