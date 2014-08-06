@@ -30,11 +30,17 @@ namespace WAApiNET.Exception
         public string JSONAnswer { get; private set; }
 
         /// <summary>
+        /// Сообщение об ошибке
+        /// </summary>
+        public new string Message { get; private set; }
+
+        /// <summary>
         /// Создает новый экземпляр
         /// </summary>
         public WAApiException()
         {
             this.Exception = null;
+            this.Message = null;
             this.JSONQuery = null;
             this.JSONAnswer = null;
         }
@@ -49,6 +55,7 @@ namespace WAApiNET.Exception
             : this()
         {
             this.Exception = exception;
+            this.Message = exception.Message;
             this.JSONQuery = jsonQuery;
             this.JSONAnswer = jsonAnswer;
         }
@@ -63,6 +70,7 @@ namespace WAApiNET.Exception
             : this()
         {
             this.Exception = new System.Exception( message );
+            this.Message = message;
             this.JSONQuery = jsonQuery;
             this.JSONAnswer = jsonAnswer;
         }
