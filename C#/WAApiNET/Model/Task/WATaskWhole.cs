@@ -1,5 +1,6 @@
 ﻿#region Using
 
+using System;
 using System.Collections.Generic;
 using Newtonsoft.Json;
 
@@ -10,7 +11,7 @@ namespace WAApiNET.Model.Task
     /// <summary>
     /// Объект задания (с геотаргетингом, суточным, недельным таргетингами, суточной статистикой и временным распределением
     /// </summary>
-    public class WATaskWhole : WATask
+    public class WATaskWhole : WATask, IEquatable<WATaskWhole>
     {
         /// <summary>
         /// Настройки геотаргетинга
@@ -116,5 +117,65 @@ namespace WAApiNET.Model.Task
             this.WeekTargeting = weekTargeting;
             this.TimeDistribution = timeDistribution;
         }
+
+        #region Members
+
+        public bool Equals( WATaskWhole other )
+        {
+            if ( ReferenceEquals( null, other ) )
+            {
+                return false;
+            }
+            if ( ReferenceEquals( this, other ) )
+            {
+                return true;
+            }
+            return base.Equals( other ) && Equals( this.GeoTargeting, other.GeoTargeting ) &&
+                   Equals( this.DayTargeting, other.DayTargeting ) && Equals( this.WeekTargeting, other.WeekTargeting ) &&
+                   Equals( this.TimeDistribution, other.TimeDistribution );
+        }
+
+        public override bool Equals( object obj )
+        {
+            if ( ReferenceEquals( null, obj ) )
+            {
+                return false;
+            }
+            if ( ReferenceEquals( this, obj ) )
+            {
+                return true;
+            }
+            if ( obj.GetType() != this.GetType() )
+            {
+                return false;
+            }
+            return this.Equals( (WATaskWhole)obj );
+        }
+
+        public override int GetHashCode()
+        {
+            unchecked
+            {
+                int hashCode = base.GetHashCode();
+                hashCode = ( hashCode * 397 ) ^ ( this.GeoTargeting != null ? this.GeoTargeting.GetHashCode() : 0 );
+                hashCode = ( hashCode * 397 ) ^ ( this.DayTargeting != null ? this.DayTargeting.GetHashCode() : 0 );
+                hashCode = ( hashCode * 397 ) ^ ( this.WeekTargeting != null ? this.WeekTargeting.GetHashCode() : 0 );
+                hashCode = ( hashCode * 397 ) ^
+                           ( this.TimeDistribution != null ? this.TimeDistribution.GetHashCode() : 0 );
+                return hashCode;
+            }
+        }
+
+        public static bool operator ==( WATaskWhole left, WATaskWhole right )
+        {
+            return Equals( left, right );
+        }
+
+        public static bool operator !=( WATaskWhole left, WATaskWhole right )
+        {
+            return !Equals( left, right );
+        }
+
+        #endregion
     }
 }
