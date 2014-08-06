@@ -1,5 +1,6 @@
 ﻿#region Using
 
+using System;
 using Newtonsoft.Json;
 
 #endregion
@@ -9,7 +10,7 @@ namespace WAApiNET.Model.Task
     /// <summary>
     /// Объект суточного таргетинга (с к-вом выполненных и незавершенных)
     /// </summary>
-    public class WADayTargetingExtend : WADayTargeting
+    public class WADayTargetingExtend : WADayTargeting, IEquatable<WADayTargetingExtend>
     {
         /// <summary>
         /// Выполнено
@@ -55,5 +56,62 @@ namespace WAApiNET.Model.Task
             this.Incomplete = incomplete;
             this.Overload = overload;
         }
+
+        #region Members
+
+        public bool Equals( WADayTargetingExtend other )
+        {
+            if ( ReferenceEquals( null, other ) )
+            {
+                return false;
+            }
+            if ( ReferenceEquals( this, other ) )
+            {
+                return true;
+            }
+            return base.Equals( other ) && this.Recd == other.Recd && this.Incomplete == other.Incomplete &&
+                   this.Overload == other.Overload;
+        }
+
+        public override bool Equals( object obj )
+        {
+            if ( ReferenceEquals( null, obj ) )
+            {
+                return false;
+            }
+            if ( ReferenceEquals( this, obj ) )
+            {
+                return true;
+            }
+            if ( obj.GetType() != this.GetType() )
+            {
+                return false;
+            }
+            return this.Equals( (WADayTargetingExtend)obj );
+        }
+
+        public override int GetHashCode()
+        {
+            unchecked
+            {
+                int hashCode = base.GetHashCode();
+                hashCode = ( hashCode * 397 ) ^ this.Recd.GetHashCode();
+                hashCode = ( hashCode * 397 ) ^ this.Incomplete.GetHashCode();
+                hashCode = ( hashCode * 397 ) ^ this.Overload.GetHashCode();
+                return hashCode;
+            }
+        }
+
+        public static bool operator ==( WADayTargetingExtend left, WADayTargetingExtend right )
+        {
+            return Equals( left, right );
+        }
+
+        public static bool operator !=( WADayTargetingExtend left, WADayTargetingExtend right )
+        {
+            return !Equals( left, right );
+        }
+
+        #endregion
     }
 }
