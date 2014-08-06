@@ -1,11 +1,8 @@
 ﻿#region Using
 
-using System.Collections.Generic;
-using System.IO;
 using System.Threading.Tasks;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using WAApiNET;
-using WAApiNET.Model;
 using WAApiNET.Model.Account;
 
 #endregion
@@ -28,12 +25,12 @@ namespace WAApiNETTests
         [TestMethod]
         public async Task TestGeneralInfo()
         {
-            await _waApi.Account.SignIn();
-            await _waApi.Account.GetGeneralInfo();
-            string login = _waApi.Account.CurrentAccount.Login;
-            string email = _waApi.Account.CurrentAccount.Mail;
-            string readOnlyKey = _waApi.Account.CurrentAccount.ReadonlyKey;
-            int? balance = _waApi.Account.CurrentAccount.Balance;
+            await this._waApi.Account.SignIn();
+            await this._waApi.Account.GetGeneralInfo();
+            string login = this._waApi.Account.CurrentAccount.Login;
+            string email = this._waApi.Account.CurrentAccount.Mail;
+            string readOnlyKey = this._waApi.Account.CurrentAccount.ReadonlyKey;
+            int? balance = this._waApi.Account.CurrentAccount.Balance;
             Assert.IsTrue( login == "testing" && email == "softezz_team@list.ru" &&
                            readOnlyKey == "sW/92PHdIAqgnBwX9I" && balance == 0 );
         }
@@ -41,8 +38,8 @@ namespace WAApiNETTests
         [TestMethod]
         public async Task TestReferrals()
         {
-            await _waApi.Account.SignIn();
-            WAReferral[] referrals = await _waApi.Account.GetReferrals();
+            await this._waApi.Account.SignIn();
+            WAReferral[] referrals = await this._waApi.Account.GetReferrals();
             Assert.IsTrue( referrals.Length >= 0 );
         }
     }
