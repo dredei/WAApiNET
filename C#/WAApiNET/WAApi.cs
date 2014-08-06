@@ -22,7 +22,6 @@ namespace WAApiNET
     {
         private readonly string _address;
         private readonly WebClient _webClient;
-        private readonly Timer _waitingTimer;
 
         #region Поля
 
@@ -67,11 +66,6 @@ namespace WAApiNET
         public JsonSerializerSettings JSONSettings { get; private set; }
 
         /// <summary>
-        /// Состояние ожидания
-        /// </summary>
-        public bool Waiting { get; private set; }
-
-        /// <summary>
         /// Срабатывает, когда либа определяет, что нас заблочили антидосом
         /// </summary>
         public event EventHandler<EventArgs> AntiDOSBlocked;
@@ -94,19 +88,11 @@ namespace WAApiNET
             this.Password = password;
             this._address = address;
             this._webClient = new WebClient { Encoding = Encoding.UTF8 };
-            this._waitingTimer = new Timer { Interval = 200 };
-            this._waitingTimer.Elapsed += this._waitingTimer_Elapsed;
 
             this.Account = new AccountCategory( this );
             this.Folder = new FolderCategory( this, this.Account );
             this.Task = new TaskCategory( this, this.Account );
             this.JSONSettings = new JsonSerializerSettings { NullValueHandling = NullValueHandling.Ignore };
-        }
-
-        private void _waitingTimer_Elapsed( object sender, ElapsedEventArgs e )
-        {
-            this.Waiting = false;
-            this._waitingTimer.Stop();
         }
 
         private async Task<bool> IsAntiDOSBlocked( string answer, string jsonData )
@@ -153,15 +139,10 @@ namespace WAApiNET
                 this.LastJSONAnswer = answer;
             }
             while ( await this.IsAntiDOSBlocked( answer, jsonData ) );
-            this.Waiting = true;
-            this._waitingTimer.Start();
             /* небольшая передышка после выполнения запроса
              * (чтобы сервак не сильно нервничал из-за большого к-ва запросов)
              */
-            while ( this.Waiting )
-            {
-                await TaskEx.Delay( 200 );
-            }
+            await TaskEx.Delay( 500 );
             return answer;
         }
 
