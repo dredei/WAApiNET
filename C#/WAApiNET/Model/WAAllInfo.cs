@@ -1,5 +1,6 @@
 ﻿#region Using
 
+using System;
 using System.Collections.Generic;
 using WAApiNET.Model.Account;
 using WAApiNET.Model.Folder;
@@ -11,7 +12,7 @@ namespace WAApiNET.Model
     /// <summary>
     /// Объект всей информации об аккаунте
     /// </summary>
-    public class WAAllInfo
+    public class WAAllInfo : IEquatable<WAAllInfo>
     {
         /// <summary>
         /// Список папок аккаунта
@@ -31,5 +32,58 @@ namespace WAApiNET.Model
             this.Folders = null;
             this.Referrals = null;
         }
+
+        #region Members
+
+        public bool Equals( WAAllInfo other )
+        {
+            if ( ReferenceEquals( null, other ) )
+            {
+                return false;
+            }
+            if ( ReferenceEquals( this, other ) )
+            {
+                return true;
+            }
+            return Equals( this.Referrals, other.Referrals ) && Equals( this.Folders, other.Folders );
+        }
+
+        public override bool Equals( object obj )
+        {
+            if ( ReferenceEquals( null, obj ) )
+            {
+                return false;
+            }
+            if ( ReferenceEquals( this, obj ) )
+            {
+                return true;
+            }
+            if ( obj.GetType() != this.GetType() )
+            {
+                return false;
+            }
+            return this.Equals( (WAAllInfo)obj );
+        }
+
+        public override int GetHashCode()
+        {
+            unchecked
+            {
+                return ( ( this.Referrals != null ? this.Referrals.GetHashCode() : 0 ) * 397 ) ^
+                       ( this.Folders != null ? this.Folders.GetHashCode() : 0 );
+            }
+        }
+
+        public static bool operator ==( WAAllInfo left, WAAllInfo right )
+        {
+            return Equals( left, right );
+        }
+
+        public static bool operator !=( WAAllInfo left, WAAllInfo right )
+        {
+            return !Equals( left, right );
+        }
+
+        #endregion
     }
 }
