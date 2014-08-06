@@ -1,9 +1,15 @@
-﻿namespace WAApiNET.Model.Task
+﻿#region Using
+
+using System;
+
+#endregion
+
+namespace WAApiNET.Model.Task
 {
     /// <summary>
     /// Объект недельнего таргетинга
     /// </summary>
-    public class WAWeekTargeting
+    public class WAWeekTargeting : IEquatable<WAWeekTargeting>
     {
         /// <summary>
         /// Номер дня (начинается с нуля)
@@ -34,5 +40,57 @@
             this.Day = day;
             this.Target = target;
         }
+
+        #region Members
+
+        public bool Equals( WAWeekTargeting other )
+        {
+            if ( ReferenceEquals( null, other ) )
+            {
+                return false;
+            }
+            if ( ReferenceEquals( this, other ) )
+            {
+                return true;
+            }
+            return this.Day == other.Day && this.Target.Equals( other.Target );
+        }
+
+        public override bool Equals( object obj )
+        {
+            if ( ReferenceEquals( null, obj ) )
+            {
+                return false;
+            }
+            if ( ReferenceEquals( this, obj ) )
+            {
+                return true;
+            }
+            if ( obj.GetType() != this.GetType() )
+            {
+                return false;
+            }
+            return this.Equals( (WAWeekTargeting)obj );
+        }
+
+        public override int GetHashCode()
+        {
+            unchecked
+            {
+                return ( this.Day.GetHashCode() * 397 ) ^ this.Target.GetHashCode();
+            }
+        }
+
+        public static bool operator ==( WAWeekTargeting left, WAWeekTargeting right )
+        {
+            return Equals( left, right );
+        }
+
+        public static bool operator !=( WAWeekTargeting left, WAWeekTargeting right )
+        {
+            return !Equals( left, right );
+        }
+
+        #endregion
     }
 }
