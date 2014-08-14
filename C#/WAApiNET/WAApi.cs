@@ -4,7 +4,6 @@ using System;
 using System.Net;
 using System.Text;
 using System.Threading.Tasks;
-using System.Timers;
 using ExtensionMethods;
 using Newtonsoft.Json;
 using WAApiNET.Categories;
