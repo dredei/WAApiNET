@@ -425,8 +425,7 @@ namespace WAApiNET.Categories
         /// <param name="taskSettings">Настройки</param>
         /// <returns></returns>
         public async Task CopyTaskSettings( int sourceFolderId, int sourceTaskId, int targetFolderId,
-            int[] targetTasksIds,
-            WATaskWhole taskSettings )
+            int[] targetTasksIds, WATaskWhole taskSettings )
         {
             var copyTaskSettingsQ = new CopyTaskSettingsQuery( this._accountCategory.Token, sourceFolderId, sourceTaskId,
                 targetFolderId, targetTasksIds, taskSettings );
