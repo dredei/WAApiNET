@@ -1,16 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <HelpTOC>
 
-  <HelpTOCNode Id="c43c20ce-4bac-4378-91b1-bc4925795343" Title="WAApiNET" Url="html/6ffbd470-65f1-c04d-18c5-e1fd0b5e27ae.htm">
-    <HelpTOCNode Id="921d3c6d-34e5-45ac-8877-312c90c8d5ab" Title="WAApi - класс" Url="html/e59534e3-66d2-2a7d-e87e-c17e7458f7f2.htm">
+  <HelpTOCNode Id="06e7b0eb-6b87-4151-83db-8f754e0e73a0" Title="WAApiNET" Url="html/6ffbd470-65f1-c04d-18c5-e1fd0b5e27ae.htm">
+    <HelpTOCNode Id="a14b692a-6dc9-4792-ba84-22dddd87c1ba" Title="WAApi - класс" Url="html/e59534e3-66d2-2a7d-e87e-c17e7458f7f2.htm">
       <HelpTOCNode Title="WAApi - конструктор" Url="html/e2f13df3-622d-24af-8933-f434e84acb44.htm" />
-      <HelpTOCNode Id="0734063b-1f9d-4bf2-9d20-f615abcaf77c" Title="WAApi - методы" Url="html/b0d4f878-d27f-83c8-53c6-75ac39cf722f.htm">
-        <HelpTOCNode Id="de260c32-db05-4539-b0f2-2e6ff8a538e7" Title="SendGet - метод" Url="html/faad6265-fd6d-2caa-50cd-2af5a58ee910.htm">
+      <HelpTOCNode Id="aceac1e6-e5ef-4d29-a185-1ecff7f2b72a" Title="WAApi - методы" Url="html/b0d4f878-d27f-83c8-53c6-75ac39cf722f.htm">
+        <HelpTOCNode Id="0d25fa86-dc85-4a0f-9be9-8e70c5f00787" Title="SendGet - метод" Url="html/faad6265-fd6d-2caa-50cd-2af5a58ee910.htm">
           <HelpTOCNode Title="SendGet(String, Object) - метод" Url="html/fc558f00-1a1c-0a4a-3cdd-e2e564e78e3b.htm" />
           <HelpTOCNode Title="SendGet(String, String) - метод" Url="html/a6ef633c-4c4e-510c-fd47-eebe2d64440e.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
-      <HelpTOCNode Id="c6926703-7dc5-473a-9b4c-cf98a860b957" Title="WAApi - свойства" Url="html/38ef39de-386c-a460-1421-baf317155454.htm">
+      <HelpTOCNode Id="ba6019a6-d636-43e9-be81-a7c9dbb24d08" Title="WAApi - свойства" Url="html/38ef39de-386c-a460-1421-baf317155454.htm">
         <HelpTOCNode Title="Account - свойство" Url="html/238be289-68e3-67fe-b364-db8b8457d454.htm" />
         <HelpTOCNode Title="Email - свойство" Url="html/f9d99671-ec0a-9312-55a4-d6741442769f.htm" />
         <HelpTOCNode Title="Folder - свойство" Url="html/19a6cc24-9de9-6e7e-8d6c-3173266952fc.htm" />
@@ -19,139 +19,181 @@
         <HelpTOCNode Title="LastJSONQuery - свойство" Url="html/d22e8091-688d-2732-ac51-b59f606cb574.htm" />
         <HelpTOCNode Title="Password - свойство" Url="html/5d81efc0-2a1a-5845-d5db-516174d3c7e8.htm" />
         <HelpTOCNode Title="Task - свойство" Url="html/3f46f3c5-ea19-98de-9347-3e43edb40630.htm" />
-        <HelpTOCNode Title="Waiting - свойство" Url="html/7a732645-75e5-a8c1-b3f1-ed5daa5db59c.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="b65f77cd-874c-42fe-9596-8249d7615690" Title="WAApi - события" Url="html/a81faff6-3ccf-1370-cabc-d7f380a17320.htm">
+      <HelpTOCNode Id="f0320810-0502-4f5c-b200-07a6267b4169" Title="WAApi - события" Url="html/a81faff6-3ccf-1370-cabc-d7f380a17320.htm">
         <HelpTOCNode Title="AntiDOSBlocked - событие" Url="html/9a5dab10-6261-0bf5-28e7-db2724681579.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
   </HelpTOCNode>
-  <HelpTOCNode Id="3812d79e-c6b0-4d97-bb31-fa58de1653a8" Title="WAApiNET.Categories" Url="html/df309f30-1558-e83b-39ba-18e603d7fe52.htm">
-    <HelpTOCNode Id="ba54158e-c54e-49b1-98d1-4ed2287d6a0c" Title="AccountCategory - класс" Url="html/2cc89fd2-3e06-c195-9448-5db04e155f5c.htm">
+  <HelpTOCNode Id="70c01253-b8f9-4f7c-aafe-1ecc091fc4e5" Title="WAApiNET.Categories" Url="html/df309f30-1558-e83b-39ba-18e603d7fe52.htm">
+    <HelpTOCNode Id="c1164077-8821-43a8-9586-fe1c39e74d2a" Title="AccountCategory - класс" Url="html/2cc89fd2-3e06-c195-9448-5db04e155f5c.htm">
       <HelpTOCNode Title="AccountCategory - конструктор" Url="html/b7592668-3690-5b50-5d11-29e9b3db16aa.htm" />
-      <HelpTOCNode Id="e61c9734-ab87-4921-a83d-23b892c798a9" Title="AccountCategory - методы" Url="html/5e15d62f-e81d-5a30-bc35-3fa2881ec58b.htm">
+      <HelpTOCNode Id="6fcc6323-8c7d-4b4f-8950-de3096fbdd57" Title="AccountCategory - методы" Url="html/5e15d62f-e81d-5a30-bc35-3fa2881ec58b.htm">
         <HelpTOCNode Title="GetAll - метод" Url="html/18d2e97e-6366-b6d0-156e-b9fb17533e6b.htm" />
         <HelpTOCNode Title="GetGeneralInfo - метод" Url="html/d769f701-3682-f021-c14e-51abb44e1939.htm" />
         <HelpTOCNode Title="GetReferrals - метод" Url="html/60002879-cf4f-2647-3bdf-6aeba3373414.htm" />
         <HelpTOCNode Title="SignIn - метод" Url="html/cf66e4ae-9a0e-0a69-0fcd-f9306fed1474.htm" />
         <HelpTOCNode Title="SignOut - метод" Url="html/ee7dd592-ef72-759b-65ec-a84242e1a822.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="646ef859-4477-4fc5-9893-1b6456b28631" Title="AccountCategory - свойства" Url="html/5c8b94c6-b451-cd0c-1009-1b7dc517d67a.htm">
+      <HelpTOCNode Id="61978418-c8a5-4ead-83df-9f5ddf78220f" Title="AccountCategory - свойства" Url="html/5c8b94c6-b451-cd0c-1009-1b7dc517d67a.htm">
         <HelpTOCNode Title="CurrentAccount - свойство" Url="html/b6c32dd3-93b7-d606-fc95-2f32c04b84c5.htm" />
         <HelpTOCNode Title="Token - свойство" Url="html/4b21decf-d096-039a-597a-7fc72fb7077c.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="70528373-e9ab-4ecb-9457-80d875dfc020" Title="FolderCategory - класс" Url="html/c7f99281-1d6b-e13d-af1e-57ad34a8c61c.htm">
+    <HelpTOCNode Id="f6e38068-96ae-48c5-bab2-65978442c958" Title="FolderCategory - класс" Url="html/c7f99281-1d6b-e13d-af1e-57ad34a8c61c.htm">
       <HelpTOCNode Title="FolderCategory - конструктор" Url="html/62e19154-a321-a815-b666-06857c70a9ef.htm" />
-      <HelpTOCNode Id="dda8d280-8c9c-4a18-9c2c-a1a7ee1e495a" Title="FolderCategory - методы" Url="html/319325ed-6cef-0e69-78ce-c15d7a5e73c2.htm">
-        <HelpTOCNode Id="b8486c36-1f78-471a-9ba2-29e822e520f1" Title="AddFolder - метод" Url="html/96f646e1-b608-7889-7a0e-2157d057fe39.htm">
+      <HelpTOCNode Id="567905f7-5926-4150-bf2e-8fde3849dd7e" Title="FolderCategory - методы" Url="html/319325ed-6cef-0e69-78ce-c15d7a5e73c2.htm">
+        <HelpTOCNode Id="35e7d5fc-1c5a-4deb-a014-0abb8dde6663" Title="AddFolder - метод" Url="html/96f646e1-b608-7889-7a0e-2157d057fe39.htm">
           <HelpTOCNode Title="AddFolder(String) - метод" Url="html/6b8f29e9-c863-4bb0-a694-7ee93e4b9662.htm" />
           <HelpTOCNode Title="AddFolder(WAFolder) - метод" Url="html/645ea1bb-e728-98ba-4e8e-187f695f692f.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="bac72dba-e9e7-48d3-bf3a-600cfe9a001d" Title="DeleteFolders - метод" Url="html/1f4cd2bd-0673-3ef4-487c-28412532e293.htm">
+        <HelpTOCNode Id="79e88a70-dd6b-4917-9b40-c937d123596a" Title="DeleteFolder - метод" Url="html/4525b141-5c5e-b3d4-c2c3-cf58a6b0c790.htm">
+          <HelpTOCNode Title="DeleteFolder(Int32) - метод" Url="html/ae3eb94c-b0e2-363d-1f40-433d55c6d5f1.htm" />
+          <HelpTOCNode Title="DeleteFolder(WAFolder) - метод" Url="html/90365eb7-b08a-2ab0-bcbe-e78d2e374d23.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="529574bf-7f1e-426e-bff7-c342f6cc47ff" Title="DeleteFolders - метод" Url="html/1f4cd2bd-0673-3ef4-487c-28412532e293.htm">
           <HelpTOCNode Title="DeleteFolders(Int32[]) - метод" Url="html/ba8b4b5f-3b1d-13da-1e20-025f3246b06f.htm" />
           <HelpTOCNode Title="DeleteFolders(WAFolder[]) - метод" Url="html/5d0d717f-c76f-84af-306c-35c1ed9f1c92.htm" />
         </HelpTOCNode>
         <HelpTOCNode Title="GetFolders - метод" Url="html/f861b33f-5b23-5c40-fd79-00e21114d96d.htm" />
-        <HelpTOCNode Id="f1a7577c-e944-4a8f-bd62-602fc916dcbb" Title="GetWholeFolder - метод" Url="html/8ee9877d-6270-d2b6-cf5a-2915c16cbb77.htm">
+        <HelpTOCNode Id="f75c4de6-c8a5-4158-b083-2daec45b7d79" Title="GetWholeFolder - метод" Url="html/8ee9877d-6270-d2b6-cf5a-2915c16cbb77.htm">
           <HelpTOCNode Title="GetWholeFolder(Int32) - метод" Url="html/27972520-cc3a-73e1-2d62-ef352d2d57c4.htm" />
           <HelpTOCNode Title="GetWholeFolder(WAFolder) - метод" Url="html/88d94409-d122-63bf-bc1e-537bf77c7b88.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="c565dee8-c94f-412e-8e44-8fac30d407a0" Title="SetFolderName - метод" Url="html/768cfdc1-6338-6259-c839-437d186ecdce.htm">
+        <HelpTOCNode Id="d335dcf7-56ce-4148-b4d0-f03d3ff0b925" Title="SetFolderName - метод" Url="html/768cfdc1-6338-6259-c839-437d186ecdce.htm">
           <HelpTOCNode Title="SetFolderName(Int32, String) - метод" Url="html/0d640649-c0f9-1662-e9dc-bd72e2d30c55.htm" />
           <HelpTOCNode Title="SetFolderName(WAFolder, String) - метод" Url="html/f4e8d6e1-ae14-020f-e104-9a17201c0298.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="ebfddc49-a9ba-476b-a23c-78c7791489d9" Title="TaskCategory - класс" Url="html/e0dd8252-d252-a747-7aac-65352aa8a5fd.htm">
+    <HelpTOCNode Id="0617b35a-fecc-4d82-9531-5173c4870efe" Title="TaskCategory - класс" Url="html/e0dd8252-d252-a747-7aac-65352aa8a5fd.htm">
       <HelpTOCNode Title="TaskCategory - конструктор" Url="html/a7149f86-d198-d8f0-7626-407bca6794cd.htm" />
-      <HelpTOCNode Id="f1644df2-6289-490e-b6cf-f19edb6135fb" Title="TaskCategory - методы" Url="html/e84acc78-0b4a-81af-a547-5d46b43e8c53.htm">
-        <HelpTOCNode Title="AddTask - метод" Url="html/ebc0ac43-e42d-e9a6-4058-34bb1c9cb6a2.htm" />
-        <HelpTOCNode Id="ad5b7105-3a22-44ff-bcf5-c792b5e7ae66" Title="CloneTask - метод" Url="html/7fbcfd9f-f852-c1b2-23de-37c11f6251e1.htm">
+      <HelpTOCNode Id="514f915f-76bf-4f00-80cd-dbea0a83f36e" Title="TaskCategory - методы" Url="html/e84acc78-0b4a-81af-a547-5d46b43e8c53.htm">
+        <HelpTOCNode Id="ad4f4626-81a3-49af-9bda-401a62855a64" Title="AddTask - метод" Url="html/4bc1ea37-0ede-9989-7843-081348a1c535.htm">
+          <HelpTOCNode Title="AddTask(Int32, WATask) - метод" Url="html/ebc0ac43-e42d-e9a6-4058-34bb1c9cb6a2.htm" />
+          <HelpTOCNode Title="AddTask(WAFolder, WATask) - метод" Url="html/e277e9b4-c667-ff40-4737-6eaaef35ba6a.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="4a176a9a-8c49-4579-baad-57cda65f37bb" Title="CloneTask - метод" Url="html/7fbcfd9f-f852-c1b2-23de-37c11f6251e1.htm">
           <HelpTOCNode Title="CloneTask(Int32, Int32, Int32, String) - метод" Url="html/26b58e17-8b70-9b6f-195f-4d5bdaf7d233.htm" />
           <HelpTOCNode Title="CloneTask(WAFolder, WAFolder, WATask, String) - метод" Url="html/ca80d72b-e5d3-69a3-babb-306a4b343082.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="22c9b07d-982c-4196-b07a-4b1ecd1113e3" Title="CopyTaskSettings - метод" Url="html/ac7e36ae-0f1a-2c41-8aa5-dd9059330129.htm">
+        <HelpTOCNode Id="7cadba69-db07-4642-82f2-dceb3d8bd113" Title="CopyTaskSettings - метод" Url="html/ac7e36ae-0f1a-2c41-8aa5-dd9059330129.htm">
           <HelpTOCNode Title="CopyTaskSettings(Int32, Int32, Int32, Int32[], WATaskWhole) - метод" Url="html/806b5ef0-4679-6f1d-e458-6d25afa74b8a.htm" />
           <HelpTOCNode Title="CopyTaskSettings(WAFolder, WATask, WAFolder, IEnumerable(WATask), WATaskWhole) - метод" Url="html/286cef3a-a526-96be-874c-c02b37ae414d.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="9ec9720f-fd22-48dc-9ac6-14ca690c06f7" Title="DeleteTasks - метод" Url="html/59640abb-de62-1ef7-cadc-32e3ade9cbb5.htm">
+        <HelpTOCNode Id="40a4d51e-7a37-449f-b2b3-99f3bd75b3c0" Title="DeleteTask - метод" Url="html/b8ec12fa-a549-7c28-e3a8-eebeb9df3170.htm">
+          <HelpTOCNode Title="DeleteTask(Int32, Int32) - метод" Url="html/fe040cad-6921-d049-5b35-b1eca27f2881.htm" />
+          <HelpTOCNode Title="DeleteTask(WAFolder, WATask) - метод" Url="html/df3f2ebf-74f7-334b-7459-e491c11a549e.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="8e9c99e5-abbf-4599-bbc1-6dd27a776339" Title="DeleteTasks - метод" Url="html/59640abb-de62-1ef7-cadc-32e3ade9cbb5.htm">
           <HelpTOCNode Title="DeleteTasks(Int32, Int32[]) - метод" Url="html/54e7a910-2bab-2280-f308-c2316e215fc4.htm" />
           <HelpTOCNode Title="DeleteTasks(WAFolder, IEnumerable(WATask)) - метод" Url="html/5135e9ee-e65c-3ab4-8acb-52a640d32778.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="18c67b4c-5f61-43ad-b172-68b0556895f8" Title="GetDaysStats - метод" Url="html/47d35d7b-78e3-af44-c5c6-a910c29bbde6.htm">
+        <HelpTOCNode Id="fdb92235-77a3-474e-b699-3f75291720c9" Title="GetDaysStats - метод" Url="html/47d35d7b-78e3-af44-c5c6-a910c29bbde6.htm">
           <HelpTOCNode Title="GetDaysStats(Int32, Int32) - метод" Url="html/8ba4f7d7-b4be-1e87-61b5-6fbf7ff4c2c1.htm" />
           <HelpTOCNode Title="GetDaysStats(WAFolder, WATask) - метод" Url="html/db2478c7-81aa-7c4d-8f5e-1acda1a301bd.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="d56c6001-1c76-472f-8fbc-b99117649c4e" Title="GetDayTargeting - метод" Url="html/43d5e52e-53f8-4a57-466c-e5743effbc4c.htm">
+        <HelpTOCNode Id="ec6f49e1-a960-4d9c-8784-f6c2df2f56e3" Title="GetDayTargeting - метод" Url="html/43d5e52e-53f8-4a57-466c-e5743effbc4c.htm">
           <HelpTOCNode Title="GetDayTargeting(Int32, Int32) - метод" Url="html/e5ac52f6-b81a-0490-8033-b728504118ea.htm" />
           <HelpTOCNode Title="GetDayTargeting(WAFolder, WATask) - метод" Url="html/b1016f80-7428-303d-83c5-03b06df12da7.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="6b64bb9d-1cdc-4e93-97af-0f14dd95e50f" Title="GetGeoTargeting - метод" Url="html/d67c5861-dd77-af5e-089c-8e113634236a.htm">
+        <HelpTOCNode Id="401d05e3-a43c-4bd1-838e-f57e212e017a" Title="GetGeoTargeting - метод" Url="html/d67c5861-dd77-af5e-089c-8e113634236a.htm">
           <HelpTOCNode Title="GetGeoTargeting(Int32, Int32) - метод" Url="html/b779021d-bcdc-2426-425c-bac504753872.htm" />
           <HelpTOCNode Title="GetGeoTargeting(WAFolder, WATask) - метод" Url="html/213af108-5cb6-1183-3034-af25af8194a6.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="7d35a349-6e84-4ac4-87c9-c846a40e9b16" Title="GetTasks - метод" Url="html/daf7d25e-3939-aa2e-a6b2-d5ffcd308e17.htm">
+        <HelpTOCNode Id="bedad7ed-88d8-4bb7-af10-e2cc03faab4f" Title="GetTasks - метод" Url="html/daf7d25e-3939-aa2e-a6b2-d5ffcd308e17.htm">
           <HelpTOCNode Title="GetTasks(Int32) - метод" Url="html/bba0d961-5d52-3364-ad84-148ca387ffd8.htm" />
           <HelpTOCNode Title="GetTasks(WAFolder) - метод" Url="html/d403e8d9-3296-d861-0c23-128d1caf761d.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="13982e9d-4309-49cd-ac06-8617b8920349" Title="GetTimeDistribution - метод" Url="html/8dd84edd-e38c-4d16-758d-7d54d9042879.htm">
+        <HelpTOCNode Id="4bf2e80e-1ec1-4fc1-9fdf-c90aa40eb021" Title="GetTimeDistribution - метод" Url="html/8dd84edd-e38c-4d16-758d-7d54d9042879.htm">
           <HelpTOCNode Title="GetTimeDistribution(Int32, Int32) - метод" Url="html/7ec36b05-5f91-ed3a-f2c4-eba0009d97a0.htm" />
           <HelpTOCNode Title="GetTimeDistribution(WAFolder, WATask) - метод" Url="html/f17eca29-69eb-aa64-f780-3ecfb24b09e3.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="b9039537-c893-4348-a7dd-cfab0c5d608f" Title="GetWeekTargeting - метод" Url="html/ce7f9b20-7d4c-8c9b-dca3-9a7da479bd04.htm">
+        <HelpTOCNode Id="9d57d2e2-d05f-40a1-8b09-f774459f3dfc" Title="GetWeekTargeting - метод" Url="html/ce7f9b20-7d4c-8c9b-dca3-9a7da479bd04.htm">
           <HelpTOCNode Title="GetWeekTargeting(Int32, Int32) - метод" Url="html/d5ccf897-8308-c662-c20c-fc32e853074e.htm" />
           <HelpTOCNode Title="GetWeekTargeting(WAFolder, WATask) - метод" Url="html/2b6a3578-f380-ef79-8122-19470d65996b.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="47f2c764-0d3c-4b52-8591-d629874814c9" Title="GetWholeTask - метод" Url="html/4410eef5-b7ed-80d5-2da2-97c4d1dbfc68.htm">
+        <HelpTOCNode Id="60acd43e-232a-43d2-a0fa-42c8825b27ce" Title="GetWholeTask - метод" Url="html/4410eef5-b7ed-80d5-2da2-97c4d1dbfc68.htm">
           <HelpTOCNode Title="GetWholeTask(Int32, Int32) - метод" Url="html/84ee3544-9c01-33fb-f82f-9333e83d8f02.htm" />
           <HelpTOCNode Title="GetWholeTask(WAFolder, WATask) - метод" Url="html/65598514-25a0-f254-5dc6-1331a4a55f2c.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="14b6f138-b4b1-496a-b269-d5d7c552357f" Title="MoveTasks - метод" Url="html/db819e74-8cce-7af7-4bea-9829d93b7a4f.htm">
+        <HelpTOCNode Id="2eb933c0-b2fd-4870-912b-f04fc80eb1f8" Title="MoveTask - метод" Url="html/461644db-c356-742e-98e9-87bfac68673d.htm">
+          <HelpTOCNode Title="MoveTask(Int32, Int32, Int32) - метод" Url="html/d924b3e6-c64d-bf06-0d09-e6f949ea93c8.htm" />
+          <HelpTOCNode Title="MoveTask(WAFolder, WAFolder, WATask) - метод" Url="html/bc1519e2-cef0-3602-5c6e-dd58a31aa3eb.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="be46f9a9-15ca-4c5a-8de2-07579f503fff" Title="MoveTasks - метод" Url="html/db819e74-8cce-7af7-4bea-9829d93b7a4f.htm">
           <HelpTOCNode Title="MoveTasks(Int32, Int32, Int32[]) - метод" Url="html/7ce046e3-2630-ecdb-83dd-874ebe2d1d5d.htm" />
           <HelpTOCNode Title="MoveTasks(WAFolder, WAFolder, Int32[]) - метод" Url="html/c88a98fd-d7ab-74b3-bca1-92ba2217df80.htm" />
+          <HelpTOCNode Title="MoveTasks(WAFolder, WAFolder, WATask[]) - метод" Url="html/db59a149-6261-86ae-3a32-a64934e682b5.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="0b1566b7-03a6-4610-9c77-a3928aeb7b8e" Title="SetTasksParams - метод" Url="html/4b801a45-1ef5-e17e-1ab8-65ad1cecf6d6.htm">
+        <HelpTOCNode Id="f8d539ef-c96e-41f8-83ba-863f51d43324" Title="SetTaskParams - метод" Url="html/6b2f7f40-144e-2cd1-3e52-81b9f038ffe4.htm">
+          <HelpTOCNode Title="SetTaskParams(Int32, WATaskWhole, Int32) - метод" Url="html/3786d937-66c2-022b-dd21-63e236e4495f.htm" />
+          <HelpTOCNode Title="SetTaskParams(WAFolder, WATaskWhole, WATask) - метод" Url="html/aaf7b0c8-8481-92f8-553f-b15fed4680ee.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="8ff4b9ca-edec-4fec-8476-9193e9380b82" Title="SetTasksParams - метод" Url="html/4b801a45-1ef5-e17e-1ab8-65ad1cecf6d6.htm">
           <HelpTOCNode Title="SetTasksParams(Int32, WATaskWhole, Int32[]) - метод" Url="html/f809d4ed-f2e5-9236-b79c-edff4ef9de7a.htm" />
           <HelpTOCNode Title="SetTasksParams(WAFolder, WATaskWhole, WATask[]) - метод" Url="html/8fa6d193-d3e1-e55c-15d1-7208cf7a3e22.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
     </HelpTOCNode>
   </HelpTOCNode>
-  <HelpTOCNode Id="ad835814-4c17-4217-a19c-4d8b3835165e" Title="WAApiNET.Exception" Url="html/0b058046-ffaf-cd92-f35d-9b2fe737e71c.htm">
-    <HelpTOCNode Id="b26bf9a6-78d3-494b-bb69-6c9ffba02b7d" Title="WAApiException - класс" Url="html/ac8866fd-2791-34c9-ca8d-6b13cfde8fcb.htm">
-      <HelpTOCNode Id="233e9761-d8b6-4d50-abd9-713d998a9998" Title="WAApiException - конструктор" Url="html/f3abe03a-57a1-f442-4465-6f0ffedd1b73.htm">
+  <HelpTOCNode Id="edbb0590-c4b9-4d67-b387-38e32dd691db" Title="WAApiNET.Exception" Url="html/0b058046-ffaf-cd92-f35d-9b2fe737e71c.htm">
+    <HelpTOCNode Id="64a1c406-8ada-4b53-8938-a130102ca7fb" Title="WAApiException - класс" Url="html/ac8866fd-2791-34c9-ca8d-6b13cfde8fcb.htm">
+      <HelpTOCNode Id="25613ca2-a70c-4188-8cda-14d818a871b6" Title="WAApiException - конструктор" Url="html/f3abe03a-57a1-f442-4465-6f0ffedd1b73.htm">
         <HelpTOCNode Title="WAApiException - конструктор" Url="html/7d6274f9-7d9e-ce29-46e5-8aa51ef0160f.htm" />
         <HelpTOCNode Title="WAApiException(Exception, String, String) - конструктор" Url="html/3ed7c373-14f6-405e-2880-aefd3c211204.htm" />
         <HelpTOCNode Title="WAApiException(String, String, String) - конструктор" Url="html/c4a6229d-6498-b975-58dc-0fa94f4eb8f6.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Title="WAApiException - методы" Url="html/79f94b75-2b21-2a46-27c9-bc66f018af5c.htm" />
-      <HelpTOCNode Id="8f91a3bb-ae40-4ba5-bd05-49b237a73f6f" Title="WAApiException - свойства" Url="html/818015a9-8c76-d532-42c9-b4aa41d09a40.htm">
+      <HelpTOCNode Id="8782a605-f0cc-4053-a441-8036f53a55ea" Title="WAApiException - методы" Url="html/79f94b75-2b21-2a46-27c9-bc66f018af5c.htm">
+        <HelpTOCNode Title="ToString - метод" Url="html/6790ade6-4d4b-df2b-f76b-5fbf170c8969.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="fee824a1-90fd-4fe5-87b4-cfa96569e49d" Title="WAApiException - свойства" Url="html/818015a9-8c76-d532-42c9-b4aa41d09a40.htm">
         <HelpTOCNode Title="Exception - свойство" Url="html/6bed2831-17c1-725c-9946-2195940571b4.htm" />
         <HelpTOCNode Title="JSONAnswer - свойство" Url="html/7b53ba2e-912a-d944-6eaf-8816d90005a8.htm" />
         <HelpTOCNode Title="JSONQuery - свойство" Url="html/fd978463-b362-b34a-5a2e-b377ac337e09.htm" />
+        <HelpTOCNode Title="Message - свойство" Url="html/ed81c05a-5ac8-11ea-8962-1189c6ee5b37.htm" />
       </HelpTOCNode>
       <HelpTOCNode Title="WAApiException - события" Url="html/afe0cdd1-b4ac-595e-ecaa-36d5e01c6f10.htm" />
     </HelpTOCNode>
   </HelpTOCNode>
-  <HelpTOCNode Id="45987527-27d2-4c2a-9845-e735538ec11f" Title="WAApiNET.Model" Url="html/a2bfd843-6fd9-bed2-d9ad-ea32729fb89c.htm">
-    <HelpTOCNode Id="cffd1ff9-f60c-436b-b993-622de821b949" Title="WAAllInfo - класс" Url="html/6d154268-653e-b283-4a93-0508d5d18ea0.htm">
+  <HelpTOCNode Id="033c0246-0221-4045-865f-3bf7763e8f3f" Title="WAApiNET.Model" Url="html/a2bfd843-6fd9-bed2-d9ad-ea32729fb89c.htm">
+    <HelpTOCNode Id="761e53b8-9a70-4080-9186-2d1acc66253d" Title="WAAllInfo - класс" Url="html/6d154268-653e-b283-4a93-0508d5d18ea0.htm">
       <HelpTOCNode Title="WAAllInfo - конструктор" Url="html/f71e2460-8fde-b277-2109-c0d089f8c397.htm" />
-      <HelpTOCNode Title="WAAllInfo - методы" Url="html/f9612098-fc5a-757e-dd88-3994f3e27d37.htm" />
-      <HelpTOCNode Id="45a53a09-ac0e-4eff-9274-7212efc056ab" Title="WAAllInfo - свойства" Url="html/0eb78538-dbc9-bf7d-d5cb-c9b9cc2eb10c.htm">
+      <HelpTOCNode Id="892003ce-4946-46e1-b6e2-5d71f842ad3d" Title="WAAllInfo - методы" Url="html/f9612098-fc5a-757e-dd88-3994f3e27d37.htm">
+        <HelpTOCNode Id="6ae869af-e164-43e2-9ce4-f665a5a6345b" Title="Equals - метод" Url="html/31370a98-6ddc-4feb-7df1-6f42880a00e1.htm">
+          <HelpTOCNode Title="Equals(Object) - метод" Url="html/60c6cdea-8431-8362-a309-aee214145e58.htm" />
+          <HelpTOCNode Title="Equals(WAAllInfo) - метод" Url="html/eb016a3f-c121-1fbe-c5eb-a337c4f63bcc.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="GetHashCode - метод" Url="html/b7a4bb20-59ef-d789-1c58-53d649704c2f.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="7b4ca264-230a-4901-86a4-4096ab8cb014" Title="WAAllInfo - операторы" Url="html/445f7ab2-65dd-7e87-3195-11e480d2f74a.htm">
+        <HelpTOCNode Title="Equality - оператор" Url="html/952a38ac-c0da-a3c4-333e-428004eb6b53.htm" />
+        <HelpTOCNode Title="Inequality - оператор" Url="html/a12d9b52-412b-3f49-416a-fc71b848032d.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="cc083e0c-7112-4676-800e-b3d2095e08b7" Title="WAAllInfo - свойства" Url="html/0eb78538-dbc9-bf7d-d5cb-c9b9cc2eb10c.htm">
         <HelpTOCNode Title="Folders - свойство" Url="html/97c2aa5b-5d72-5b23-99a1-4ef378366473.htm" />
         <HelpTOCNode Title="Referrals - свойство" Url="html/7e243403-b39e-f1ad-2d71-365398396e75.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
   </HelpTOCNode>
-  <HelpTOCNode Id="a3860dbc-cf19-4d91-9395-430439f47c2b" Title="WAApiNET.Model.Account" Url="html/8fee5cf5-4de0-e3ca-b741-93a6a2d6dae2.htm">
-    <HelpTOCNode Id="8574727b-346b-4512-9b35-3cef137ceed9" Title="WAAccount - класс" Url="html/36ede53e-f446-ab48-c1ae-8228d521a334.htm">
-      <HelpTOCNode Id="5bb457f7-2c84-43a4-b53b-078d5a0a3889" Title="WAAccount - конструктор" Url="html/a63af8ea-5908-3f25-2869-6c19961bbf15.htm">
+  <HelpTOCNode Id="9c03b9fd-d441-4e0a-afbd-9ba140af31c4" Title="WAApiNET.Model.Account" Url="html/8fee5cf5-4de0-e3ca-b741-93a6a2d6dae2.htm">
+    <HelpTOCNode Id="701929a5-97cf-485e-b15e-58e19067bc86" Title="WAAccount - класс" Url="html/36ede53e-f446-ab48-c1ae-8228d521a334.htm">
+      <HelpTOCNode Id="dc63724e-6579-4dee-96b7-18e803372e4a" Title="WAAccount - конструктор" Url="html/a63af8ea-5908-3f25-2869-6c19961bbf15.htm">
         <HelpTOCNode Title="WAAccount - конструктор" Url="html/0ef70883-d377-f0bf-a39a-4795584fdecd.htm" />
         <HelpTOCNode Title="WAAccount(Nullable(Int32), Nullable(Int32), String, Nullable(Int32), String, Boolean, String, String) - конструктор" Url="html/9aac5146-8489-437e-b6bb-43b1a90e4378.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Title="WAAccount - методы" Url="html/34917b2e-efc2-55c7-da16-1d9c44fa6ea0.htm" />
-      <HelpTOCNode Id="7c3ac17d-7c75-4b7e-80e5-8ee3c2eac8a3" Title="WAAccount - свойства" Url="html/75648405-ba22-559e-2500-512fd49e6c0f.htm">
+      <HelpTOCNode Id="3e2bb9d3-dd49-47b6-bf9b-b1d8aa31dbb5" Title="WAAccount - методы" Url="html/34917b2e-efc2-55c7-da16-1d9c44fa6ea0.htm">
+        <HelpTOCNode Id="7aca70b7-009f-41d9-9e7c-59b90eecea65" Title="Equals - метод" Url="html/8d74a328-c548-b9b5-44e1-b6168e3a4ba6.htm">
+          <HelpTOCNode Title="Equals(Object) - метод" Url="html/95a655fd-8e9f-1b4e-7d24-da1f7bd18bdb.htm" />
+          <HelpTOCNode Title="Equals(WAAccount) - метод" Url="html/488f7fb2-cc5a-f808-f15b-2ffba812e122.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="GetHashCode - метод" Url="html/ce255836-6c8a-5774-9b7c-34645b15896b.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="e9cf4a4a-d396-48b5-abe6-86c8680f8efd" Title="WAAccount - операторы" Url="html/236b134e-c1e4-0d27-7cce-9473248c6948.htm">
+        <HelpTOCNode Title="Equality - оператор" Url="html/6ecd5f67-3235-f748-272e-f30b41669d2a.htm" />
+        <HelpTOCNode Title="Inequality - оператор" Url="html/6be9f9cf-c566-b95e-5a84-007ba57b1cc6.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="f672c9a7-f68c-4ff2-8df2-940f7d1efd83" Title="WAAccount - свойства" Url="html/75648405-ba22-559e-2500-512fd49e6c0f.htm">
         <HelpTOCNode Title="Balance - свойство" Url="html/1894594d-f154-4e71-68cb-314bef387f7c.htm" />
         <HelpTOCNode Title="Deleted - свойство" Url="html/0d61be0f-8fd1-2a17-47b4-d8ba7a0d2081.htm" />
         <HelpTOCNode Title="Id - свойство" Url="html/0a3a416f-eadd-97f1-d327-bc1cd9856366.htm" />
@@ -162,83 +204,153 @@
         <HelpTOCNode Title="Timebonus - свойство" Url="html/b58ff47d-e0e1-7a11-6bbf-36b046eaed6f.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="25a40359-b253-4936-8dce-23a9acf95b8f" Title="WAReferral - класс" Url="html/6a168a7c-6d8d-9c4e-7e9e-abc55b909c63.htm">
-      <HelpTOCNode Id="9e0df6d0-d93d-4628-a294-527e2d3ffb2b" Title="WAReferral - конструктор" Url="html/c776000a-ba4c-60ce-30a4-293e6cf8bc15.htm">
+    <HelpTOCNode Id="9d536045-010f-4859-8f70-2abb1fd14698" Title="WAReferral - класс" Url="html/6a168a7c-6d8d-9c4e-7e9e-abc55b909c63.htm">
+      <HelpTOCNode Id="c84c139e-3ee7-401e-9e61-fbd1111f930e" Title="WAReferral - конструктор" Url="html/c776000a-ba4c-60ce-30a4-293e6cf8bc15.htm">
         <HelpTOCNode Title="WAReferral - конструктор" Url="html/48012fd8-1a21-f594-f896-5c85bf0ecaae.htm" />
         <HelpTOCNode Title="WAReferral(String, Nullable(Int32), Nullable(Int32)) - конструктор" Url="html/c45c7394-3518-6bf7-6582-250f440ad571.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Title="WAReferral - методы" Url="html/eb945b77-3caf-73fc-721a-e6a66daf328f.htm" />
-      <HelpTOCNode Id="f2092a87-1f89-460d-a63f-ef6c114cda40" Title="WAReferral - свойства" Url="html/2e832fa1-1114-f790-ed25-af621d3c3a4c.htm">
+      <HelpTOCNode Id="92bf6c22-82d0-4c68-a5b5-fe2b2478cacf" Title="WAReferral - методы" Url="html/eb945b77-3caf-73fc-721a-e6a66daf328f.htm">
+        <HelpTOCNode Id="4258d8ba-e405-4422-874a-f8e4ba747c79" Title="Equals - метод" Url="html/00849a18-9f00-dcd3-6370-2baa5c5474af.htm">
+          <HelpTOCNode Title="Equals(Object) - метод" Url="html/a9a07256-563a-e19e-497c-dc68696e48bb.htm" />
+          <HelpTOCNode Title="Equals(WAReferral) - метод" Url="html/a2cde37f-4d13-66bf-bd34-6d1ad288c085.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="GetHashCode - метод" Url="html/ad4d4d1c-0a88-208d-6260-cf080599d2a3.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="4733a0af-e191-46d8-b5a6-f0d79ac69bbb" Title="WAReferral - операторы" Url="html/adbc990e-9e5b-59c2-274e-668374de4871.htm">
+        <HelpTOCNode Title="Equality - оператор" Url="html/4e7d5518-b1b3-4499-6640-70028bf8f58a.htm" />
+        <HelpTOCNode Title="Inequality - оператор" Url="html/2f60af7e-bbc7-af56-2876-cacd9e84b742.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="fafb1d9d-73fe-4ac2-8413-3dce4405f44f" Title="WAReferral - свойства" Url="html/2e832fa1-1114-f790-ed25-af621d3c3a4c.htm">
         <HelpTOCNode Title="Deductions - свойство" Url="html/5acfe29d-830e-6c03-d09a-e208d50d9b8e.htm" />
         <HelpTOCNode Title="Inactivity - свойство" Url="html/217f2a77-aad7-ba72-14e0-8dd25d1e848b.htm" />
         <HelpTOCNode Title="Login - свойство" Url="html/12dbbc29-ee94-d1b4-d2d0-cc8fd03a3592.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
   </HelpTOCNode>
-  <HelpTOCNode Id="8a16dca9-0957-4235-af7b-1d1f221738c3" Title="WAApiNET.Model.Folder" Url="html/64cb43bd-13d9-b6e4-8030-96df43cd45ed.htm">
-    <HelpTOCNode Id="76043413-2d08-407a-8a6a-7228158b5842" Title="WAFolder - класс" Url="html/1e492313-d42e-0bd6-1cfc-7e87017c735f.htm">
-      <HelpTOCNode Id="ea7d00fd-36f2-4c94-a243-45962184a1ce" Title="WAFolder - конструктор" Url="html/8974be0e-26cf-b52d-a7f3-c92d397da315.htm">
+  <HelpTOCNode Id="624c9442-bf61-4a30-a638-f11ddd9b9ad9" Title="WAApiNET.Model.Folder" Url="html/64cb43bd-13d9-b6e4-8030-96df43cd45ed.htm">
+    <HelpTOCNode Id="faab96be-2016-4331-ade3-c774bdb28e0a" Title="WAFolder - класс" Url="html/1e492313-d42e-0bd6-1cfc-7e87017c735f.htm">
+      <HelpTOCNode Id="cdc67a28-f65a-47c2-b2aa-c7a354c9e6d8" Title="WAFolder - конструктор" Url="html/8974be0e-26cf-b52d-a7f3-c92d397da315.htm">
         <HelpTOCNode Title="WAFolder - конструктор" Url="html/a530425e-e772-2cd4-97b0-efd0b251a142.htm" />
         <HelpTOCNode Title="WAFolder(Nullable(Int32), String, Nullable(Int32)) - конструктор" Url="html/18d5f891-161f-2fe0-bcc8-3d9ac1e35442.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Title="WAFolder - методы" Url="html/1cb76b73-bbe0-4e91-b7bd-1ad219a23e2d.htm" />
-      <HelpTOCNode Id="3748f4b5-26a3-4c42-afae-3a7158d73828" Title="WAFolder - свойства" Url="html/401eed96-babd-41c6-67bc-70cc9ce70508.htm">
+      <HelpTOCNode Id="7e567277-28aa-40ce-a075-4cffa059fb8d" Title="WAFolder - методы" Url="html/1cb76b73-bbe0-4e91-b7bd-1ad219a23e2d.htm">
+        <HelpTOCNode Id="fa9ea1ed-baa8-49af-a3b4-0a7320467f18" Title="Equals - метод" Url="html/0fef40e4-6eba-aa8e-c8a9-edf08daf2061.htm">
+          <HelpTOCNode Title="Equals(Object) - метод" Url="html/8cb99846-9bc9-451e-70c2-e5f34adce13f.htm" />
+          <HelpTOCNode Title="Equals(WAFolder) - метод" Url="html/9e80af95-3d37-0bb7-7e8d-20e0026f99ba.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="GetHashCode - метод" Url="html/33db1efb-03e3-a678-6c00-b7615106a74b.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="dc5e772e-49cb-49d3-bcf5-3a39a9b211a8" Title="WAFolder - операторы" Url="html/d014ceba-add5-1745-c94c-7d0b4029f220.htm">
+        <HelpTOCNode Title="Equality - оператор" Url="html/8391fb54-666e-a837-53a9-bf42e00bef6c.htm" />
+        <HelpTOCNode Title="Inequality - оператор" Url="html/3426a713-1775-d566-494a-a16355217250.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="c24e5f93-d8a7-4ad4-a1cb-505a418d40c5" Title="WAFolder - свойства" Url="html/401eed96-babd-41c6-67bc-70cc9ce70508.htm">
         <HelpTOCNode Title="FolderId - свойство" Url="html/897425f3-4418-33f9-6d0e-9f33e7b12ecc.htm" />
         <HelpTOCNode Title="Name - свойство" Url="html/8ebb7abe-a211-e0a7-51ff-9112df3db077.htm" />
         <HelpTOCNode Title="Tasks - свойство" Url="html/2f7f7df0-10d6-8e71-92f1-cb6c4f0aefe2.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="1b86a897-7341-418f-9766-29c8ee97340c" Title="WAFolderWhole - класс" Url="html/d10ce31b-4b14-e2b7-043f-33da0bb22c0b.htm">
+    <HelpTOCNode Id="dbb69eb9-dbdb-4396-bd02-fddb0a71eee1" Title="WAFolderWhole - класс" Url="html/d10ce31b-4b14-e2b7-043f-33da0bb22c0b.htm">
       <HelpTOCNode Title="WAFolderWhole - конструктор" Url="html/3cc887a6-57d7-019f-d733-abded516d40c.htm" />
-      <HelpTOCNode Title="WAFolderWhole - методы" Url="html/c396c126-ebac-a702-bdc3-0055d5148103.htm" />
-      <HelpTOCNode Id="615f8a0b-0500-4631-bc28-96461d8640fd" Title="WAFolderWhole - свойства" Url="html/c9a0b188-9e27-80c1-91f9-3fadbd27c9cb.htm">
+      <HelpTOCNode Id="87e977cd-f3ad-48fe-87c7-73761d0b5795" Title="WAFolderWhole - методы" Url="html/c396c126-ebac-a702-bdc3-0055d5148103.htm">
+        <HelpTOCNode Id="398834ed-84d9-4d9d-b02f-b47e2770280d" Title="Equals - метод" Url="html/ceeb5be6-4328-e77c-c484-3c8ba400d45d.htm">
+          <HelpTOCNode Title="Equals(Object) - метод" Url="html/0a7d83ac-c2b6-22d5-0a9f-5261b07cc4a8.htm" />
+          <HelpTOCNode Title="Equals(WAFolderWhole) - метод" Url="html/81ca7341-a677-ed4c-5d1d-b5ecb317fff7.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="GetHashCode - метод" Url="html/53d3e9ad-de1f-4f08-3710-19f3097497a0.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="12a7bc02-ec4e-44f3-ac61-fb58deaff1d1" Title="WAFolderWhole - операторы" Url="html/df44001c-3ed7-4115-acc7-bd88f601a612.htm">
+        <HelpTOCNode Title="Equality - оператор" Url="html/c7d201f4-a6be-0d67-86f7-7ef628ed5236.htm" />
+        <HelpTOCNode Title="Inequality - оператор" Url="html/87f9ed91-da4d-17f3-8713-d6821a7e2a98.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="28bcb22c-9b7f-48a8-87a0-ceae5b3754fa" Title="WAFolderWhole - свойства" Url="html/c9a0b188-9e27-80c1-91f9-3fadbd27c9cb.htm">
         <HelpTOCNode Title="Tasks - свойство" Url="html/dce215e1-c73b-01b1-2452-084a61b51b2b.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
   </HelpTOCNode>
-  <HelpTOCNode Id="e1bd1590-c44b-4108-8337-91e5c26e7dfd" Title="WAApiNET.Model.Task" Url="html/4e0f5e81-f062-84a7-0e5c-7aafdb9409a1.htm">
-    <HelpTOCNode Id="82344e9c-d8ec-415f-9a07-466fc15b6072" Title="WADayTargeting - класс" Url="html/ab8976cd-9a22-7d29-4ce5-73ef7d52d55e.htm">
-      <HelpTOCNode Id="3a921584-7fca-47e6-b62c-a38cf993d081" Title="WADayTargeting - конструктор" Url="html/d54703ae-98f7-9408-ebdf-05adb3c59ca5.htm">
+  <HelpTOCNode Id="9d8e6f61-ca4d-4ef5-ad19-98bd5d77454f" Title="WAApiNET.Model.Task" Url="html/4e0f5e81-f062-84a7-0e5c-7aafdb9409a1.htm">
+    <HelpTOCNode Id="0ad71a5e-8c89-4ce7-a5e9-35795f391614" Title="WADayTargeting - класс" Url="html/ab8976cd-9a22-7d29-4ce5-73ef7d52d55e.htm">
+      <HelpTOCNode Id="ccac9940-038d-4447-b01f-49351cabf983" Title="WADayTargeting - конструктор" Url="html/d54703ae-98f7-9408-ebdf-05adb3c59ca5.htm">
         <HelpTOCNode Title="WADayTargeting - конструктор" Url="html/fa0847e6-2b14-d405-e370-42b678aa1522.htm" />
         <HelpTOCNode Title="WADayTargeting(Nullable(Int32), Nullable(Int32), Nullable(Int32)) - конструктор" Url="html/81c29cda-215e-2081-3035-4e5aec763e1a.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Title="WADayTargeting - методы" Url="html/9c462e18-43a3-8720-14ec-79d71289ba5b.htm" />
-      <HelpTOCNode Id="6fcde155-b45d-4859-b4ba-cbc13b692fe3" Title="WADayTargeting - свойства" Url="html/fe6bbf10-587a-e426-c22b-a58bcd2e7b6e.htm">
+      <HelpTOCNode Id="b2263fe2-8f29-4b60-8b51-b6dc9d976f49" Title="WADayTargeting - методы" Url="html/9c462e18-43a3-8720-14ec-79d71289ba5b.htm">
+        <HelpTOCNode Id="88f02313-2848-4a2e-bf36-43661d583a98" Title="Equals - метод" Url="html/bac208c2-30e0-8c95-2fbe-d12874234cd0.htm">
+          <HelpTOCNode Title="Equals(Object) - метод" Url="html/6eaf8352-a2e7-e314-bb92-1e013b56b3c4.htm" />
+          <HelpTOCNode Title="Equals(WADayTargeting) - метод" Url="html/14b06090-ce58-b3f0-9b72-8e2cfce8dce2.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="GetHashCode - метод" Url="html/b64aa6e7-3824-e982-2602-eccdbff87906.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="83f5c6f4-1da2-43f8-ac3c-1c40820132a8" Title="WADayTargeting - операторы" Url="html/d54953fa-0bdd-0596-fabe-8c6dce613e47.htm">
+        <HelpTOCNode Title="Equality - оператор" Url="html/ba19112f-cdfe-182c-21f2-91c39a9bebbc.htm" />
+        <HelpTOCNode Title="Inequality - оператор" Url="html/dc43c90e-21c5-0454-34c5-c22ea098d4f2.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="335cb633-d775-437a-b677-60c2cde63eb8" Title="WADayTargeting - свойства" Url="html/fe6bbf10-587a-e426-c22b-a58bcd2e7b6e.htm">
         <HelpTOCNode Title="Hour - свойство" Url="html/d8742e97-9cd0-ac6f-4501-baf1271f5959.htm" />
         <HelpTOCNode Title="Max - свойство" Url="html/1826fb9a-1eb0-8859-8c5d-d141e0b71cb1.htm" />
         <HelpTOCNode Title="Min - свойство" Url="html/4d5bde3c-3a15-45c9-565d-632f73eebce2.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="03e9edbd-cd35-42ac-a34c-539e815a26f3" Title="WADayTargetingExtend - класс" Url="html/e8dea199-f0b5-27b7-005f-ecc7cef74c4a.htm">
-      <HelpTOCNode Id="d737d8a4-12df-4883-8366-64f65bbc7d3d" Title="WADayTargetingExtend - конструктор" Url="html/f0c5adeb-a51c-6d1c-a5ad-fd0c93a4ac4e.htm">
+    <HelpTOCNode Id="c8fcae7e-fb15-473f-9d09-f3bf699d5489" Title="WADayTargetingExtend - класс" Url="html/e8dea199-f0b5-27b7-005f-ecc7cef74c4a.htm">
+      <HelpTOCNode Id="f7d4bdf6-bb4c-408a-a8c9-571a159645aa" Title="WADayTargetingExtend - конструктор" Url="html/f0c5adeb-a51c-6d1c-a5ad-fd0c93a4ac4e.htm">
         <HelpTOCNode Title="WADayTargetingExtend - конструктор" Url="html/02009db9-ff10-f9e7-d888-6cceea31b25b.htm" />
         <HelpTOCNode Title="WADayTargetingExtend(Nullable(Int32), Nullable(Int32), Nullable(Int32), Nullable(Int32), Nullable(Int32), Nullable(Int32)) - конструктор" Url="html/01b6e588-7f0e-326a-65f2-8125a897663e.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Title="WADayTargetingExtend - методы" Url="html/9255ae4f-cb98-f28b-ae4e-0d4dc8fa0a5d.htm" />
-      <HelpTOCNode Id="23e8ad1c-fc67-4399-a07e-87c637080654" Title="WADayTargetingExtend - свойства" Url="html/c5469e59-ad25-871b-ea7c-2f2c41d637f7.htm">
+      <HelpTOCNode Id="7bbe296d-a515-4d3f-b427-a6f27a222695" Title="WADayTargetingExtend - методы" Url="html/9255ae4f-cb98-f28b-ae4e-0d4dc8fa0a5d.htm">
+        <HelpTOCNode Id="cc1acd4d-79c0-43cd-9490-4a114facaf79" Title="Equals - метод" Url="html/5318ed4c-040f-f455-45c7-91292b7df7f5.htm">
+          <HelpTOCNode Title="Equals(Object) - метод" Url="html/df231672-7654-8a97-450a-92b0c34688b3.htm" />
+          <HelpTOCNode Title="Equals(WADayTargetingExtend) - метод" Url="html/3973261c-3389-517f-6280-bfecf8ffb298.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="GetHashCode - метод" Url="html/0ba46cfc-7f59-1c69-56d8-f176fbee65ea.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="223ff970-1331-40d7-a6d9-bbf307475ebb" Title="WADayTargetingExtend - операторы" Url="html/ff0817df-7a4a-836d-1d96-77f2786e7fed.htm">
+        <HelpTOCNode Title="Equality - оператор" Url="html/6f2255fa-2925-a7e0-1edf-2c4ccae89591.htm" />
+        <HelpTOCNode Title="Inequality - оператор" Url="html/860fd488-df4e-5a23-6648-b7632e9b6b32.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="757ddd1e-f85f-4bd7-8d32-dee9efddd46f" Title="WADayTargetingExtend - свойства" Url="html/c5469e59-ad25-871b-ea7c-2f2c41d637f7.htm">
         <HelpTOCNode Title="Incomplete - свойство" Url="html/9e09accd-0fcb-a0bc-93fd-8136e9ec5d97.htm" />
         <HelpTOCNode Title="Overload - свойство" Url="html/dc4a9807-d9f9-2617-bd78-2d3b78e2faea.htm" />
         <HelpTOCNode Title="Recd - свойство" Url="html/14f0f1e0-48ad-90d6-1c63-13f01bd4e8a0.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="30de9869-9855-410d-9685-de15c127283f" Title="WAGeoTargeting - класс" Url="html/84f12a78-c8b5-df70-f48e-c6826c07e9a8.htm">
+    <HelpTOCNode Id="1778a0c3-0efe-4e61-9d71-5f8ce7ceadb2" Title="WAGeoTargeting - класс" Url="html/84f12a78-c8b5-df70-f48e-c6826c07e9a8.htm">
       <HelpTOCNode Title="WAGeoTargeting - конструктор" Url="html/756a3e90-d9e3-ba05-1efc-008d66c139fa.htm" />
-      <HelpTOCNode Title="WAGeoTargeting - методы" Url="html/35bfbb77-5489-380b-2fd9-fe715f66954a.htm" />
-      <HelpTOCNode Id="fd2bf992-33fc-4009-ba0c-54a5355cf2d4" Title="WAGeoTargeting - свойства" Url="html/a644c619-5e40-2103-97ab-c4478065eeba.htm">
+      <HelpTOCNode Id="c44f844e-1062-4890-aa53-8ab25bc6782d" Title="WAGeoTargeting - методы" Url="html/35bfbb77-5489-380b-2fd9-fe715f66954a.htm">
+        <HelpTOCNode Id="704ac728-d680-4ca9-894f-0d952a5d2f73" Title="Equals - метод" Url="html/55c78639-4bd3-747a-12a5-a83eb4e315ef.htm">
+          <HelpTOCNode Title="Equals(Object) - метод" Url="html/ab8f0aaa-2368-255c-8938-44d6ec89f447.htm" />
+          <HelpTOCNode Title="Equals(WAGeoTargeting) - метод" Url="html/18cecad5-5e56-aca4-cdd2-5c60e15ed5f7.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="GetHashCode - метод" Url="html/d91dc9ca-b369-2a84-f4af-f2bc6be370a0.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="359e14c4-8e97-4128-a7b4-a34bff410d2f" Title="WAGeoTargeting - операторы" Url="html/3b8ec6fd-3e94-97d5-5889-12cb683587a2.htm">
+        <HelpTOCNode Title="Equality - оператор" Url="html/6ca973b3-aa7b-be6e-bcb8-b57b32d80b65.htm" />
+        <HelpTOCNode Title="Inequality - оператор" Url="html/4ee80d18-50de-f5ef-d3f1-fc648afdc2d8.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="5cff18a7-2380-413c-9a42-78aaed3b404c" Title="WAGeoTargeting - свойства" Url="html/a644c619-5e40-2103-97ab-c4478065eeba.htm">
         <HelpTOCNode Title="Name - свойство" Url="html/4ad4ba7b-89e5-d266-f254-aee9618c8abc.htm" />
         <HelpTOCNode Title="Recd - свойство" Url="html/3c3f68a1-2037-9ceb-0fdd-4c6dd72eb663.htm" />
         <HelpTOCNode Title="Target - свойство" Url="html/d2db3352-238a-7285-094a-feb58c55e962.htm" />
         <HelpTOCNode Title="ZoneId - свойство" Url="html/40e25e62-ee38-808c-6187-638d8acc4ea0.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="64b1cb0e-1667-4050-887a-1c4eeb79e619" Title="WATask - класс" Url="html/d19c7646-225f-fc60-6e2c-d321772780f8.htm">
-      <HelpTOCNode Id="3f322b08-83da-4317-aed1-59978c9385a2" Title="WATask - конструктор" Url="html/112135e1-ac01-bed6-ad34-d877e71c4c71.htm">
+    <HelpTOCNode Id="a8dacb81-312d-44de-ba8a-82aa60929738" Title="WATask - класс" Url="html/d19c7646-225f-fc60-6e2c-d321772780f8.htm">
+      <HelpTOCNode Id="422dc930-1c09-4c42-b71b-dfb44fcca5aa" Title="WATask - конструктор" Url="html/112135e1-ac01-bed6-ad34-d877e71c4c71.htm">
         <HelpTOCNode Title="WATask - конструктор" Url="html/f256eb18-69fe-13e4-4d3d-556b4d834a27.htm" />
         <HelpTOCNode Title="WATask(WATask) - конструктор" Url="html/b4b4ea95-5c9c-ef4d-8500-a1b929ad307b.htm" />
         <HelpTOCNode Title="WATask(Nullable(Int32), Nullable(Int32), Nullable(Int32), Boolean, Boolean, Nullable(Double), String, String, Boolean, Boolean, Nullable(Int32), Nullable(Int32), String, String, Nullable(Int32), String, Nullable(Int32), String) - конструктор" Url="html/f5a2a6f6-f46a-aab2-80eb-3ab8ab355dc6.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Title="WATask - методы" Url="html/99fb5815-dbf6-ccff-6eac-006ac2dd3d48.htm" />
-      <HelpTOCNode Id="6accc857-b7a1-4e29-87bc-19d139ac0262" Title="WATask - свойства" Url="html/04b42e74-1e3f-81ef-759d-1b936172fb93.htm">
+      <HelpTOCNode Id="cace0673-70ec-4943-b2de-de0172ca60f2" Title="WATask - методы" Url="html/99fb5815-dbf6-ccff-6eac-006ac2dd3d48.htm">
+        <HelpTOCNode Id="84155e66-cd4c-4427-8070-9cf89353df83" Title="Equals - метод" Url="html/7aaba17e-8986-4464-ea42-bf039c181c0c.htm">
+          <HelpTOCNode Title="Equals(Object) - метод" Url="html/8dfc3f72-dda1-b989-c763-bddea7e09e18.htm" />
+          <HelpTOCNode Title="Equals(WATask) - метод" Url="html/8955eb3c-a026-19ee-f922-deb4f4609038.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="GetHashCode - метод" Url="html/bf91ca51-5433-cdf1-e6d7-1f298ccad6bb.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="1278eaac-bbf6-4169-8cb9-b26f21fdc36b" Title="WATask - операторы" Url="html/11939614-97a5-648e-faf5-614a95a39ba6.htm">
+        <HelpTOCNode Title="Equality - оператор" Url="html/e745bfb8-0758-2776-05f4-09d5bcc52ea9.htm" />
+        <HelpTOCNode Title="Inequality - оператор" Url="html/29a6ed5a-de04-6a1e-767f-822125fcfb85.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="c30ec133-dedf-4430-a7aa-90774c7886e8" Title="WATask - свойства" Url="html/04b42e74-1e3f-81ef-759d-1b936172fb93.htm">
         <HelpTOCNode Title="AfterClick - свойство" Url="html/151fdebe-4412-caeb-6a14-8a907e71b554.htm" />
         <HelpTOCNode Title="AllowProxy - свойство" Url="html/9dcc129a-3e9e-1b50-8ae6-391a944858ed.htm" />
         <HelpTOCNode Title="BeforeClick - свойство" Url="html/b5fa14c9-fac4-684f-3ed4-70f237e1aed2.htm" />
@@ -259,14 +371,24 @@
         <HelpTOCNode Title="UniquePeriod - свойство" Url="html/5e532dd4-d9bf-27fc-ac1f-3a0709b6e947.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="957bf3b6-e25e-4b5c-ab46-e2a7df02986e" Title="WATaskWhole - класс" Url="html/05fadb1f-462f-419e-9af9-1bc4650cae26.htm">
-      <HelpTOCNode Id="e34bc218-e336-4cb2-a0e3-090354843b4f" Title="WATaskWhole - конструктор" Url="html/0c50ee1a-1392-edca-7d76-f29739f5db1f.htm">
+    <HelpTOCNode Id="07418019-5bbb-4719-9b58-1df8c5cd764f" Title="WATaskWhole - класс" Url="html/05fadb1f-462f-419e-9af9-1bc4650cae26.htm">
+      <HelpTOCNode Id="e69b89e6-5e55-4729-a1a2-fa08c9eb3989" Title="WATaskWhole - конструктор" Url="html/0c50ee1a-1392-edca-7d76-f29739f5db1f.htm">
         <HelpTOCNode Title="WATaskWhole - конструктор" Url="html/586f0e5d-d44a-af8b-190f-d138e33603ad.htm" />
         <HelpTOCNode Title="WATaskWhole(WATask, List(WAGeoTargeting), List(WADayTargeting), List(WADayTargetingExtend), List(WAWeekTargeting), List(WATimeDistribution)) - конструктор" Url="html/7919a04d-7f3b-ff21-8e74-bc2534868f90.htm" />
         <HelpTOCNode Title="WATaskWhole(Nullable(Int32), Nullable(Int32), Nullable(Int32), Boolean, Boolean, Nullable(Double), String, String, Boolean, Boolean, Nullable(Int32), Nullable(Int32), String, String, Nullable(Int32), String, Nullable(Int32), String, List(WAGeoTargeting), List(WADayTargeting), List(WADayTargetingExtend), List(WAWeekTargeting), List(WATimeDistribution)) - конструктор" Url="html/be3dc119-4f1b-e090-7cba-9f642d73baff.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Title="WATaskWhole - методы" Url="html/52fafa5d-318a-b1fd-6584-9faeaf3f4198.htm" />
-      <HelpTOCNode Id="675bd6b4-464f-4e1a-921e-6f7bdf6b368e" Title="WATaskWhole - свойства" Url="html/edbcef6e-bcba-ca78-feb6-c0e729355ef1.htm">
+      <HelpTOCNode Id="2c741acb-c692-41ef-a52d-94196cecf909" Title="WATaskWhole - методы" Url="html/52fafa5d-318a-b1fd-6584-9faeaf3f4198.htm">
+        <HelpTOCNode Id="9ea37fa1-ab8a-4058-9c55-a229020d6e6d" Title="Equals - метод" Url="html/5368870e-2801-1050-1638-a83563a53035.htm">
+          <HelpTOCNode Title="Equals(Object) - метод" Url="html/a854409b-411a-ce02-bfe5-1b68a6139dbd.htm" />
+          <HelpTOCNode Title="Equals(WATaskWhole) - метод" Url="html/fb2efd7a-e912-3988-c1f9-4b1b0c59ee9c.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="GetHashCode - метод" Url="html/a1fb0852-64b3-f771-24fd-67360ccf2faa.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="fc070830-53af-4e90-ade7-564e9d0f9b5d" Title="WATaskWhole - операторы" Url="html/a4113f29-1d63-5ed8-c7f0-cad541037b7f.htm">
+        <HelpTOCNode Title="Equality - оператор" Url="html/6e42d583-0b4c-fc0c-4132-a9476b72b0ea.htm" />
+        <HelpTOCNode Title="Inequality - оператор" Url="html/f1ef906f-829f-1ab2-ef43-dbce736526ad.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="365c6fd8-a7df-4105-9cf6-28baee714e44" Title="WATaskWhole - свойства" Url="html/edbcef6e-bcba-ca78-feb6-c0e729355ef1.htm">
         <HelpTOCNode Title="DayStats - свойство" Url="html/145283ba-c2e1-2e66-b4ab-484c67d1992c.htm" />
         <HelpTOCNode Title="DayTargeting - свойство" Url="html/645deb60-12e9-bb2d-15f2-19fdd872a6c5.htm" />
         <HelpTOCNode Title="GeoTargeting - свойство" Url="html/1a331a7e-904b-247d-c917-306f155a0f01.htm" />
@@ -274,44 +396,64 @@
         <HelpTOCNode Title="WeekTargeting - свойство" Url="html/53762933-a682-d301-cb49-6acd11fa2c58.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="74450ca4-61ed-4072-be7d-50b2e9fa27b8" Title="WATimeDistribution - класс" Url="html/2707aa2d-6036-b2ab-fab1-bc3362bbbecb.htm">
-      <HelpTOCNode Id="25104f8c-0e95-42c9-8b90-b2d80a5828f7" Title="WATimeDistribution - конструктор" Url="html/10fb7a16-d628-37dd-7aa8-01608c4456b6.htm">
+    <HelpTOCNode Id="fab05916-654f-403b-9aaf-7a141b4434c0" Title="WATimeDistribution - класс" Url="html/2707aa2d-6036-b2ab-fab1-bc3362bbbecb.htm">
+      <HelpTOCNode Id="35e2da00-45b8-49ac-93e0-47ac54b6dbd4" Title="WATimeDistribution - конструктор" Url="html/10fb7a16-d628-37dd-7aa8-01608c4456b6.htm">
         <HelpTOCNode Title="WATimeDistribution - конструктор" Url="html/a43e7be6-4d14-7c8a-9d43-b1e10317f0cf.htm" />
         <HelpTOCNode Title="WATimeDistribution(Int32, Int32) - конструктор" Url="html/25244c0f-076b-d24a-a257-58bdaa7d00a2.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Title="WATimeDistribution - методы" Url="html/501415a0-2821-012e-dc8e-f137ac881230.htm" />
-      <HelpTOCNode Id="283bc5ce-58a0-4752-aabc-abad3da1218e" Title="WATimeDistribution - свойства" Url="html/62849d1d-2271-a997-39f7-66530cf54f07.htm">
+      <HelpTOCNode Id="22862763-65b6-46db-a739-3564c6b614e1" Title="WATimeDistribution - методы" Url="html/501415a0-2821-012e-dc8e-f137ac881230.htm">
+        <HelpTOCNode Id="b44c61fd-1ccc-4547-ac5f-824f7ee2a176" Title="Equals - метод" Url="html/d42e8144-3a56-ce64-157a-47cc034d333d.htm">
+          <HelpTOCNode Title="Equals(Object) - метод" Url="html/5c446504-0e4c-35bc-f5b6-58dce0633d9a.htm" />
+          <HelpTOCNode Title="Equals(WATimeDistribution) - метод" Url="html/6b6548da-5a85-f1c8-7471-e564d539e2e8.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="GetHashCode - метод" Url="html/4bfddb7b-2914-e942-ea49-276a8de0b144.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="457c0433-932d-446b-ae6b-94f4aa5f2b56" Title="WATimeDistribution - операторы" Url="html/b0b0a97e-1aac-93f1-e037-d1ddccccddcd.htm">
+        <HelpTOCNode Title="Equality - оператор" Url="html/418d554b-7076-e72d-f920-6df4705cdf52.htm" />
+        <HelpTOCNode Title="Inequality - оператор" Url="html/4a6f3c78-9b23-ee41-d1a8-113dd5f43269.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="b5213650-8792-4c93-86fa-6051e1b2395c" Title="WATimeDistribution - свойства" Url="html/62849d1d-2271-a997-39f7-66530cf54f07.htm">
         <HelpTOCNode Title="Percent - свойство" Url="html/4ffb1a2e-70e3-cc63-536b-a603db3a0dba.htm" />
         <HelpTOCNode Title="Priority - свойство" Url="html/02c84256-ead2-aeaf-f406-d9b9fe057ba3.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="8f2959c3-df8b-4c3b-8448-1404a77daa42" Title="WAWeekTargeting - класс" Url="html/4da46f53-efb9-db8f-8970-9270e938ae0c.htm">
-      <HelpTOCNode Id="21a15ee6-0719-4131-9782-1a6e7d334813" Title="WAWeekTargeting - конструктор" Url="html/b1914e53-8f03-f1e5-763b-23af90d87b87.htm">
+    <HelpTOCNode Id="602b5131-c3d7-4c36-a8a9-15db988e3c4a" Title="WAWeekTargeting - класс" Url="html/4da46f53-efb9-db8f-8970-9270e938ae0c.htm">
+      <HelpTOCNode Id="30555f77-f9f1-43e9-8375-15059c5f989b" Title="WAWeekTargeting - конструктор" Url="html/b1914e53-8f03-f1e5-763b-23af90d87b87.htm">
         <HelpTOCNode Title="WAWeekTargeting - конструктор" Url="html/0cd8dc63-9c14-cbe2-fc79-3a264c5bf3ad.htm" />
         <HelpTOCNode Title="WAWeekTargeting(Nullable(Int32), Nullable(Double)) - конструктор" Url="html/d0ab7fc8-a2a8-5c60-e18c-5bf530975d74.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Title="WAWeekTargeting - методы" Url="html/09a53a35-4d02-c72e-6946-f551196209b1.htm" />
-      <HelpTOCNode Id="aaf90781-39a4-4c21-b3f8-462e1b067e54" Title="WAWeekTargeting - свойства" Url="html/fabed1f9-8b63-60f6-fd29-395502715bd5.htm">
+      <HelpTOCNode Id="16418065-86b8-4c02-abc2-d65147e08447" Title="WAWeekTargeting - методы" Url="html/09a53a35-4d02-c72e-6946-f551196209b1.htm">
+        <HelpTOCNode Id="4d682412-abb0-4f36-8fe9-ce8a397c705c" Title="Equals - метод" Url="html/34d23de2-d02d-5531-eb91-56429003d233.htm">
+          <HelpTOCNode Title="Equals(Object) - метод" Url="html/8552f2b2-2658-9aa3-2f23-5b2f15f148a1.htm" />
+          <HelpTOCNode Title="Equals(WAWeekTargeting) - метод" Url="html/bf6b5991-57cc-9434-9e7e-b24d2c4423cc.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="GetHashCode - метод" Url="html/6b76640f-cc48-e5ec-b66d-ba3638e9a8b7.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="fa07fc7c-e96d-4584-b62f-6627b51571d7" Title="WAWeekTargeting - операторы" Url="html/c83b441e-06f3-e349-d848-b1dcaff83af5.htm">
+        <HelpTOCNode Title="Equality - оператор" Url="html/ed8e7d41-5c72-8533-193d-c732b76fe5c6.htm" />
+        <HelpTOCNode Title="Inequality - оператор" Url="html/53fe3567-8c99-1966-70e6-f5dc37b2296a.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="f54f45c1-dedf-40e7-ab9b-df92818c4422" Title="WAWeekTargeting - свойства" Url="html/fabed1f9-8b63-60f6-fd29-395502715bd5.htm">
         <HelpTOCNode Title="Day - свойство" Url="html/f8e069fa-986f-3c47-ab4c-e09604e0e29a.htm" />
         <HelpTOCNode Title="Target - свойство" Url="html/e5e19b43-1956-e712-fa45-3ea936a1f72d.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
   </HelpTOCNode>
-  <HelpTOCNode Id="6f0f34cc-e02f-4e61-8452-c490a8c37204" Title="WAApiNET.ServerQueries" Url="html/3eca535a-2c16-a74b-9586-769b3d7e1db2.htm">
-    <HelpTOCNode Id="62a71d94-986d-4ca9-a855-332e250cc368" Title="BaseQuery - класс" Url="html/88eab7e0-213a-6cde-777a-97aecdfc853b.htm">
+  <HelpTOCNode Id="669fccb0-b952-42ae-ae0c-2c0d5879dbb0" Title="WAApiNET.ServerQueries" Url="html/3eca535a-2c16-a74b-9586-769b3d7e1db2.htm">
+    <HelpTOCNode Id="0a553688-328a-408c-844e-2fe5f31f0186" Title="BaseQuery - класс" Url="html/88eab7e0-213a-6cde-777a-97aecdfc853b.htm">
       <HelpTOCNode Title="BaseQuery - конструктор" Url="html/6973a559-fd2f-f15c-5404-959353ded4f0.htm" />
       <HelpTOCNode Title="BaseQuery - методы" Url="html/0684999e-34ec-3467-e59c-a752075a5088.htm" />
-      <HelpTOCNode Id="d79672f7-4dca-4769-be03-e611ebceffe8" Title="BaseQuery - свойства" Url="html/a72d7697-e291-5257-679a-f82768a95538.htm">
+      <HelpTOCNode Id="22ebdc64-f3a6-4479-a40e-2639e81e280b" Title="BaseQuery - свойства" Url="html/a72d7697-e291-5257-679a-f82768a95538.htm">
         <HelpTOCNode Title="Action - свойство" Url="html/e438f507-6db5-41d3-ddf5-0ce665c1ceb5.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="c9dc2ad1-91cd-4c60-98ea-a5f0d36bc6ab" Title="BaseQueryData - класс" Url="html/0a56299b-4bd8-24fd-977b-2329cfecc468.htm">
-      <HelpTOCNode Id="07349995-7b3a-4e44-96b6-02183e98f604" Title="BaseQueryData - конструктор" Url="html/5a85d1f3-b387-4689-8934-765ee7d0d724.htm">
+    <HelpTOCNode Id="4f4e7af2-e0c9-4a84-854e-65f8673abfa4" Title="BaseQueryData - класс" Url="html/0a56299b-4bd8-24fd-977b-2329cfecc468.htm">
+      <HelpTOCNode Id="92220ef4-d213-4361-9253-3bbdc9363d5c" Title="BaseQueryData - конструктор" Url="html/5a85d1f3-b387-4689-8934-765ee7d0d724.htm">
         <HelpTOCNode Title="BaseQueryData - конструктор" Url="html/54dcb8dc-80c1-163a-e840-05060da76220.htm" />
         <HelpTOCNode Title="BaseQueryData(String) - конструктор" Url="html/14f8a0f5-e669-7a36-28f7-7364020fedec.htm" />
       </HelpTOCNode>
       <HelpTOCNode Title="BaseQueryData - методы" Url="html/2fe8f6f8-3750-13fc-f277-acd0c6d5bf85.htm" />
-      <HelpTOCNode Id="c0aa6467-32dd-4d58-b43c-7f1a040aefaf" Title="BaseQueryData - свойства" Url="html/ab98818d-1d59-8d39-abd8-9fb42e47d792.htm">
+      <HelpTOCNode Id="f8e98f9f-0462-4779-95ab-3783b3a024b7" Title="BaseQueryData - свойства" Url="html/ab98818d-1d59-8d39-abd8-9fb42e47d792.htm">
         <HelpTOCNode Title="Token - свойство" Url="html/ae94b017-9bfe-ebfa-b273-1f8f40ff5716.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
