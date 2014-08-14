@@ -496,6 +496,32 @@ namespace WAApiNET.Categories
         }
 
         /// <summary>
+        /// Перенос заданий в другую папку
+        /// </summary>
+        /// <param name="sourceFolder">Исходная папка</param>
+        /// <param name="targetFolder">Папка назначения</param>
+        /// <param name="tasks">Задания</param>
+        /// <returns></returns>
+        public async Task MoveTasks( WAFolder sourceFolder, WAFolder targetFolder, WATask[] tasks )
+        {
+            if ( sourceFolder == null || sourceFolder.FolderId == null )
+            {
+                throw new WAApiException( "Некорректный параметр: sourceFolder!" );
+            }
+            if ( targetFolder == null || targetFolder.FolderId == null )
+            {
+                throw new WAApiException( "Некорректный параметр: sourceFolder!" );
+            }
+            if ( tasks == null || tasks.Any( t => t.TaskId == null ) )
+            {
+                throw new WAApiException( "Некорректный параметр: tasks!" );
+            }
+            await
+                this.MoveTasks( (int)sourceFolder.FolderId, (int)targetFolder.FolderId,
+                    tasks.Select( t => t.TaskId != null ? (int)t.TaskId : 0 ).ToArray() );
+        }
+
+        /// <summary>
         /// Перенос задания в другую папку
         /// </summary>
         /// <param name="sourceFolderId">Исходная папка</param>
