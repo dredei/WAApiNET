@@ -107,11 +107,11 @@ namespace WAApiNETTests
             {
                 Assert.Fail();
             }
-            await this._waApi.Task.SetTasksParams( folderId, newTask, new[] { (int)task.TaskId } );
+            await this._waApi.Task.SetTaskParams( folderId, newTask, (int)task.TaskId );
             newTask = await this._waApi.Task.GetWholeTask( folderId, (int)task.TaskId );
             string extSource = newTask.ExtSource;
             int? afterClick = newTask.AfterClick;
-            await this._waApi.Task.DeleteTasks( folderId, new[] { (int)task.TaskId } );
+            await this._waApi.Task.DeleteTask( folderId, (int)task.TaskId );
             Assert.IsTrue( extSource == "http://softez.pp.ua/2" && afterClick == 35 &&
                            newTask.DayTargeting.Any( dt => dt.Hour == 0 && dt.Min == 5 && dt.Max == 10 ) &&
                            newTask.DayTargeting.Any( dt => dt.Hour == 1 && dt.Min == 6 && dt.Max == 11 ) &&

@@ -44,7 +44,7 @@ namespace WAApiNETTests
             await this._waApi.Folder.SetFolderName( newFolder, "FolderFromTests2" );
             folders = await this._waApi.Folder.GetFolders();
             bool newNameFolderFound = folders.SingleOrDefault( f => f.Name == "FolderFromTests2" ) != null;
-            await this._waApi.Folder.DeleteFolders( new[] { newFolder } );
+            await this._waApi.Folder.DeleteFolder( newFolder );
             folders = await this._waApi.Folder.GetFolders();
             Assert.IsTrue( foldersCountAfterAdd == 4 && newNameFolderFound && folders.Count == 3 );
         }
