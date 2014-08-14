@@ -534,6 +534,18 @@ namespace WAApiNET.Categories
         }
 
         /// <summary>
+        /// Перенос задания в другую папку
+        /// </summary>
+        /// <param name="sourceFolder">Исходная папка</param>
+        /// <param name="targetFolder">Папка назначения</param>
+        /// <param name="task">Задание</param>
+        /// <returns></returns>
+        public async Task MoveTask( WAFolder sourceFolder, WAFolder targetFolder, WATask task )
+        {
+            await this.MoveTasks( sourceFolder, targetFolder, new[] { task } );
+        }
+
+        /// <summary>
         /// Клонирование задания
         /// </summary>
         /// <param name="sourceFolderId">Id исходной папки</param>
