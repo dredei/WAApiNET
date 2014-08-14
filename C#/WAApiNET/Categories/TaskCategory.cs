@@ -392,6 +392,30 @@ namespace WAApiNET.Categories
         }
 
         /// <summary>
+        /// Изменение настроек задания
+        /// </summary>
+        /// <param name="folderId">Id папки</param>
+        /// <param name="taskParams">Настройки задания</param>
+        /// <param name="taskId">Id задания</param>
+        /// <returns></returns>
+        public async Task SetTaskParams( int folderId, WATaskWhole taskParams, int taskId )
+        {
+            await this.SetTasksParams( folderId, taskParams, new[] { taskId } );
+        }
+
+        /// <summary>
+        /// Изменение настроек задания
+        /// </summary>
+        /// <param name="folder">Папка</param>
+        /// <param name="taskParams">Настройки задания</param>
+        /// <param name="task">Задание</param>
+        /// <returns></returns>
+        public async Task SetTaskParams( WAFolder folder, WATaskWhole taskParams, WATask task )
+        {
+            await this.SetTasksParams( folder, taskParams, new[] { task } );
+        }
+
+        /// <summary>
         /// Копирование настроек задания
         /// </summary>
         /// <param name="sourceFolderId">Исходный Id папки</param>
