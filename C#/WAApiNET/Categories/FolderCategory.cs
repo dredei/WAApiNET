@@ -131,6 +131,26 @@ namespace WAApiNET.Categories
         }
 
         /// <summary>
+        /// Удаление папки
+        /// </summary>
+        /// <param name="folderId">Id папки</param>
+        /// <returns></returns>
+        public async Task DeleteFolder( int folderId )
+        {
+            await this.DeleteFolders( new[] { folderId } );
+        }
+
+        /// <summary>
+        /// Удаление папки
+        /// </summary>
+        /// <param name="folder">Папка</param>
+        /// <returns></returns>
+        public async Task DeleteFolder( WAFolder folder )
+        {
+            await this.DeleteFolders( new[] { folder } );
+        }
+
+        /// <summary>
         /// Получение всех данных папки
         /// </summary>
         /// <param name="folderId">Id папки</param>
