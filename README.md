@@ -29,3 +29,7 @@ Changelog
 - Переопределен метод Equals для классов пространства имен Model;
 - Добавлена [перегрузка для метода MoveTasks](https://github.com/dredei/WAApiNET/commit/dc1164bff1425bb1fb70cb1ac0e1d3f6aef5f341#diff-8f67a73ee8d1209a83f28ad4a234a7b6R505);
 - Добавлены следующие методы: [удаление папки](https://github.com/dredei/WAApiNET/commit/5682063d1fcaf7a3037f88fca784694110b80383#diff-0053273e8716ca61b8d6ab941160388cR138), [удаление задания](https://github.com/dredei/WAApiNET/commit/0b356d04e77dd2fe23ac1a9751307e4813df7ea4#diff-8f67a73ee8d1209a83f28ad4a234a7b6R141), [изменение настроек задания](https://github.com/dredei/WAApiNET/commit/beb59a96166350c46b5952b4cf6c7789b4b7bab1#diff-8f67a73ee8d1209a83f28ad4a234a7b6R401), [перенос задания в другую папку](https://github.com/dredei/WAApiNET/commit/7b1c67d18cd514db76e8dc4f5f0ce3d31b3c7eff#diff-8f67a73ee8d1209a83f28ad4a234a7b6R505).
+
+**v1.0.3** (12.06.2015)
+- Исправлена [проблема с десериализацией свойства Task ID](https://github.com/dredei/WAApiNET/commit/1ad0efd3ac38c05ce5df6276eb4011667f5711f1#diff-511b5c42abf95267633d362f0c475f6d);
+- Можно [указывать в конструкторе (или в свойстве) ждать ли нам определенное время, если нас заблочил AntiDOS](https://github.com/dredei/WAApiNET/commit/b76b6be8089048db8d21e0412169910e12eaf1f2#diff-d7866a98ebefe46f15e233754d6a7fd1R86).
