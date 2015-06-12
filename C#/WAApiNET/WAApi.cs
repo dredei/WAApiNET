@@ -65,6 +65,11 @@ namespace WAApiNET
         public JsonSerializerSettings JSONSettings { get; private set; }
 
         /// <summary>
+        /// Ждать, если заблокировали AntiDOS'ом
+        /// </summary>
+        public bool WaitIfBlockedByAntiDOS { get; set; }
+
+        /// <summary>
         /// Срабатывает, когда либа определяет, что нас заблочили антидосом
         /// </summary>
         public event EventHandler<EventArgs> AntiDOSBlocked;
@@ -77,7 +82,9 @@ namespace WAApiNET
         /// <param name="email">Почта</param>
         /// <param name="password">Пароль</param>
         /// <param name="address">Адрес сервера</param>
-        public WAApi( string email, string password, string address = "http://api.waspace.net" )
+        /// <param name="waitIfBlockedByAntiDOS">Ждать, если заблокировали AntiDOS'ом</param>
+        public WAApi( string email, string password, string address = "http://api.waspace.net",
+            bool waitIfBlockedByAntiDOS = true )
         {
             if ( address[ address.Length - 1 ] == '/' )
             {
@@ -85,6 +92,7 @@ namespace WAApiNET
             }
             this.Email = email;
             this.Password = password;
+            this.WaitIfBlockedByAntiDOS = waitIfBlockedByAntiDOS;
             this._address = address;
             this._webClient = new WebClient { Encoding = Encoding.UTF8 };
 
@@ -110,7 +118,10 @@ namespace WAApiNET
                     // генерируем событие, что нас заблочили антидосом
                     handler( this, new EventArgs() );
                 }
-                await TaskEx.Delay( 65000 );
+                if ( this.WaitIfBlockedByAntiDOS )
+                {
+                    await TaskEx.Delay( 65000 );
+                }
                 return true;
             }
             throw new WAApiException( "Ошибка \"{0}\"!".F( errorAnswer.Error ), jsonData, answer );
