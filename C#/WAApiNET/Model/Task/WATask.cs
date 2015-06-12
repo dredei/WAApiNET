@@ -15,7 +15,6 @@ namespace WAApiNET.Model.Task
         /// <summary>
         /// Id задания
         /// </summary>
-        [JsonIgnore]
         [JsonProperty( PropertyName = "Task ID" )]
         public int? TaskId { get; set; }
 
@@ -208,6 +207,15 @@ namespace WAApiNET.Model.Task
             this.ExtSource = task.ExtSource;
             this.BeforeClick = task.BeforeClick;
             this.ProfileSorage = task.ProfileSorage;
+        }
+
+        /// <summary>
+        /// Нужен для JSON.NET
+        /// </summary>
+        /// <returns></returns>
+        public bool ShouldSerializeTaskId()
+        {
+            return false;
         }
 
         #region Members
