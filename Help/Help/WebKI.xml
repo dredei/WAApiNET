@@ -192,6 +192,7 @@
   <HelpKINode Title="SetFolderName метод" Url="html/768cfdc1-6338-6259-c839-437d186ecdce.htm" />
   <HelpKINode Title="SetTaskParams метод" Url="html/6b2f7f40-144e-2cd1-3e52-81b9f038ffe4.htm" />
   <HelpKINode Title="SetTasksParams метод" Url="html/4b801a45-1ef5-e17e-1ab8-65ad1cecf6d6.htm" />
+  <HelpKINode Title="ShouldSerializeTaskId метод" Url="html/966af612-e6bd-c396-8a88-d5ce8aab50c2.htm" />
   <HelpKINode Title="SignIn метод" Url="html/cf66e4ae-9a0e-0a69-0fcd-f9306fed1474.htm" />
   <HelpKINode Title="SignOut метод" Url="html/ee7dd592-ef72-759b-65ec-a84242e1a822.htm" />
   <HelpKINode Title="Target свойство">
@@ -273,7 +274,7 @@
   <HelpKINode Title="WAAllInfo.WAAllInfo конструктор" Url="html/f71e2460-8fde-b277-2109-c0d089f8c397.htm" />
   <HelpKINode Title="WAApi - класс">
     <HelpKINode Title="WAApi - класс" Url="html/e59534e3-66d2-2a7d-e87e-c17e7458f7f2.htm" />
-    <HelpKINode Title="конструктор" Url="html/e2f13df3-622d-24af-8933-f434e84acb44.htm" />
+    <HelpKINode Title="конструктор" Url="html/229dc3ea-ce1e-a605-9c6e-b19d826885ef.htm" />
     <HelpKINode Title="методы" Url="html/b0d4f878-d27f-83c8-53c6-75ac39cf722f.htm" />
     <HelpKINode Title="о WAApi - класс" Url="html/e59534e3-66d2-2a7d-e87e-c17e7458f7f2.htm" />
     <HelpKINode Title="свойства" Url="html/38ef39de-386c-a460-1421-baf317155454.htm" />
@@ -289,7 +290,8 @@
   <HelpKINode Title="WAApi.Password свойство" Url="html/5d81efc0-2a1a-5845-d5db-516174d3c7e8.htm" />
   <HelpKINode Title="WAApi.SendGet метод" Url="html/faad6265-fd6d-2caa-50cd-2af5a58ee910.htm" />
   <HelpKINode Title="WAApi.Task свойство" Url="html/3f46f3c5-ea19-98de-9347-3e43edb40630.htm" />
-  <HelpKINode Title="WAApi.WAApi конструктор" Url="html/e2f13df3-622d-24af-8933-f434e84acb44.htm" />
+  <HelpKINode Title="WAApi.WAApi конструктор" Url="html/229dc3ea-ce1e-a605-9c6e-b19d826885ef.htm" />
+  <HelpKINode Title="WAApi.WaitIfBlockedByAntiDOS свойство" Url="html/7444cb66-8de2-4587-1913-de064a2e70af.htm" />
   <HelpKINode Title="WAApiException - класс">
     <HelpKINode Title="WAApiException - класс" Url="html/ac8866fd-2791-34c9-ca8d-6b13cfde8fcb.htm" />
     <HelpKINode Title="конструктор" Url="html/f3abe03a-57a1-f442-4465-6f0ffedd1b73.htm" />
@@ -410,6 +412,7 @@
   <HelpKINode Title="WAGeoTargeting.Target свойство" Url="html/d2db3352-238a-7285-094a-feb58c55e962.htm" />
   <HelpKINode Title="WAGeoTargeting.WAGeoTargeting конструктор" Url="html/756a3e90-d9e3-ba05-1efc-008d66c139fa.htm" />
   <HelpKINode Title="WAGeoTargeting.ZoneId свойство" Url="html/40e25e62-ee38-808c-6187-638d8acc4ea0.htm" />
+  <HelpKINode Title="WaitIfBlockedByAntiDOS свойство" Url="html/7444cb66-8de2-4587-1913-de064a2e70af.htm" />
   <HelpKINode Title="WAReferral - класс">
     <HelpKINode Title="WAReferral - класс" Url="html/6a168a7c-6d8d-9c4e-7e9e-abc55b909c63.htm" />
     <HelpKINode Title="конструктор" Url="html/c776000a-ba4c-60ce-30a4-293e6cf8bc15.htm" />
@@ -454,6 +457,7 @@
   <HelpKINode Title="WATask.Profile свойство" Url="html/512c9e46-dcf3-354e-76f9-56c6c29720cb.htm" />
   <HelpKINode Title="WATask.ProfileSorage свойство" Url="html/beae799f-c6ab-aa80-4f9e-f629c4901407.htm" />
   <HelpKINode Title="WATask.RangeSize свойство" Url="html/91a8451c-8e47-799b-a824-5c45deecc5d9.htm" />
+  <HelpKINode Title="WATask.ShouldSerializeTaskId метод" Url="html/966af612-e6bd-c396-8a88-d5ce8aab50c2.htm" />
   <HelpKINode Title="WATask.TaskId свойство" Url="html/a6769a01-260c-982e-154b-a127ec5a9dd6.htm" />
   <HelpKINode Title="WATask.UniquePeriod свойство" Url="html/5e532dd4-d9bf-27fc-ac1f-3a0709b6e947.htm" />
   <HelpKINode Title="WATask.WATask конструктор" Url="html/112135e1-ac01-bed6-ad34-d877e71c4c71.htm" />
